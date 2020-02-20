@@ -1,0 +1,18 @@
+- name: add personal cert. 
+  ci:
+    appliance:      "{{ inventory_hostname }}"
+    client_id:      "{{ client_id }}"
+    client_secret:  "{{ client_secret }}"
+    lmi_port:       "{{ lmi_port }}"
+    log:            "{{ log_level }}"
+    force:          "{{ force }}"
+    # header:         "application/json"
+    ciapi:
+      p12certfile:  "{{ p12certfile | default(None) }}"
+      p12cert:      "{{ p12cert | default(None) }}"
+      label:        "{{ label | default(None) }}"
+      isdefault:    "{{ isdefault }}"
+      password:     "{{ password }}"
+
+    action: ibmsecurity.ci.configuration.certificates.add_personalcert
+

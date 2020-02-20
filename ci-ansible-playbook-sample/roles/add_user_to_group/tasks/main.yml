@@ -1,0 +1,15 @@
+- name: Add a User to a group in IBM Cloud Identity Cloud Directory. 
+  ci:
+    appliance:      "{{ inventory_hostname }}"
+    client_id:      "{{ client_id }}"
+    client_secret:  "{{ client_secret }}"
+    lmi_port:       "{{ lmi_port }}"
+    log:            "{{ log_level }}"
+    force:          "{{ force }}"
+    header:         "application/scim+json"
+    ciapi:
+      group:        "{{ group }}"
+      user:         "{{ user }}"
+      email:        "{{ email }}"
+    action: ibmsecurity.ci.groups.add_user
+

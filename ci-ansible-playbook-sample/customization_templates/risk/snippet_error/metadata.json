@@ -1,0 +1,20 @@
+{
+   "contentMaxSize": 100,
+   "description": "A page to store Trusteer snippets error page",
+   "id": {
+      "component": "risk",
+      "name": "snippet_error",
+      "revision": 7
+   },
+   "isServiceTemplate": false,
+   "parameters": {
+      "optional": [
+      ],
+      "required": [
+         {
+            "description": "The error message to display.",
+            "key": "@ERROR_MESSAGE@"
+         }
+      ]
+   }
+}

@@ -1,0 +1,40 @@
+{
+   "contentMaxSize": 100,
+   "description": "A page to store the Adaptive Access Trusteer snippets",
+   "id": {
+      "component": "risk",
+      "name": "adaptive_access_snippets",
+      "revision": 7
+   },
+   "isServiceTemplate": false,
+   "parameters": {
+      "optional": [
+      ],
+      "required": [
+         {
+            "description": "The Trusteer snippet id.",
+            "key": "@SNIPPET_ID@"
+         },
+         {
+            "description": "The frontend Snippet host",
+            "key": "@TRUSTEER_FRONTEND_HOST@"
+         },
+         {
+            "description": "The domain name.",
+            "key": "@DOMAIN_NAME@"
+         },
+         {
+            "description": "The customer session from iv-creds.",
+            "key": "@TAGVALUE_SESSION_INDEX@"
+         },
+         {
+            "description": "The target url to submit to.",
+            "key": "@TARGET_URL@"
+         },
+         {
+            "description": "The target url query parameters to post.",
+            "key": "@TARGET_URL_QUERY_PARAMETERS@"
+         }
+      ]
+   }
+}

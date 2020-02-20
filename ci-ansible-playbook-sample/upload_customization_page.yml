@@ -1,0 +1,26 @@
+
+- name: Upload templates (pages)
+  hosts: all
+  no_log: False
+  connection: local
+  gather_facts: no
+  vars:
+    log_level: "DEBUG"
+  roles:
+    - role: start_ci_config
+    
+    # the new `page` must be in the directory structure of the orginal `templates.zip`. Extracted content in the folder `customization_templates`
+    # place your new html file next to the orginal.
+    #
+    # HTML files, are renamed before uploading to: page.html.
+    #
+    # Other files:
+    #
+    # New files must be named: orginal_file_name<_custname>.xml
+    # the last `_` till the extension will be remove for uploading.
+    #
+    - role: upload_customization_page
+      keepzip: true                     # true: this will not remove the templates.zip after upload.
+      pages:    
+        - value: customization_templates/authbroker/social_login/default/default/page_customized.html
+ 

@@ -1,0 +1,54 @@
+- name: Update Authentication Factos Properties
+  hosts: all
+  no_log: False
+  connection: local
+  gather_facts: no
+  vars:
+    log_level: "DEBUG"
+  roles:
+    - role: start_ci_config
+
+    - role: update_authentication_factor_emailotp
+      charset: "0123456789"
+      maxtries: "5"
+      lifetimesec: "300"
+      length: "6"
+      enablevalidationonenroll: true
+      enabled: true
+
+    - role: update_authentication_factor_smsotp
+      charset: "0123456789"
+      maxtries: "5"
+      lifetimesec: "300"
+      length: "6"
+      enablevalidationonenroll: true
+      enabled: true
+
+    - role: update_authentication_factor_totp
+      timestepskew: "1"
+      secretkeyurl: "otpauth://totp/CloudIdentity:@USER_NAME@?secret=@SECRET_KEY@&issuer=CloudIdentity&algorithm=@ALGORITHM@"
+      length: "6"
+      onetimeuse: true
+      timestepsizesec: "30"
+      enabled: true
+      algorithm: "HmacSHA1"
+
+    - role: update_authentication_factor_verify
+      face_supportedalgorithms: '["RSASHA256", "RSASHA512"]'
+      face_enabled: true
+      face_algorithm: "RSASHA256"
+      userpresence_supportedalgorithms: '["RSASHA256", "RSASHA512"]'
+      userpresence_enabled: true
+      userpresence_algorithm: "RSASHA256"
+      fingerprint_supportedalgorithms: '["RSASHA256", "RSASHA512"]'
+      fingerprint_enabled: true
+      fingerprint_algorithm: "RSASHA256"
+      enabled: true
+
+    - role: update_authentication_factor_qr
+      lsi_charset: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+      lsi_length:  "25"
+      dsi_charset: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+      dsi_length:  "25"
+      expiry:      "120"
+      enabled:     true

@@ -1,0 +1,24 @@
+- name: add attribute. 
+  ci:
+    appliance:      "{{ inventory_hostname }}"
+    client_id:      "{{ client_id }}"
+    client_secret:  "{{ client_secret }}"
+    lmi_port:       "{{ lmi_port }}"
+    log:            "{{ log_level }}"
+    force:          "{{ force }}"
+    # header:       "application/json"
+    ciapi:
+      attributename:                                          "{{ attributename }}"
+      attributedescription:                                   "{{ attributedescription }}"
+      sourcetype:                                             "{{ sourcetype }}"
+      singlesignon:                                           "{{ singlesignon }}"
+      datatype:                                               "{{ datatype }}"
+      scope:                                                  "{{ scope }}"
+
+      ## for all types
+      attributeidentifier:                                    "{{ attributeidentifier | default(None) }}"
+      identitysource:                                         "{{ identitysource | default(None) }}"
+      attributenamefromtheidentitysource:                     "{{ attributenamefromtheidentitysource | default(None) }}"
+      value:                                                  "{{ value | default(None) }}"
+      applytransformation:                                    "{{ applytransformation | default(None) }}"
+    action: ibmsecurity.ci.configuration.attributes.add

@@ -1,0 +1,16 @@
+{
+   "contentMaxSize": 100,
+   "description": "A proper Login verified page dispalyed",
+   "id": {
+      "component": "authbroker",
+      "name": "Login_verified",
+      "revision": 3
+   },
+   "isServiceTemplate": false,
+   "parameters": {
+      "optional": [
+      ],
+      "required": [
+      ]
+   }
+}

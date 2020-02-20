@@ -1,0 +1,18 @@
+
+- name: add personal cert
+  hosts: all
+  no_log: False
+  connection: local
+  gather_facts: no
+  vars:
+    log_level: "DEBUG"
+  roles:
+    - role: start_ci_config
+
+    # use `p12certfile` or `p12cert`.
+    - role: add_personalcert
+      p12certfile: "filename.p12"     # path + filename of p12
+      p12cert: ""                     # base64 encoded p12
+      isdefault: False
+      password: "password"
+      label: "testlabel"

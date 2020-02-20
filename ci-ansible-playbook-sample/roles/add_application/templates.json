@@ -1,0 +1,3691 @@
+{
+  "_embedded": {
+    "templates": [
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/260"
+          }
+        },
+        "name": "&frankly",
+        "icon": "/appaccess/v1.0/icons/frankly_logo160.png",
+        "description": "A platform for planned (or spontaneous) dialogue between management and employees"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/430"
+          }
+        },
+        "name": "10000ft",
+        "icon": "/appaccess/v1.0/icons/10,000ft_logo160.png",
+        "description": "A collaborative software platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/252"
+          }
+        },
+        "name": "15five",
+        "icon": "/appaccess/v1.0/icons/15five_logo160.png",
+        "description": "An employee performance service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/378"
+          }
+        },
+        "name": "4me",
+        "icon": "/appaccess/v1.0/icons/4me_logo160.png",
+        "description": "An enterprise service management application"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/75"
+          }
+        },
+        "name": "Accellion Kiteworks",
+        "icon": "/appaccess/v1.0/icons/kiteworks_logo160.png",
+        "description": "A platform for secure file access and sharing"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/363"
+          }
+        },
+        "name": "Accredible",
+        "icon": "/appaccess/v1.0/icons/accredible_logo160.png",
+        "description": "A Platform as a Service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/317"
+          }
+        },
+        "name": "Adobe Captivate Prime",
+        "icon": "/appaccess/v1.0/icons/adobe_captivate_prime_logo160.png",
+        "description": "A learning management system"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/47"
+          }
+        },
+        "name": "Adobe Creative Cloud",
+        "icon": "/appaccess/v1.0/icons/adobe_creative_cloud_logo160.png",
+        "description": "A software as a service basically for graphic and design offered by Adobe Systems"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/69"
+          }
+        },
+        "name": "Agiloft",
+        "icon": "/appaccess/v1.0/icons/agiloft_logo160.png",
+        "description": "A customer relationship management application"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/94"
+          }
+        },
+        "name": "Aha!",
+        "icon": "/appaccess/v1.0/icons/aha_logo160.png",
+        "description": "A Web-based product management tools and roadmapping software for agile product managers"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/369"
+          }
+        },
+        "name": "AlertOps",
+        "icon": "/appaccess/v1.0/icons/alertops_logo160.png",
+        "description": "A collaborative Incident Management"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/387"
+          }
+        },
+        "name": "AlterDesk",
+        "icon": "/appaccess/v1.0/icons/alterdesk_logo160.png",
+        "description": "A white label communication platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/5"
+          }
+        },
+        "name": "Amazon Web Services (AWS)",
+        "icon": "/appaccess/v1.0/icons/amazon_web_services_logo160.png",
+        "description": "A portal for cloud computing services"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/101"
+          }
+        },
+        "name": "ANCILE uAlign",
+        "icon": "/appaccess/v1.0/icons/ancile_ualign_logo160.png",
+        "description": "A corporate communications solution in the cloud"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/121"
+          }
+        },
+        "name": "AnswerHub",
+        "icon": "/appaccess/v1.0/icons/answerhub_logo160.png",
+        "description": "A portal and Q&A software for teams, customers and partners"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/135"
+          }
+        },
+        "name": "Appian",
+        "icon": "/appaccess/v1.0/icons/appian_logo160.png",
+        "description": "A BPM(Business Process Management) driven application platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/339"
+          }
+        },
+        "name": "Appraisd",
+        "icon": "/appaccess/v1.0/icons/appraisd_logo160.png",
+        "description": "An online performance review and staff appraisals"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/275"
+          }
+        },
+        "name": "apteligent",
+        "icon": "/appaccess/v1.0/icons/apteligent_logo160.png",
+        "description": "An application performance management"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/110"
+          }
+        },
+        "name": "ArcGIS",
+        "icon": "/appaccess/v1.0/icons/arcgis_logo160.png",
+        "description": "A geographic information system (GIS) for working with maps and geographic information"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/145"
+          }
+        },
+        "name": "Artifactory",
+        "icon": "/appaccess/v1.0/icons/jfrog_artifactory_logo160.png",
+        "description": "A Repository Manager."
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/61"
+          }
+        },
+        "name": "Asana",
+        "icon": "/appaccess/v1.0/icons/asana_logo160.png",
+        "description": "A business networking platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/132"
+          }
+        },
+        "name": "Aspera Files",
+        "icon": "/appaccess/v1.0/icons/aspera_files_logo160.png",
+        "description": "An high speed fasp file sharing collaboration exchange software as a service saas"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/333"
+          }
+        },
+        "name": "Atlassian",
+        "icon": "/appaccess/v1.0/icons/atlassian_logo160.png",
+        "description": "An enterprise software group"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/408"
+          }
+        },
+        "name": "Automox",
+        "icon": "/appaccess/v1.0/icons/automox_logo160.png",
+        "description": "A cloud system management solution designed to completely automate the patching, configuration, and maintenance of Windows, OS X, and Linux systems from a single platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/27"
+          }
+        },
+        "name": "bamboohr",
+        "icon": "/appaccess/v1.0/icons/bamboohr_logo160.png",
+        "description": "A human resource software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/189"
+          }
+        },
+        "name": "Base",
+        "icon": "/appaccess/v1.0/icons/base_logo160.png",
+        "description": "A platform offering CRM (Customer-Relationship-Management) software for sales acceleration"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/68"
+          }
+        },
+        "name": "BIME",
+        "icon": "/appaccess/v1.0/icons/bime_logo160.png",
+        "description": "An analytic tool"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/147"
+          }
+        },
+        "name": "Birst",
+        "icon": "/appaccess/v1.0/icons/birst_logo160.png",
+        "description": "A business intelligence platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/232"
+          }
+        },
+        "name": "BitGlass",
+        "icon": "/appaccess/v1.0/icons/bitglass_logo160.png",
+        "description": "A cloud security software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/354"
+          }
+        },
+        "name": "Blissbook",
+        "icon": "/appaccess/v1.0/icons/blissbook_logo160.png",
+        "description": "A policy management software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/77"
+          }
+        },
+        "name": "Blueworks Live",
+        "icon": "/appaccess/v1.0/icons/ibm_blueworks_live_logo160.png",
+        "description": "IBM Blueworks Live is a cloud-based business process modeller"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/92"
+          }
+        },
+        "name": "Bonusly",
+        "icon": "/appaccess/v1.0/icons/bonusly_logo160.png",
+        "description": "A social recognition platform that allows you to reward your colleagues with instant peer-to-peer bonuses and gain valuable insight into the strengths, skills, and accomplishments of your team"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/6"
+          }
+        },
+        "name": "Box",
+        "icon": "/appaccess/v1.0/icons/box_logo160.png",
+        "description": "A cloud storage and file sharing service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/318"
+          }
+        },
+        "name": "Branch",
+        "icon": "/appaccess/v1.0/icons/branch_logo160.png",
+        "description": "A mobile linking platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/311"
+          }
+        },
+        "name": "Brandfolder",
+        "icon": "/appaccess/v1.0/icons/brandfolder_logo160.png",
+        "description": "A digital asset management simplified"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/331"
+          }
+        },
+        "name": "BrightEdge",
+        "icon": "/appaccess/v1.0/icons/brightedge_logo160.png",
+        "description": "A SEO and content performance marketing platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/416"
+          }
+        },
+        "name": "Buddy Punch",
+        "icon": "/appaccess/v1.0/icons/buddypunch_logo160.png",
+        "description": "A time recording software for employees"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/223"
+          }
+        },
+        "name": "Bugsnag",
+        "icon": "/appaccess/v1.0/icons/bugsnag_logo160.png",
+        "description": "A error monitoring for applications"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/178"
+          }
+        },
+        "name": "Buildkite",
+        "icon": "/appaccess/v1.0/icons/buildkite_logo160.png",
+        "description": "A collaboration and automation tools for building and shipping"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/364"
+          }
+        },
+        "name": "built.io",
+        "icon": "/appaccess/v1.0/icons/built.io_logo160.png",
+        "description": "A cloud-based, API-first enterprise suite"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/344"
+          }
+        },
+        "name": "CA Identity Service",
+        "icon": "/appaccess/v1.0/icons/ca_identity_service_logo160.png",
+        "description": "A cloud-based identity and access management (IAM) solution that complements CA Single Sign On, delivering a hybrid solution that enables seamless application access across cloud and on-premises applications"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/300"
+          }
+        },
+        "name": "CakeHR",
+        "icon": "/appaccess/v1.0/icons/cakehr_logo160.png",
+        "description": "A management software for small and medium businesses"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/217"
+          }
+        },
+        "name": "CanvasLMS",
+        "icon": "/appaccess/v1.0/icons/canvaslms_logo160.png",
+        "description": "A learning management system"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/389"
+          }
+        },
+        "name": "Carbonite",
+        "icon": "/appaccess/v1.0/icons/carboniteendpointprotection_logo160.png",
+        "description": "An online backup service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/268"
+          }
+        },
+        "name": "CircleHD",
+        "icon": "/appaccess/v1.0/icons/circlehd_logo160.png",
+        "description": "An enterprise Video eLearning Platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/174"
+          }
+        },
+        "name": "Cisco Meraki",
+        "icon": "/appaccess/v1.0/icons/cisco_meraki_logo160.png",
+        "description": "A cloud managed IT company"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/418"
+          }
+        },
+        "name": "Cisco Umbrella",
+        "icon": "/appaccess/v1.0/icons/ciscoumbrella_logo160.png",
+        "description": "A cloud security platform that provides defense against threats"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/395"
+          }
+        },
+        "name": "Cisco Webex Meetings",
+        "icon": "/appaccess/v1.0/icons/webexmeetings_logo160.png",
+        "description": "An enterprise solution for video conferencing & web conferencing today"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/345"
+          }
+        },
+        "name": "Cisco Webex Teams",
+        "icon": "/appaccess/v1.0/icons/webexteams_logo160.png",
+        "description": "An app-centric, cloud-based service that provides a complete collaboration suite for teams"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/29"
+          }
+        },
+        "name": "Citrix",
+        "icon": "/appaccess/v1.0/icons/citrix_online_logo160.png",
+        "description": "A platform that mobilize business with secure app and data delivery"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/78"
+          }
+        },
+        "name": "Citrix ShareFile",
+        "icon": "/appaccess/v1.0/icons/citrix_sharefile_logo160.png",
+        "description": "A provider which offers secure file sharing and storage"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/8"
+          }
+        },
+        "name": "Clarizen",
+        "icon": "/appaccess/v1.0/icons/clarizen_logo160.png",
+        "description": "An online project management software solution"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/57"
+          }
+        },
+        "name": "ClearSlide",
+        "icon": "/appaccess/v1.0/icons/clearslide_logo160.png",
+        "description": "A Platform for Sales & Marketing"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/355"
+          }
+        },
+        "name": "Clever",
+        "icon": "/appaccess/v1.0/icons/clever_logo160.png",
+        "description": "An educational software solution for schools"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/181"
+          }
+        },
+        "name": "ClickTime",
+        "icon": "/appaccess/v1.0/icons/clicktime_logo160.png",
+        "description": "A provider of time and expense management applications"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/356"
+          }
+        },
+        "name": "Cloudability",
+        "icon": "/appaccess/v1.0/icons/cloudability_logo160.png",
+        "description": "A data-driven cloud cost management service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/243"
+          }
+        },
+        "name": "CloudAMQP",
+        "icon": "/appaccess/v1.0/icons/cloudamqp_logo160.png",
+        "description": "An add-on providing RabbitMQ as a service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/256"
+          }
+        },
+        "name": "CloudApp",
+        "icon": "/appaccess/v1.0/icons/cloudapp_logo160.png",
+        "description": "A web storage provider"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/9"
+          }
+        },
+        "name": "CloudPassage",
+        "icon": "/appaccess/v1.0/icons/cloudpassage_logo160.png",
+        "description": "A cloud server security with instant visibility and protection in public and private clouds"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/421"
+          }
+        },
+        "name": "ClubHouse",
+        "icon": "/appaccess/v1.0/icons/clubhouse_logo160.png",
+        "description": "A project management service for software development teams"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/255"
+          }
+        },
+        "name": "Cmpute",
+        "icon": "/appaccess/v1.0/icons/cmpute_logo160.png",
+        "description": "A Dynamic Compute Management Platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/287"
+          }
+        },
+        "name": "Coggle",
+        "icon": "/appaccess/v1.0/icons/coggle_logo160.png",
+        "description": "A collaborative mind-mapping tool"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/325"
+          }
+        },
+        "name": "Collaborate",
+        "icon": "/appaccess/v1.0/icons/octiv_logo160.png",
+        "description": "A Sales Productivity for Sophisticated Companies"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/328"
+          }
+        },
+        "name": "ConceptShare",
+        "icon": "/appaccess/v1.0/icons/conceptshare_logo160.png",
+        "description": "A shared visual workspace provider"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/33"
+          }
+        },
+        "name": "Concur",
+        "icon": "/appaccess/v1.0/icons/concur_logo160.png",
+        "description": "A provider of integrated travel and expense management solutions"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/370"
+          }
+        },
+        "name": "ContractWorks",
+        "icon": "/appaccess/v1.0/icons/contractworks_logo160.png",
+        "description": "A contract management software provider"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/165"
+          }
+        },
+        "name": "Convo",
+        "icon": "/appaccess/v1.0/icons/convo_logo160.png",
+        "description": "A private enterprise social network for real-time collaboration."
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/445"
+          }
+        },
+        "name": "CoraLogix",
+        "icon": "/appaccess/v1.0/icons/coralogix_logo160.png",
+        "description": "A machine learning log analytics platform which improves the delivery and maintenance process for software providers"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/280"
+          }
+        },
+        "name": "Cronitor",
+        "icon": "/appaccess/v1.0/icons/cronitor_logo160.png",
+        "description": "A cron job monitoring tool"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/277"
+          }
+        },
+        "name": "CrossKnowledge",
+        "icon": "/appaccess/v1.0/icons/crossknowledge_logo160.png",
+        "description": "An Integrated Digital Learning Solution"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/1"
+          }
+        },
+        "name": "Custom Application",
+        "icon": "/appaccess/v1.0/icons/default_logo160.png",
+        "description": "The custom template to access any type of application."
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/455"
+          }
+        },
+        "name": "CyberArk",
+        "icon": "/appaccess/v1.0/icons/cyberark_logo160.png",
+        "description": "A provider of access security solution"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/102"
+          }
+        },
+        "name": "DataDog",
+        "icon": "/appaccess/v1.0/icons/datadog_logo160.png",
+        "description": "A SaaS-based monitoring and analytics platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/129"
+          }
+        },
+        "name": "Deputy",
+        "icon": "/appaccess/v1.0/icons/deputy_logo160.png",
+        "description": "A leading employee scheduling and workforce management software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/83"
+          }
+        },
+        "name": "Desk.com",
+        "icon": "/appaccess/v1.0/icons/desk.com_logo160.png",
+        "description": "A customer service and helpdesk ticket software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/97"
+          }
+        },
+        "name": "DeskPro",
+        "icon": "/appaccess/v1.0/icons/deskpro_logo160.png",
+        "description": "a helpdesk software platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/375"
+          }
+        },
+        "name": "DigiCert",
+        "icon": "/appaccess/v1.0/icons/digicert_logo160.png",
+        "description": "A SSL Digital certificate authority"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/391"
+          }
+        },
+        "name": "dmarcian",
+        "icon": "/appaccess/v1.0/icons/dmarcian_logo160.png",
+        "description": "An email-validation tool using Domain-based Message Authentication, Reporting and Conformance (DMARC)"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/199"
+          }
+        },
+        "name": "Docebo",
+        "icon": "/appaccess/v1.0/icons/docebo_logo160.png",
+        "description": "A SAAS/Cloud platform."
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/38"
+          }
+        },
+        "name": "DocuSign",
+        "icon": "/appaccess/v1.0/icons/docusign_logo160.png",
+        "description": "A platform which provides digital transaction management services"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/182"
+          }
+        },
+        "name": "Dome9",
+        "icon": "/appaccess/v1.0/icons/dome9_logo160.png",
+        "description": "A purpose-built security and compliance solution for public and hybrid clouds"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/128"
+          }
+        },
+        "name": "DOMO",
+        "icon": "/appaccess/v1.0/icons/domo_logo160.png",
+        "description": "A Cloud server & Hosting"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/11"
+          }
+        },
+        "name": "Dropbox",
+        "icon": "/appaccess/v1.0/icons/dropbox_logo160.png",
+        "description": "A file sharing portal"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/315"
+          }
+        },
+        "name": "Droplr",
+        "icon": "/appaccess/v1.0/icons/droplr_logo160.png",
+        "description": "A file sharing portal"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/379"
+          }
+        },
+        "name": "Druva Cloud Platform",
+        "icon": "/appaccess/v1.0/icons/druva_cloud_platform_logo160.png",
+        "description": "A data protection, governance and intelligence in a platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/380"
+          }
+        },
+        "name": "Druva inSync",
+        "icon": "/appaccess/v1.0/icons/druvainsync_logo160.png",
+        "description": "A provider of single dashboard for data protection"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/357"
+          }
+        },
+        "name": "Duo Security",
+        "icon": "/appaccess/v1.0/icons/duosecurity_logo160.png",
+        "description": "A Trusted Access platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/175"
+          }
+        },
+        "name": "EduBrite",
+        "icon": "/appaccess/v1.0/icons/edubrite_logo160.png",
+        "description": "A learning platform."
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/42"
+          }
+        },
+        "name": "Egnyte",
+        "icon": "/appaccess/v1.0/icons/egnyte_logo160.png",
+        "description": "A content collaboration, compliant data protection and simple infrastructure modernization; all through a single SaaS solution"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/322"
+          }
+        },
+        "name": "Ekarda",
+        "icon": "/appaccess/v1.0/icons/ekarda_logo160.png",
+        "description": "An eCards site"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/384"
+          }
+        },
+        "name": "Elements.cloud",
+        "icon": "/appaccess/v1.0/icons/elementscloud_logo160.png",
+        "description": "A provider of tools required for sustainable GDPR compliance"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/382"
+          }
+        },
+        "name": "Enplug",
+        "icon": "/appaccess/v1.0/icons/enplug_logo160.png",
+        "description": "The visual communications solution for businesses"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/131"
+          }
+        },
+        "name": "Envoy",
+        "icon": "/appaccess/v1.0/icons/envoy_logo160.png",
+        "description": "A visitor management solution for visitor pre-registration, collecting visitor information, signatures and photos"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/321"
+          }
+        },
+        "name": "erp maestro",
+        "icon": "/appaccess/v1.0/icons/erpmaestro_logo160.png",
+        "description": "A Platform for End-to-End Automated Access Controls"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/93"
+          }
+        },
+        "name": "eSignLive",
+        "icon": "/appaccess/v1.0/icons/esignlive_logo160.png",
+        "description": "An E- Signatur provider"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/413"
+          }
+        },
+        "name": "Euromonitor Passport",
+        "icon": "/appaccess/v1.0/icons/euromonitor_logo160.png",
+        "description": "A provider of strategic market research"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/292"
+          }
+        },
+        "name": "evident.io",
+        "icon": "/appaccess/v1.0/icons/evident.io_logo160.png",
+        "description": "A cloud-native infrastructure security solution service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/151"
+          }
+        },
+        "name": "Expensify",
+        "icon": "/appaccess/v1.0/icons/expensify_logo160.png",
+        "description": "A travel and expense app for personal and business use"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/438"
+          }
+        },
+        "name": "Expiration Reminder",
+        "icon": "/appaccess/v1.0/icons/expirationreminder_logo160.png",
+        "description": "A document expiration and renewal tracking software service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/235"
+          }
+        },
+        "name": "ezeep",
+        "icon": "/appaccess/v1.0/icons/ezeep_logo160.png",
+        "description": "A cloud managed printing system"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/184"
+          }
+        },
+        "name": "EZOfficeInventory",
+        "icon": "/appaccess/v1.0/icons/ezofficeinventory_logo160.png",
+        "description": "An Equipment Tracking Software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/248"
+          }
+        },
+        "name": "EZRentOut",
+        "icon": "/appaccess/v1.0/icons/ezrentout_logo160.png",
+        "description": "An equipment rental software service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/352"
+          }
+        },
+        "name": "Fastly",
+        "icon": "/appaccess/v1.0/icons/fastly_logo160.png",
+        "description": "A real-time CDN"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/326"
+          }
+        },
+        "name": "Favro",
+        "icon": "/appaccess/v1.0/icons/favro_logo160.png",
+        "description": "A planning and collaboration app for organizational flow"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/386"
+          }
+        },
+        "name": "Federated Directory",
+        "icon": "/appaccess/v1.0/icons/federateddirectory_logo160.png",
+        "description": "A provider of connections between companies and cloud solutions."
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/236"
+          }
+        },
+        "name": "feedly",
+        "icon": "/appaccess/v1.0/icons/feedly_logo160.png",
+        "description": "A news aggregator"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/244"
+          }
+        },
+        "name": "FilesAnywhere",
+        "icon": "/appaccess/v1.0/icons/filesanywhere_logo160.png",
+        "description": "A file sharing portal"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/403"
+          }
+        },
+        "name": "Fivetran",
+        "icon": "/appaccess/v1.0/icons/fivetran_logo160.png",
+        "description": "A data organizer"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/149"
+          }
+        },
+        "name": "Flatter Files SAML",
+        "icon": "/appaccess/v1.0/icons/flatter_files_logo160.png",
+        "description": "A cloud based flat file cabinet"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/250"
+          }
+        },
+        "name": "FogBugz",
+        "icon": "/appaccess/v1.0/icons/fogbugz_logo160.png",
+        "description": "A work tracking and collaboration tool"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/412"
+          }
+        },
+        "name": "Formstack",
+        "icon": "/appaccess/v1.0/icons/formstack_logo160.png",
+        "description": "An online form builder"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/399"
+          }
+        },
+        "name": "Fossa",
+        "icon": "/appaccess/v1.0/icons/fossa_logo160.png",
+        "description": "An automated license scanning, dependency analysis"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/142"
+          }
+        },
+        "name": "Freshdesk",
+        "icon": "/appaccess/v1.0/icons/freshdesk_logo160.png",
+        "description": "An online customer support software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/143"
+          }
+        },
+        "name": "freshservice",
+        "icon": "/appaccess/v1.0/icons/freshservice_logo160.png",
+        "description": "A cloud-based ITSM software service desk including powerful IT help desk automation tool to manage incidents, assets and more"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/388"
+          }
+        },
+        "name": "frevvo",
+        "icon": "/appaccess/v1.0/icons/frevvo_logo160.png",
+        "description": "A workflow software to transform and automate approval processes"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/193"
+          }
+        },
+        "name": "Front",
+        "icon": "/appaccess/v1.0/icons/front_logo160.png",
+        "description": "A collaborative inbox for businesses"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/4"
+          }
+        },
+        "name": "G Suite",
+        "icon": "/appaccess/v1.0/icons/gsuite_logo160.png",
+        "description": "A brand of cloud computing, productivity and collaboration tools from Google"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/218"
+          }
+        },
+        "name": "GaggleAMP",
+        "icon": "/appaccess/v1.0/icons/gaggleamp_logo160.png",
+        "description": "A social marketing platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/429"
+          }
+        },
+        "name": "getAbstract",
+        "icon": "/appaccess/v1.0/icons/getabstract_logo160.png",
+        "description": "A library of business book summaries"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/371"
+          }
+        },
+        "name": "GetGuru",
+        "icon": "/appaccess/v1.0/icons/getguru_logo160.png",
+        "description": "A knowledge management solution that keeps customer-facing teams up-to-date"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/28"
+          }
+        },
+        "name": "GitHub Enterprise",
+        "icon": "/appaccess/v1.0/icons/github_logo160.png",
+        "description": "A platform for workgroups, developers and businesses using GitHub"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/254"
+          }
+        },
+        "name": "Glasscubes",
+        "icon": "/appaccess/v1.0/icons/glasscubes_logo160.png",
+        "description": "A cloud-based platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/427"
+          }
+        },
+        "name": "GoodData",
+        "icon": "/appaccess/v1.0/icons/gooddata_logo160.png",
+        "description": "A cloud-based business intelligence software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/44"
+          }
+        },
+        "name": "Greenhouse Software",
+        "icon": "/appaccess/v1.0/icons/greenhouse_software_logo160.png",
+        "description": "An American technology company that provides a recruiting software as a service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/407"
+          }
+        },
+        "name": "Grovo",
+        "icon": "/appaccess/v1.0/icons/grovo_logo160.png",
+        "description": "A provider of SaaS learning solution"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/188"
+          }
+        },
+        "name": "HackerOne",
+        "icon": "/appaccess/v1.0/icons/hackerone_logo160.png",
+        "description": "A vulnerability coordination and bug bounty platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/206"
+          }
+        },
+        "name": "HackerRank",
+        "icon": "/appaccess/v1.0/icons/hackerrank_logo160.png",
+        "description": "A technology company that focuses on competitive programming challenges for both consumers and businesses"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/106"
+          }
+        },
+        "name": "HappyFox",
+        "icon": "/appaccess/v1.0/icons/happyfox_logo160.png",
+        "description": "a help desk software solution"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/335"
+          }
+        },
+        "name": "Helix",
+        "icon": "/appaccess/v1.0/icons/helixteamhub_logo160.png",
+        "description": "A scalable and intuitive source code repository tool to manage git, mercurial, and SVN"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/435"
+          }
+        },
+        "name": "HelloSign",
+        "icon": "/appaccess/v1.0/icons/hellosign_logo160.png",
+        "description": "A cloud-based electronic signature tool"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/424"
+          }
+        },
+        "name": "Helpjuice",
+        "icon": "/appaccess/v1.0/icons/helpjuice_logo160.png",
+        "description": "A knowledge base platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/398"
+          }
+        },
+        "name": "Helpmonks",
+        "icon": "/appaccess/v1.0/icons/helpmonks_logo160.png",
+        "description": "The team email management solution"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/257"
+          }
+        },
+        "name": "HelpScout",
+        "icon": "/appaccess/v1.0/icons/helpscout_logo160.png",
+        "description": "A provider of customer support tools"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/238"
+          }
+        },
+        "name": "Honey",
+        "icon": "/appaccess/v1.0/icons/honey_logo160.png",
+        "description": "An application for  startups through enterprise"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/372"
+          }
+        },
+        "name": "Honeybadger",
+        "icon": "/appaccess/v1.0/icons/honeybadger_logo160.png",
+        "description": "An Exception and uptime monitoring for Ruby-centric teams"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/219"
+          }
+        },
+        "name": "Hoshinplan",
+        "icon": "/appaccess/v1.0/icons/hoshinplan_logo160.png",
+        "description": "A platform to build strategy, monitor performance and focus on execution"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/153"
+          }
+        },
+        "name": "Hosted Graphite",
+        "icon": "/appaccess/v1.0/icons/hosted_graphite_logo160.png",
+        "description": "An open-source application metrics system"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/70"
+          }
+        },
+        "name": "Huddle",
+        "icon": "/appaccess/v1.0/icons/huddle_logo160.png",
+        "description": "A cloud-based collaboration service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/284"
+          }
+        },
+        "name": "Humanity",
+        "icon": "/appaccess/v1.0/icons/humanity_logo160.png",
+        "description": "An Easy-To-Use Employee Scheduling Software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/456"
+          }
+        },
+        "name": "IBM Cognos Analytics",
+        "icon": "/appaccess/v1.0/icons/ibm_cognos_analytics_logo160.png",
+        "description": "A web-based integrated business intelligence suite providing a toolset for reporting, analytics, scorecarding, and monitoring of events and metrics"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/13"
+          }
+        },
+        "name": "IBM Connections",
+        "icon": "/appaccess/v1.0/icons/ibm_connections_cloud_logo160.png",
+        "description": "A business social network platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/82"
+          }
+        },
+        "name": "IBM Kenexa Talent Suite",
+        "icon": "/appaccess/v1.0/icons/ibm_kenexa_talent_suite_logo160.png",
+        "description": "An employment and retention solution to assist organizations in hiring and keeping workers"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/53"
+          }
+        },
+        "name": "IBM MaaS360",
+        "icon": "/appaccess/v1.0/icons/ibm_maas360_logo160.png",
+        "description": "A secure endpoint and mobile management platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/453"
+          }
+        },
+        "name": "IBM QRadar",
+        "icon": "/appaccess/v1.0/icons/ibmqradar_logo160.png",
+        "description": "An intelligent security information and event management (SIEM)"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/454"
+          }
+        },
+        "name": "IBM Resilient",
+        "icon": "/appaccess/v1.0/icons/ibm_resilient_logo160.png",
+        "description": "An Incident Response Platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/283"
+          }
+        },
+        "name": "IBM Security Secret Server",
+        "icon": "/appaccess/v1.0/icons/ibmsecuritysecretserver_logo160.png",
+        "description": "A privileged Account management software provider"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/237"
+          }
+        },
+        "name": "IdeaScale",
+        "icon": "/appaccess/v1.0/icons/ideascale_logo160.png",
+        "description": "A cloud-based innovation software platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/451"
+          }
+        },
+        "name": "IDrive",
+        "icon": "/appaccess/v1.0/icons/idrive_logo160.png",
+        "description": "A file sharing portal"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/86"
+          }
+        },
+        "name": "Igloo Software",
+        "icon": "/appaccess/v1.0/icons/igloosoftware_logo160.png",
+        "description": "An intranet provider"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/273"
+          }
+        },
+        "name": "Illumio",
+        "icon": "/appaccess/v1.0/icons/illumio_logo160.png",
+        "description": "An enterprise data center and cloud computing security company"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/198"
+          }
+        },
+        "name": "ImageRelay",
+        "icon": "/appaccess/v1.0/icons/image_relay_logo160.png",
+        "description": "A Brand and Digital Asset Management Solutions."
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/187"
+          }
+        },
+        "name": "iMeetCentral",
+        "icon": "/appaccess/v1.0/icons/imeet_central_logo160.png",
+        "description": "A project management software."
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/90"
+          }
+        },
+        "name": "Informatica Cloud",
+        "icon": "/appaccess/v1.0/icons/informatica_cloud_logo160.png",
+        "description": "A cloud integration platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/126"
+          }
+        },
+        "name": "Inspired elearning",
+        "icon": "/appaccess/v1.0/icons/inspired_elearning_logo160.png",
+        "description": "A learning management systems & compliance training for your workplace IT needs."
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/183"
+          }
+        },
+        "name": "InteractGo",
+        "icon": "/appaccess/v1.0/icons/interact_logo160.png",
+        "description": "An intranet software company"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/30"
+          }
+        },
+        "name": "invision",
+        "icon": "/appaccess/v1.0/icons/invision_logo160.png",
+        "description": "A design collaboration platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/434"
+          }
+        },
+        "name": "IronWifi",
+        "icon": "/appaccess/v1.0/icons/ironwifi_logo160.png",
+        "description": "An Authentication Platform and Captive Portal"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/291"
+          }
+        },
+        "name": "ITGlue",
+        "icon": "/appaccess/v1.0/icons/itglue_logo160.png",
+        "description": "A documentation platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/139"
+          }
+        },
+        "name": "ITRP",
+        "icon": "/appaccess/v1.0/icons/itrp_logo160.png",
+        "description": "An enterprise-class IT service management application built specifically for multinational organizations"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/383"
+          }
+        },
+        "name": "JamaSoftware",
+        "icon": "/appaccess/v1.0/icons/jamasoftware_logo160.png",
+        "description": "A product delivery and requirement management solution"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/310"
+          }
+        },
+        "name": "jamf",
+        "icon": "/appaccess/v1.0/icons/jamf_logo160.png",
+        "description": "An Apple device management solution"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/179"
+          }
+        },
+        "name": "Jenkins",
+        "icon": "/appaccess/v1.0/icons/jenkins_logo160.png",
+        "description": "An open source automation server provider"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/230"
+          }
+        },
+        "name": "Jfrog Bintray",
+        "icon": "/appaccess/v1.0/icons/jfrogbintray_logo160.png",
+        "description": "A software as a service platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/15"
+          }
+        },
+        "name": "JIRA",
+        "icon": "/appaccess/v1.0/icons/jira_logo160.png",
+        "description": "An Atlassian Service Desk"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/156"
+          }
+        },
+        "name": "Jitbit",
+        "icon": "/appaccess/v1.0/icons/jitbit_logo160.png",
+        "description": "A Helpdesk ticketing system"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/271"
+          }
+        },
+        "name": "JobScore",
+        "icon": "/appaccess/v1.0/icons/jobscore_logo160.png",
+        "description": "An applicant tracking system and resume database"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/381"
+          }
+        },
+        "name": "jTask Pulse",
+        "icon": "/appaccess/v1.0/icons/jtaskpulse_logo160.png",
+        "description": "A support business transformation project, from cloud, to enterprise resource planning implementations"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/111"
+          }
+        },
+        "name": "Kanban Tool",
+        "icon": "/appaccess/v1.0/icons/kanban_tool_logo160.png",
+        "description": "A visual project management tool"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/288"
+          }
+        },
+        "name": "Kanbanize",
+        "icon": "/appaccess/v1.0/icons/kanbanize_logo160.png",
+        "description": "A Software for Lean Management"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/298"
+          }
+        },
+        "name": "KapostSAML",
+        "icon": "/appaccess/v1.0/icons/kapost_logo160.png",
+        "description": "A software to realize B2B marketing strategy"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/276"
+          }
+        },
+        "name": "Keeper",
+        "icon": "/appaccess/v1.0/icons/keeper_logo160.png",
+        "description": "A provider of password management and online file storage"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/324"
+          }
+        },
+        "name": "Kentik",
+        "icon": "/appaccess/v1.0/icons/kentik_logo160.png",
+        "description": "A performance monitoring and DDoS protection service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/157"
+          }
+        },
+        "name": "kintone",
+        "icon": "/appaccess/v1.0/icons/kintone_logo160.png",
+        "description": "An application Platform as a Service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/173"
+          }
+        },
+        "name": "KiSSFLOW",
+        "icon": "/appaccess/v1.0/icons/kissflow_logo160.png",
+        "description": "A workflow tool & business process workflow management software to automate your workflow process"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/155"
+          }
+        },
+        "name": "Klipfolio",
+        "icon": "/appaccess/v1.0/icons/klipfolio_logo160.png",
+        "description": "A business dashboard software service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/261"
+          }
+        },
+        "name": "Knack",
+        "icon": "/appaccess/v1.0/icons/knack_logo160.png",
+        "description": "A SaaS company that offers tools to simplify creation of online databases and web apps"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/286"
+          }
+        },
+        "name": "KnowBe4",
+        "icon": "/appaccess/v1.0/icons/knowbe4_logo160.png",
+        "description": "A Security Awareness Training provider"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/299"
+          }
+        },
+        "name": "KnowledgeOwl",
+        "icon": "/appaccess/v1.0/icons/knowledgeowl_logo160.png",
+        "description": "A knowledge base software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/279"
+          }
+        },
+        "name": "Kudos",
+        "icon": "/appaccess/v1.0/icons/kudos_logo160.png",
+        "description": "An employee recognition software."
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/212"
+          }
+        },
+        "name": "Lattice",
+        "icon": "/appaccess/v1.0/icons/lattice_logo160.png",
+        "description": "A tool that helps companies evolve their performance management system"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/307"
+          }
+        },
+        "name": "LaunchDarkly",
+        "icon": "/appaccess/v1.0/icons/launchdarkly_logo160.png",
+        "description": "A continuous delivery and feature flag management platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/98"
+          }
+        },
+        "name": "Lesson.ly",
+        "icon": "/appaccess/v1.0/icons/lesson.ly_logo160.png",
+        "description": "An online training software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/168"
+          }
+        },
+        "name": "Lifesize",
+        "icon": "/appaccess/v1.0/icons/lifesize_logo160.png",
+        "description": "A video and audio telecommunications company"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/62"
+          }
+        },
+        "name": "LiquidPlanner",
+        "icon": "/appaccess/v1.0/icons/liquidplanner_logo160.png",
+        "description": "An online project management software solution"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/108"
+          }
+        },
+        "name": "Litmos",
+        "icon": "/appaccess/v1.0/icons/litmos_logo160.png",
+        "description": "A learning management platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/301"
+          }
+        },
+        "name": "LiveChat",
+        "icon": "/appaccess/v1.0/icons/livechat_logo160.png",
+        "description": "A live chat and help desk software service for businesses"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/393"
+          }
+        },
+        "name": "LogDNA",
+        "icon": "/appaccess/v1.0/icons/logdna_logo160.png",
+        "description": "A cloud log management system"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/245"
+          }
+        },
+        "name": "Loggly",
+        "icon": "/appaccess/v1.0/icons/loggly_logo160.png",
+        "description": "A cloud-based log management service provider"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/246"
+          }
+        },
+        "name": "Logit.io",
+        "icon": "/appaccess/v1.0/icons/logit.io_logo160.png",
+        "description": "A hosted ELK (ElasticSearch, Logstash, Kibana) provider, allowing users to collect/log data in a simple way"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/63"
+          }
+        },
+        "name": "LogMeIn",
+        "icon": "/appaccess/v1.0/icons/logmein_logo160.png",
+        "description": "A cloud based software as a service provider"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/203"
+          }
+        },
+        "name": "Lokad",
+        "icon": "/appaccess/v1.0/icons/lokad_logo160.png",
+        "description": "A quantitative supply Chain - predictive optimization software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/24"
+          }
+        },
+        "name": "Lucidchart",
+        "icon": "/appaccess/v1.0/icons/lucidchart_logo160.png",
+        "description": "A portal for for visual communication"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/158"
+          }
+        },
+        "name": "MangoApps",
+        "icon": "/appaccess/v1.0/icons/mangoapps_logo160.png",
+        "description": "An Intranet and team collaboration software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/361"
+          }
+        },
+        "name": "Manuscript",
+        "icon": "/appaccess/v1.0/icons/manuscript_logo160.png",
+        "description": "A project management software service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/258"
+          }
+        },
+        "name": "MarketLogic",
+        "icon": "/appaccess/v1.0/icons/marketlogic_logo160.png",
+        "description": "A venture-financed corporation that provides marketing information systems to marketing and research teams"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/346"
+          }
+        },
+        "name": "Matomo",
+        "icon": "/appaccess/v1.0/icons/matomo_logo160.png",
+        "description": "A Web & Mobile Analytics Cloud"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/312"
+          }
+        },
+        "name": "MindTickle",
+        "icon": "/appaccess/v1.0/icons/mindtickle_logo160.png",
+        "description": "A Software Company."
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/290"
+          }
+        },
+        "name": "Mindtouch",
+        "icon": "/appaccess/v1.0/icons/mindtouch_logo160.png",
+        "description": "A cloud based software provider."
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/146"
+          }
+        },
+        "name": "Mingle by Thoughtworks",
+        "icon": "/appaccess/v1.0/icons/mingle_logo160.png",
+        "description": "A Project Management Software."
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/319"
+          }
+        },
+        "name": "Miro",
+        "icon": "/appaccess/v1.0/icons/miro_logo160.png",
+        "description": "A whiteboard and collaboration tool"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/16"
+          }
+        },
+        "name": "mixpanel",
+        "icon": "/appaccess/v1.0/icons/mixpanel_logo160.png",
+        "description": "An analytics platform for mobile & web"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/274"
+          }
+        },
+        "name": "MODE",
+        "icon": "/appaccess/v1.0/icons/mode_logo160.png",
+        "description": "A data analysis platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/439"
+          }
+        },
+        "name": "Mojohelpdesk",
+        "icon": "/appaccess/v1.0/icons/mojohelpdesk_logo160.png",
+        "description": "A helpdesk software for IT requests"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/343"
+          }
+        },
+        "name": "Monday.com",
+        "icon": "/appaccess/v1.0/icons/monday.com_logo160.png",
+        "description": "A visual project management tool that helps transform the way teams work together"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/51"
+          }
+        },
+        "name": "Mozy",
+        "icon": "/appaccess/v1.0/icons/mozy_logo160.png",
+        "description": "An online backup service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/289"
+          }
+        },
+        "name": "Mulesoft",
+        "icon": "/appaccess/v1.0/icons/anypoint_platform_mulesoft_logo160.png",
+        "description": "An integration software provider for connecting applications, data sources and APIs, in the cloud or on-premises"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/267"
+          }
+        },
+        "name": "MURAL",
+        "icon": "/appaccess/v1.0/icons/mural_logo160.png",
+        "description": "An online brainstorming site."
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/350"
+          }
+        },
+        "name": "MyTime",
+        "icon": "/appaccess/v1.0/icons/mytime_logo160.png",
+        "description": "An online booking solution for businesses"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/211"
+          }
+        },
+        "name": "MyWebTimesheets",
+        "icon": "/appaccess/v1.0/icons/mywebtimesheets_logo160.png",
+        "description": "A management and time tracking software on the cloud"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/422"
+          }
+        },
+        "name": "MyWorkDrive",
+        "icon": "/appaccess/v1.0/icons/myworkdrive_logo160.png",
+        "description": "A secure remote file access, instant collaboration and data leak prevention for enterprises"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/36"
+          }
+        },
+        "name": "NetSuite",
+        "icon": "/appaccess/v1.0/icons/netsuite_logo160.png",
+        "description": "A provider of cloud-based business management software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/37"
+          }
+        },
+        "name": "New Relic",
+        "icon": "/appaccess/v1.0/icons/new_relic_logo160.png",
+        "description": "A software analytics platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/396"
+          }
+        },
+        "name": "Nexonia",
+        "icon": "/appaccess/v1.0/icons/nexonia_logo160.png",
+        "description": "An expense and time reporting software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/316"
+          }
+        },
+        "name": "NexTravel",
+        "icon": "/appaccess/v1.0/icons/nextravel_logo160.png",
+        "description": "A travel platform ."
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/215"
+          }
+        },
+        "name": "Nmbrs",
+        "icon": "/appaccess/v1.0/icons/nmbrs_logo160.png",
+        "description": "A HR-Payroll software for businesses"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/336"
+          }
+        },
+        "name": "Nuclino",
+        "icon": "/appaccess/v1.0/icons/nuclino_logo160.png",
+        "description": "A knowledge base for teams"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/41"
+          }
+        },
+        "name": "Office 365",
+        "icon": "/appaccess/v1.0/icons/office365_logo160.png",
+        "description": "An online version of Microsoft Office"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/64"
+          }
+        },
+        "name": "Okta",
+        "icon": "/appaccess/v1.0/icons/okta_logo160.png",
+        "description": "A platform offering secure connections between people and technology"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/308"
+          }
+        },
+        "name": "OnDMARC",
+        "icon": "/appaccess/v1.0/icons/ondmarc_logo160.png",
+        "description": "A cyber security space for email"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/447"
+          }
+        },
+        "name": "OneCloud",
+        "icon": "/appaccess/v1.0/icons/onecloud_logo160.png",
+        "description": "An automation platform enabling business users to take control of their company's enterprise landscape"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/239"
+          }
+        },
+        "name": "OneDesk",
+        "icon": "/appaccess/v1.0/icons/onedesk_logo160.png",
+        "description": "A single platform for product management, project management, and customer service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/263"
+          }
+        },
+        "name": "OneLogin",
+        "icon": "/appaccess/v1.0/icons/onelogin_logo160.png",
+        "description": "An identity and access management (IAM) solution"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/91"
+          }
+        },
+        "name": "OpenDataSoft",
+        "icon": "/appaccess/v1.0/icons/opendatasoft_logo160.png",
+        "description": "A turnkey SaaS platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/99"
+          }
+        },
+        "name": "OpenDNS",
+        "icon": "/appaccess/v1.0/icons/opendns_logo160.png",
+        "description": "A security service protecting devices"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/449"
+          }
+        },
+        "name": "OpenText Core",
+        "icon": "/appaccess/v1.0/icons/opentextcore_logo160.png",
+        "description": "A personal cloud storage for securely sharing and collaborating on files"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/159"
+          }
+        },
+        "name": "OpsGenie",
+        "icon": "/appaccess/v1.0/icons/opsgenie_logo160.png",
+        "description": "An alerting and on-call management solution"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/251"
+          }
+        },
+        "name": "Orginio",
+        "icon": "/appaccess/v1.0/icons/orginio_logo160.png",
+        "description": "An organizational charts creator"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/446"
+          }
+        },
+        "name": "Outreach",
+        "icon": "/appaccess/v1.0/icons/outreach_logo160.png",
+        "description": "An enterprise communication platform for sales"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/440"
+          }
+        },
+        "name": "Pacific TimeSheet",
+        "icon": "/appaccess/v1.0/icons/pacifictimesheet_logo160.png",
+        "description": "A web based Timesheet software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/17"
+          }
+        },
+        "name": "PagerDuty",
+        "icon": "/appaccess/v1.0/icons/pagerduty_logo160.png",
+        "description": "An enterprise-grade incident management platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/160"
+          }
+        },
+        "name": "Panorama9",
+        "icon": "/appaccess/v1.0/icons/panorama9_logo160.png",
+        "description": "A cloud-based service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/224"
+          }
+        },
+        "name": "ParkMyCloud",
+        "icon": "/appaccess/v1.0/icons/parkmycloud_logo160.png",
+        "description": "A simple, single-purpose SaaS tool that connects to Amazon Web Services (AWS) and Microsoft Azure and enables users to automatically schedule on/off times for their idle compute resources"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/411"
+          }
+        },
+        "name": "Password Manager Pro",
+        "icon": "/appaccess/v1.0/icons/password_manager_pro_logo160.png",
+        "description": "An asset management software service which manages IT assets"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/348"
+          }
+        },
+        "name": "Peakon",
+        "icon": "/appaccess/v1.0/icons/peakon_logo160.png",
+        "description": "A platform for measuring and improving employee engagement"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/172"
+          }
+        },
+        "name": "PeopleHR",
+        "icon": "/appaccess/v1.0/icons/peoplehr_logo160.png",
+        "description": "A web-based HR software system"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/415"
+          }
+        },
+        "name": "Pigeonhole Live",
+        "icon": "/appaccess/v1.0/icons/pigeonholelive_logo160.png",
+        "description": "A Q&A and polling platform designed for event planners, participants, employees and companies"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/210"
+          }
+        },
+        "name": "Ping Identity",
+        "icon": "/appaccess/v1.0/icons/pingidentity_logo160.png",
+        "description": "A unified Identity Defined Security platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/410"
+          }
+        },
+        "name": "Pipedrive",
+        "icon": "/appaccess/v1.0/icons/pipedrive_logo160.png",
+        "description": "A sales CRM and pipeline management software service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/141"
+          }
+        },
+        "name": "PlanMyleave",
+        "icon": "/appaccess/v1.0/icons/planmyleave_logo160.png",
+        "description": "An HRIS and online leave management system designed to scale easily from small and medium businesses to large enterprises"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/423"
+          }
+        },
+        "name": "Planview LeanKit",
+        "icon": "/appaccess/v1.0/icons/planview_leankit_logo160.png",
+        "description": "A visual project delivery tool"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/441"
+          }
+        },
+        "name": "Platform9",
+        "icon": "/appaccess/v1.0/icons/platform9_logo160.png",
+        "description": "A cloud platform that provides a simple way to consume powerful open source frameworks."
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/425"
+          }
+        },
+        "name": "Podbean",
+        "icon": "/appaccess/v1.0/icons/podbean_logo160.png",
+        "description": "A podcast hosting solution"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/417"
+          }
+        },
+        "name": "Postman",
+        "icon": "/appaccess/v1.0/icons/postman_logo160.png",
+        "description": "An API development environment"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/385"
+          }
+        },
+        "name": "ProcessPlan",
+        "icon": "/appaccess/v1.0/icons/processplan_logo160.png",
+        "description": "A business process manager"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/241"
+          }
+        },
+        "name": "ProdPad",
+        "icon": "/appaccess/v1.0/icons/prodpad_logo160.png",
+        "description": "A product management software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/214"
+          }
+        },
+        "name": "ProjectToolbelt",
+        "icon": "/appaccess/v1.0/icons/projecttoolbelt_logo160.png",
+        "description": "A web based project management software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/195"
+          }
+        },
+        "name": "Promapp",
+        "icon": "/appaccess/v1.0/icons/promapp_logo160.png",
+        "description": "A cloud based process management software provider"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/209"
+          }
+        },
+        "name": "Proto.io",
+        "icon": "/appaccess/v1.0/icons/protoio_logo160.png",
+        "description": "An application prototyping platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/154"
+          }
+        },
+        "name": "Proxyclick",
+        "icon": "/appaccess/v1.0/icons/proxyclick_logo160.png",
+        "description": "A web based software that manages visitors to your offices"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/197"
+          }
+        },
+        "name": "PurelyHR",
+        "icon": "/appaccess/v1.0/icons/purelyhr_logo160.png",
+        "description": "An online human resource information system"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/351"
+          }
+        },
+        "name": "Qstream",
+        "icon": "/appaccess/v1.0/icons/qstream_logo160.png",
+        "description": "A sales acceleration software for sales people"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/144"
+          }
+        },
+        "name": "Quandora",
+        "icon": "/appaccess/v1.0/icons/quandora_logo160.png",
+        "description": "A question and answer software for knowledge sharing"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/330"
+          }
+        },
+        "name": "Qubole",
+        "icon": "/appaccess/v1.0/icons/qubole_logo160.png",
+        "description": "A Platform for Big Data Analytics ."
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/249"
+          }
+        },
+        "name": "Questetra",
+        "icon": "/appaccess/v1.0/icons/questetra_logo160.png",
+        "description": "A Cloud-based workflow"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/404"
+          }
+        },
+        "name": "QuickHelp",
+        "icon": "/appaccess/v1.0/icons/quickhelp_logo160.png",
+        "description": "An online, on-demand learning solution"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/406"
+          }
+        },
+        "name": "Quip",
+        "icon": "/appaccess/v1.0/icons/quip_logo160.png",
+        "description": "A collaborative productivity software suite"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/450"
+          }
+        },
+        "name": "Reamaze",
+        "icon": "/appaccess/v1.0/icons/reamaze_logo160.png",
+        "description": "A customer support software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/320"
+          }
+        },
+        "name": "Receptive",
+        "icon": "/appaccess/v1.0/icons/receptive_logo160.png",
+        "description": "A software consultant"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/231"
+          }
+        },
+        "name": "Recognize",
+        "icon": "/appaccess/v1.0/icons/recognize_logo160.png",
+        "description": "A social employee recognition and employee rewards platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/39"
+          }
+        },
+        "name": "Remedyforce",
+        "icon": "/appaccess/v1.0/icons/remedyforce_logo160.png",
+        "description": "A hosted IT management system provided by BMC"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/171"
+          }
+        },
+        "name": "Replicon",
+        "icon": "/appaccess/v1.0/icons/replicon_logo160.png",
+        "description": "A software company providing cloud time tracking"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/436"
+          }
+        },
+        "name": "ResourceGuru",
+        "icon": "/appaccess/v1.0/icons/resourceguru_logo160.png",
+        "description": "A Resource scheduling software tool."
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/341"
+          }
+        },
+        "name": "Retrace",
+        "icon": "/appaccess/v1.0/icons/retrace_logo160.png",
+        "description": "A simple SaaS based solution designed to be affordable for companies of all sizes"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/302"
+          }
+        },
+        "name": "Rollbar",
+        "icon": "/appaccess/v1.0/icons/rollbar_logo160.png",
+        "description": "An Error tracking software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/207"
+          }
+        },
+        "name": "Run My Process",
+        "icon": "/appaccess/v1.0/icons/runmyprocess_logo160.png",
+        "description": "A software company that transform the way your business works by delivering end-to-end digital"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/332"
+          }
+        },
+        "name": "Runscope",
+        "icon": "/appaccess/v1.0/icons/runscope_logo160.png",
+        "description": "A solutions provider for API performance testing, monitoring and debugging"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/428"
+          }
+        },
+        "name": "SaaSLicense",
+        "icon": "/appaccess/v1.0/icons/saaslicense_logo160.png",
+        "description": "A license management and optimization tool"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/14"
+          }
+        },
+        "name": "Sage Intacct",
+        "icon": "/appaccess/v1.0/icons/sageintacct_logo160.png",
+        "description": "A provider of financial management and accounting software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/3"
+          }
+        },
+        "name": "Salesforce",
+        "icon": "/appaccess/v1.0/icons/salesforce_logo160.png",
+        "description": "An enterprise with focus on cloud computing"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/368"
+          }
+        },
+        "name": "SalesLoft",
+        "icon": "/appaccess/v1.0/icons/salesloft_logo160.png",
+        "description": "A sales engagement platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/19"
+          }
+        },
+        "name": "Samanage",
+        "icon": "/appaccess/v1.0/icons/samanage_logo160.png",
+        "description": "An IT service management provider"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/342"
+          }
+        },
+        "name": "SamePage",
+        "icon": "/appaccess/v1.0/icons/samepage_logo160.png",
+        "description": "A Team Collaboration & Messaging app"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/109"
+          }
+        },
+        "name": "SAP NetWeaver",
+        "icon": "/appaccess/v1.0/icons/sap_logo160.png",
+        "description": "A technology platform that enables the composition, provisioning, and management of SAP and non-SAP applications across a heterogeneous software environment"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/306"
+          }
+        },
+        "name": "Sauce Labs",
+        "icon": "/appaccess/v1.0/icons/saucelabs_logo160.png",
+        "description": "A platform for cross browse testing, selenium testing, and mobile testing"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/133"
+          }
+        },
+        "name": "ScreenSteps",
+        "icon": "/appaccess/v1.0/icons/screensteps_logo160.png",
+        "description": "An Online Employee Training software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/397"
+          }
+        },
+        "name": "SendSafely",
+        "icon": "/appaccess/v1.0/icons/sendsafely_logo160.png",
+        "description": "An End-to-End Encryption Platform for Secure File Exchange and Confidential Email"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/327"
+          }
+        },
+        "name": "Sentry",
+        "icon": "/appaccess/v1.0/icons/sentry_logo160.png",
+        "description": "A platform for real-time error tracking"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/20"
+          }
+        },
+        "name": "ServiceNow",
+        "icon": "/appaccess/v1.0/icons/servicenow_logo160.png",
+        "description": "An enterprise cloud company"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/162"
+          }
+        },
+        "name": "Shiftplanning",
+        "icon": "/appaccess/v1.0/icons/shiftplanning_logo160.png",
+        "description": "An online employee scheduling and management software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/137"
+          }
+        },
+        "name": "Showpad",
+        "icon": "/appaccess/v1.0/icons/showpad_logo160.png",
+        "description": "A content activation platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/228"
+          }
+        },
+        "name": "Shufflrr",
+        "icon": "/appaccess/v1.0/icons/shufflrr_logo160.png",
+        "description": "A file Management for presentations."
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/402"
+          }
+        },
+        "name": "Signal Sciences",
+        "icon": "/appaccess/v1.0/icons/signalsciences_logo160.png",
+        "description": "A next-gen WAF and RASP to protect web applications, APIs and microservices"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/242"
+          }
+        },
+        "name": "SignalFx",
+        "icon": "/appaccess/v1.0/icons/signalfx_logo160.png",
+        "description": "A SaaS-based monitoring and analytics platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/213"
+          }
+        },
+        "name": "Skeddly",
+        "icon": "/appaccess/v1.0/icons/skeddly_logo160.png",
+        "description": "A first automated scheduling service for Amazon Web Services"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/105"
+          }
+        },
+        "name": "Skilljar",
+        "icon": "/appaccess/v1.0/icons/skilljar_logo160.png",
+        "description": "a cloud learning management system"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/426"
+          }
+        },
+        "name": "Skydesk",
+        "icon": "/appaccess/v1.0/icons/skydesk_logo160.png",
+        "description": "A business collaboration service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/401"
+          }
+        },
+        "name": "SkyPrep",
+        "icon": "/appaccess/v1.0/icons/skyprep_logo160.png",
+        "description": "An online training software for employee and customer training"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/54"
+          }
+        },
+        "name": "Slack",
+        "icon": "/appaccess/v1.0/icons/slack_logo160.png",
+        "description": "A real-time messaging app"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/309"
+          }
+        },
+        "name": "Slemma",
+        "icon": "/appaccess/v1.0/icons/slemma_logo160.png",
+        "description": "An analytics and dashboard Software as a Service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/367"
+          }
+        },
+        "name": "Slido",
+        "icon": "/appaccess/v1.0/icons/slido_logo160.png",
+        "description": "An audience interaction tool"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/113"
+          }
+        },
+        "name": "Small Improvements",
+        "icon": "/appaccess/v1.0/icons/small_improvements_logo160.png",
+        "description": "A Performance review software and 360 degree feedback software service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/297"
+          }
+        },
+        "name": "SmarterU",
+        "icon": "/appaccess/v1.0/icons/smarteru_logo160.png",
+        "description": "A Learning Management System"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/304"
+          }
+        },
+        "name": "SnapEngage",
+        "icon": "/appaccess/v1.0/icons/snapengage_logo160.png",
+        "description": "A chat Software as a Service for sales and support teams"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/431"
+          }
+        },
+        "name": "Snowflake",
+        "icon": "/appaccess/v1.0/icons/snowflake_logo160.png",
+        "description": "A clouddata warehouse"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/45"
+          }
+        },
+        "name": "SoftLayer",
+        "icon": "/appaccess/v1.0/icons/softlayer_logo160.png",
+        "description": "An IBM cloud infrastructure service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/59"
+          }
+        },
+        "name": "Soonr Workplace",
+        "icon": "/appaccess/v1.0/icons/soonr_workplace_logo160.png",
+        "description": "A file sharing and collaboration service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/334"
+          }
+        },
+        "name": "SourceClear",
+        "icon": "/appaccess/v1.0/icons/sourceclear_logo160.png",
+        "description": "A software composition analysis for DevSecOps"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/337"
+          }
+        },
+        "name": "Split",
+        "icon": "/appaccess/v1.0/icons/split_logo160.png",
+        "description": "A feature experimentation platform for engineering and product teams"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/392"
+          }
+        },
+        "name": "Spoke",
+        "icon": "/appaccess/v1.0/icons/spoke_logo160.png",
+        "description": "An AI Help Desk Ticketing for employee support"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/313"
+          }
+        },
+        "name": "Spotinst",
+        "icon": "/appaccess/v1.0/icons/spotinst_logo160.png",
+        "description": "A cloud-cost management platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/71"
+          }
+        },
+        "name": "SpringCM",
+        "icon": "/appaccess/v1.0/icons/springcm_logo160.png",
+        "description": "A secure cloud platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/266"
+          }
+        },
+        "name": "SproutVideo",
+        "icon": "/appaccess/v1.0/icons/sproutvideo_logo160.png",
+        "description": "A video hosting solutions"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/365"
+          }
+        },
+        "name": "SSOGen",
+        "icon": "/appaccess/v1.0/icons/ssogen_logo160.png",
+        "description": "A NextGen Cloud SSO for Internal and Cloud Web Applications"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/281"
+          }
+        },
+        "name": "Status Dashboard",
+        "icon": "/appaccess/v1.0/icons/statusdashboard_logo160.png",
+        "description": "A securely hosted status dashboard and incident communication platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/414"
+          }
+        },
+        "name": "StatusCast",
+        "icon": "/appaccess/v1.0/icons/statuscast_logo160.png",
+        "description": "A hoster for status pages offering IT operations, help desk, SaaS communicate application downtime and scheduled maintenance"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/374"
+          }
+        },
+        "name": "StatusHub",
+        "icon": "/appaccess/v1.0/icons/statushub_logo160.png",
+        "description": "A status page manager"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/85"
+          }
+        },
+        "name": "StatusPage",
+        "icon": "/appaccess/v1.0/icons/statuspage_logo160.png",
+        "description": "A web infrastructure and developer"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/400"
+          }
+        },
+        "name": "StoriesOnBoard",
+        "icon": "/appaccess/v1.0/icons/storiesonboard_logo160.png",
+        "description": "A tool for assigning user stories for product management"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/66"
+          }
+        },
+        "name": "SugarCRM",
+        "icon": "/appaccess/v1.0/icons/sugarcrm_logo160.png",
+        "description": "A customer relationship management application"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/192"
+          }
+        },
+        "name": "Sumo Logic",
+        "icon": "/appaccess/v1.0/icons/sumo_logic_logo160.png",
+        "description": "A cloud-native, machine data analytics service for log management and time series metrics"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/443"
+          }
+        },
+        "name": "Sunlight",
+        "icon": "/appaccess/v1.0/icons/sunlight_logo160.png",
+        "description": "A learning portal is a website for training and learner activities"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/349"
+          }
+        },
+        "name": "Supermood",
+        "icon": "/appaccess/v1.0/icons/supermood_logo160.png",
+        "description": "A Platform as a Service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/21"
+          }
+        },
+        "name": "Syncplicity",
+        "icon": "/appaccess/v1.0/icons/syncplicity_logo160.png",
+        "description": "A file sharing portal "
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/340"
+          }
+        },
+        "name": "Synerion",
+        "icon": "/appaccess/v1.0/icons/synerion_logo160.png",
+        "description": "A workforce management solution in form of time and attendance software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/96"
+          }
+        },
+        "name": "Tableau",
+        "icon": "/appaccess/v1.0/icons/tableau_logo160.png",
+        "description": "A business intelligence software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/205"
+          }
+        },
+        "name": "TalentLms",
+        "icon": "/appaccess/v1.0/icons/talentlms_logo160.png",
+        "description": "A cloud based e-learning platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/376"
+          }
+        },
+        "name": "talkspirit",
+        "icon": "/appaccess/v1.0/icons/talkspirit_logo160.png",
+        "description": "A secure enterprise social network for the workplace"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/167"
+          }
+        },
+        "name": "Targetprocess",
+        "icon": "/appaccess/v1.0/icons/targetprocess_logo160.png",
+        "description": "A visual project management software solution that focuses on the agile software development methodology"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/419"
+          }
+        },
+        "name": "Teamphoria",
+        "icon": "/appaccess/v1.0/icons/teamphoria_logo160.png",
+        "description": "An employee review and recognition software service"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/140"
+          }
+        },
+        "name": "Teem",
+        "icon": "/appaccess/v1.0/icons/teem_logo160.png",
+        "description": "A meeting room management and workplace analytics platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/226"
+          }
+        },
+        "name": "Testable",
+        "icon": "/appaccess/v1.0/icons/testable_logo160.png",
+        "description": "A web platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/314"
+          }
+        },
+        "name": "TestFairy",
+        "icon": "/appaccess/v1.0/icons/testfairy_logo160.png",
+        "description": "A beta testing platform for mobile apps"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/405"
+          }
+        },
+        "name": "TestingBot",
+        "icon": "/appaccess/v1.0/icons/testingbot_logo160.png",
+        "description": "A system for cross browser testing"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/358"
+          }
+        },
+        "name": "TextExpander",
+        "icon": "/appaccess/v1.0/icons/textexpander_logo160.png",
+        "description": "A productivity app that uses keyboard shortcuts to automatically insert longer blocks of frequently used text called snippets"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/433"
+          }
+        },
+        "name": "TextMagic",
+        "icon": "/appaccess/v1.0/icons/textmagic_logo160.png",
+        "description": "A business text-messaging service for sending notifications, alerts, reminders, confirmations and SMS marketing campaigns"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/265"
+          }
+        },
+        "name": "Thomsons Online Benefits",
+        "icon": "/appaccess/v1.0/icons/thomsons_online_benefits_logo160.png",
+        "description": "A provider of employee benefits software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/186"
+          }
+        },
+        "name": "ThousandEyes",
+        "icon": "/appaccess/v1.0/icons/thousandeyes_logo160.png",
+        "description": "A network intelligence for enterprises and service providers"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/420"
+          }
+        },
+        "name": "TimeLive",
+        "icon": "/appaccess/v1.0/icons/timelive_logo160.png",
+        "description": "An online web timesheet and time tracking solution"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/296"
+          }
+        },
+        "name": "Tinfoil Security",
+        "icon": "/appaccess/v1.0/icons/tinfoilsecurity_logo160.png",
+        "description": "A simple website application security solution by routinely monitoring and checking for vulnerabilities"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/377"
+          }
+        },
+        "name": "Trumba",
+        "icon": "/appaccess/v1.0/icons/trumba_logo160.png",
+        "description": "A web-hosted event calendar software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/452"
+          }
+        },
+        "name": "Twilio Flex",
+        "icon": "/appaccess/v1.0/icons/twilioflex_logo160.png",
+        "description": "A Cloud communications platform for building SMS, Voice & Messaging applications"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/338"
+          }
+        },
+        "name": "Ubersmith",
+        "icon": "/appaccess/v1.0/icons/ubersmith_logo160.png",
+        "description": "A Subscription Business Software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/194"
+          }
+        },
+        "name": "Unifi",
+        "icon": "/appaccess/v1.0/icons/unifi_logo160.png",
+        "description": "An Internet access, VoIP and IPTV provider."
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/163"
+          }
+        },
+        "name": "UserEcho",
+        "icon": "/appaccess/v1.0/icons/userecho_logo160.png",
+        "description": "A software solution  provider."
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/114"
+          }
+        },
+        "name": "UserVoice",
+        "icon": "/appaccess/v1.0/icons/uservoice_logo160.png",
+        "description": "A product feedback management software platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/107"
+          }
+        },
+        "name": "Ustream",
+        "icon": "/appaccess/v1.0/icons/ustream_logo160.png",
+        "description": "A video sharing portal for businesses"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/233"
+          }
+        },
+        "name": "Velpic",
+        "icon": "/appaccess/v1.0/icons/velpic_logo160.png",
+        "description": "An eLearning platform and Learning Management System (LMS)"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/95"
+          }
+        },
+        "name": "VersionOne",
+        "icon": "/appaccess/v1.0/icons/versionone_logo160.png",
+        "description": "An enterprise agile software solutions"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/161"
+          }
+        },
+        "name": "VictorOps",
+        "icon": "/appaccess/v1.0/icons/victorops_logo160.png",
+        "description": "A real-time incident management platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/409"
+          }
+        },
+        "name": "VIDIZMO",
+        "icon": "/appaccess/v1.0/icons/vidizmo_logo160.png",
+        "description": "An Enterprise Video Platform and Video Streaming Portal, Enterprise Video Content Management and Streaming"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/444"
+          }
+        },
+        "name": "Visitly",
+        "icon": "/appaccess/v1.0/icons/visitly_logo160.png",
+        "description": "A Modern Visitor Management"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/360"
+          }
+        },
+        "name": "Visual Paradigm",
+        "icon": "/appaccess/v1.0/icons/visual_paradigm_logo160.png",
+        "description": "A software design tool tailored for agile software projects"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/394"
+          }
+        },
+        "name": "Vtiger",
+        "icon": "/appaccess/v1.0/icons/vtiger_logo160.png",
+        "description": "An online software for sales, Help desk and Marketing"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/462"
+          }
+        },
+        "name": "Wandera",
+        "icon": "/appaccess/v1.0/icons/wandera_logo160.png",
+        "description": "A security and privacy manager for mobile users"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/366"
+          }
+        },
+        "name": "Way We Do",
+        "icon": "/appaccess/v1.0/icons/way_we_do_logo160.png",
+        "description": "A SOP software for standard operating procedures and policies"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/457"
+          }
+        },
+        "name": "Wdesk",
+        "icon": "/appaccess/v1.0/icons/wdesk_logo160.png",
+        "description": "A reporting and compliance cloud platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/58"
+          }
+        },
+        "name": "WebEx Cisco",
+        "icon": "/appaccess/v1.0/icons/webex_logo160.png",
+        "description": "A provider of web and video conferencing and webinar applications"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/164"
+          }
+        },
+        "name": "Weekdone",
+        "icon": "/appaccess/v1.0/icons/weekdone_logo160.png",
+        "description": "A portal for Weekly Planning and Quarterly Objectives"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/432"
+          }
+        },
+        "name": "When I Work",
+        "icon": "/appaccess/v1.0/icons/wheniwork_logo160.png",
+        "description": "An online employee scheduling software and time clock"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/166"
+          }
+        },
+        "name": "WhosOnLocation",
+        "icon": "/appaccess/v1.0/icons/whosonlocation_logo160.png",
+        "description": "An easy to use set of tools that tracks the presence of people into and out of physical sites"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/270"
+          }
+        },
+        "name": "Workato",
+        "icon": "/appaccess/v1.0/icons/workato_logo160.png",
+        "description": "Is a enterprise integration platform to integrate and automate tasks across on-premise, cloud apps and databases"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/180"
+          }
+        },
+        "name": "Workboard",
+        "icon": "/appaccess/v1.0/icons/workboard_logo160.png",
+        "description": "A Goal achievement software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/34"
+          }
+        },
+        "name": "Workday",
+        "icon": "/appaccess/v1.0/icons/workday_logo160.png",
+        "description": "An enterprise-level software solution for human resource and financial management"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/442"
+          }
+        },
+        "name": "Workpath",
+        "icon": "/appaccess/v1.0/icons/workpath_logo160.png",
+        "description": "A software for control and employee development (SaaS)"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/305"
+          }
+        },
+        "name": "workplace",
+        "icon": "/appaccess/v1.0/icons/workplace_logo160.png",
+        "description": "A collaborative platform run by Facebook"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/390"
+          }
+        },
+        "name": "Workteam",
+        "icon": "/appaccess/v1.0/icons/workteam_logo160.png",
+        "description": "A software for employee engagement"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/176"
+          }
+        },
+        "name": "Wrike",
+        "icon": "/appaccess/v1.0/icons/wrike_logo160.png",
+        "description": "An online project management software provider"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/465"
+          }
+        },
+        "name": "Xi Frame",
+        "icon": "/appaccess/v1.0/icons/xiframe_logo160.png",
+        "description": "An enterprise cloud company that makes datacenter infrastructure invisible"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/448"
+          }
+        },
+        "name": "xMatters",
+        "icon": "/appaccess/v1.0/icons/xmatters_logo160.png",
+        "description": "A cloud based solutions provider"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/353"
+          }
+        },
+        "name": "Yodeck",
+        "icon": "/appaccess/v1.0/icons/yodeck_logo160.png",
+        "description": "A cloud-based digital signage platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/22"
+          }
+        },
+        "name": "Zendesk",
+        "icon": "/appaccess/v1.0/icons/zendesk_logo160.png",
+        "description": "A platform that offers web-based software"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/362"
+          }
+        },
+        "name": "Ziflow",
+        "icon": "/appaccess/v1.0/icons/ziflow_logo160.png",
+        "description": "A proofing tool for marketers which simplifies the review and approval process for creative content"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/190"
+          }
+        },
+        "name": "Zinc",
+        "icon": "/appaccess/v1.0/icons/zinc_logo160.png",
+        "description": "A secure enterprise communication platform for workers in front of customers"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/23"
+          }
+        },
+        "name": "Zoho",
+        "icon": "/appaccess/v1.0/icons/zoho_logo160.png",
+        "description": "A platform offering applications and software for businesses"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/253"
+          }
+        },
+        "name": "Zoom",
+        "icon": "/appaccess/v1.0/icons/zoom_logo160.png",
+        "description": "A cloud video conferencing platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/32"
+          }
+        },
+        "name": "ZScaler",
+        "icon": "/appaccess/v1.0/icons/zscaler_logo160.png",
+        "description": "A cloud-based security as a service platform"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/264"
+          }
+        },
+        "name": "ZScaler Admin Login",
+        "icon": "/appaccess/v1.0/icons/zscaler_logo160.png",
+        "description": "An administration console"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/appaccess/v1.0/templates/84"
+          }
+        },
+        "name": "Zuora",
+        "icon": "/appaccess/v1.0/icons/zuora_logo160.png",
+        "description": "An enterprise software company that designs and sells SaaS applications"
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "/appaccess/v1.0/templates"
+    }
+  }
+}

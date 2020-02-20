@@ -1,0 +1,76 @@
+- name: add app. 
+  ci:
+    appliance:      "{{ inventory_hostname }}"
+    client_id:      "{{ client_id }}"
+    client_secret:  "{{ client_secret }}"
+    lmi_port:       "{{ lmi_port }}"
+    log:            "{{ log_level }}"
+    force:          "{{ force }}"
+    # header:       "application/json"
+    ciapi:
+      visibleonlaunchpad:                                     "{{ visibleonlaunchpad }}"
+      applicationstate:                                       "{{ applicationstate }}"
+      templateid:                                             "{{ templateid }}"
+      appname:                                                "{{ appname }}"
+      description:                                            "{{ description }}"
+      providers_saml_properties_companyname:                  "{{ providers_saml_properties_companyname }}"
+      entitlement:                                            "{{ entitlement | default(None) }}"
+      # for Application    
+      providers_saml_properties_providerid:                   "{{ providers_saml_properties_providerid | default(None) }}"
+      providers_saml_properties_generateuniqueid:             "{{ providers_saml_properties_generateuniqueid | default(None) }}"
+      providers_saml_properties_validateauthnrequest:         "{{ providers_saml_properties_validateauthnrequest | default(None) }}"
+      providers_saml_properties_encryptassertion:             "{{ providers_saml_properties_encryptassertion | default(None) }}"
+      providers_saml_properties_ici_reserved_subjectnameid:   "{{ providers_saml_properties_ici_reserved_subjectnameid | default(None) }}"
+      providers_saml_properties_includeallattributes:         "{{ providers_saml_properties_includeallattributes | default(None) }}"
+      providers_saml_properties_assertionconsumerserviceurl:  "{{ providers_saml_properties_assertionconsumerserviceurl | default(None) }}"
+      providers_saml_justintimeprovisioning:                  "{{ providers_saml_justintimeprovisioning | default(None) }}"
+      providers_sso_domainname:                               "{{ providers_sso_domainname | default(None) }}"
+      # OIDC APP
+      providers_saml_properties_signauthnresponse:            "{{ providers_saml_properties_signauthnresponse | default(None) }}"
+      providers_saml_properties_signaturealgorithm:           "{{ providers_saml_properties_signaturealgorithm | default(None) }}"
+      providers_saml_properties_defaultnameidformat:          "{{ providers_saml_properties_defaultnameidformat | default(None) }}"
+      providers_saml_assertionconsumerservice_url:            "{{ providers_saml_assertionconsumerservice_url | default(None) }}"
+      providers_saml_assertionconsumerservice_default:        "{{ providers_saml_assertionconsumerservice_default | default(None) }}"
+      providers_saml_assertionconsumerservice_index:          "{{ providers_saml_assertionconsumerservice_index | default(None) }}"
+      providers_oidc_restrictscopes:                          "{{ providers_oidc_restrictscopes | default(None) }}"
+      providers_oidc_properties_granttypes_authorizationcode: "{{ providers_oidc_properties_granttypes_authorizationcode | default(None) }}"
+      providers_oidc_properties_granttypes_implicit:          "{{ providers_oidc_properties_granttypes_implicit | default(None) }}"
+      providers_oidc_properties_granttypes_deviceflow:        "{{ providers_oidc_properties_granttypes_deviceflow | default(None) }}"
+      providers_oidc_properties_granttypes_ropc:              "{{ providers_oidc_properties_granttypes_ropc | default(None) }}"
+      providers_oidc_properties_donotgenerateclientsecret:    "{{ providers_oidc_properties_donotgenerateclientsecret | default(None) }}"
+      providers_oidc_properties_generaterefreshtoken:         "{{ providers_oidc_properties_generaterefreshtoken | default(None) }}"
+      providers_oidc_properties_sendallknownuserattributes:   "{{ providers_oidc_properties_sendallknownuserattributes | default(None) }}"
+      providers_oidc_properties_accesstokenexpiry:            "{{ providers_oidc_properties_accesstokenexpiry | default(None) }}"
+      providers_oidc_properties_idtokensigningalg:            "{{ providers_oidc_properties_idtokensigningalg | default(None) }}"
+      providers_oidc_properties_redirecturis:                 "{{ providers_oidc_properties_redirecturis | default(None) }}"
+      providers_oidc_token_accesstokentype:                   "{{ providers_oidc_token_accesstokentype | default(None) }}"
+      providers_oidc_token_audiences:                         "{{ providers_oidc_token_audiences | default(None) }}"
+      providers_oidc_token_attributemappings:                 "{{ providers_oidc_token_attributemappings | default(None) }}"
+      providers_oidc_requirepkceverification:                 "{{ providers_oidc_requirepkceverification | default(None) }}"
+      providers_oidc_consentaction:                           "{{ providers_oidc_consentaction | default(None) }}"
+      providers_oidc_applicationurl:                          "{{ providers_oidc_applicationurl | default(None) }}"
+      providers_oidc_scopes:                                  "{{ providers_oidc_scopes | default(None) }}"
+      providers_oidc_restrictentitlements:                    "{{ providers_oidc_restrictentitlements | default(None) }}"
+      providers_oidc_entitlements:                            "{{ providers_oidc_entitlements | default(None) }}"     
+      # For Custom Application
+      providers_sso_spssourl:                                 "{{ providers_sso_spssourl | default(None) }}"
+      providers_sso_useroptions:                              "{{ providers_sso_useroptions | default(None) }}"
+      providers_sso_idpinitiatedssosupport:                   "{{ providers_sso_idpinitiatedssosupport | default(None) }}"
+      providers_bookmarkurl:                                  "{{ providers_bookmarkurl | default(None) }}"
+      customicon:                                             "{{ customicon | default(None) }}"
+      ## for all apps
+      attributemappings:                                      "{{ attributemappings | default(None) }}"
+      ## for all apps
+      target_connectedapp:                                    "{{ target_connectedapp | default(None) }}"
+      # for customization:
+      # https://community.ibm.com/community/user/security/blogs/meenakshi-kumari1/2020/01/17/theme-management-ibm-cloud-identity?CommunityKey=e7c36119-46d7-42f2-97a9-b44f0cc89c6d&tab=recentcommunityblogsdashboard
+      themeid:                                                "{{ themeid | default(None) }}"
+      # For Govern License
+      provpolicy:                                             "{{ provpolicy | default(None) }}"                      # Provision accounts
+      deprovpolicy:                                           "{{ deprovpolicy | default(None) }}"                    # Deprovision accounts
+      deprovpction:                                           "{{ deprovpction | default(None) }}"                    # Deprovision Action
+      graceperiod:                                            "{{ graceperiod | default(None) }}"                     # Grace Period (days)
+      provisionscimbaseurl:                                   "{{ provisionscimbaseurl | default(None) }}"            # SCIM Base URL
+      provisionbearertoken:                                   "{{ provisionbearertoken | default(None) }}"            # Bearer token
+      provisionattributemappings:                             "{{ provisionattributemappings | default(None) }}"      # Account lifecycle
+    action: ibmsecurity.ci.applications.add

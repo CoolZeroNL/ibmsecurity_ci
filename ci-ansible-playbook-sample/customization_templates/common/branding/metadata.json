@@ -1,0 +1,21 @@
+{
+   "contentMaxSize": 100,
+   "description": "A set of common elements sunch as logo, css, header and footer or a page. These are used to customize the look and feel for all templates.",
+   "id": {
+      "component": "common",
+      "name": "branding",
+      "revision": 1
+   },
+   "isServiceTemplate": false,
+   "parameters": {
+      "optional": [
+         {
+            "default": null,
+            "description": "The id of the theme that holds the common visual elements.",
+            "key": "@THEME_ID@"
+         }
+      ],
+      "required": [
+      ]
+   }
+}

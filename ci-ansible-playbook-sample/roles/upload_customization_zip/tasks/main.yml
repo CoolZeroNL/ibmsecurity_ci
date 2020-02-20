@@ -1,0 +1,11 @@
+- name: Upload zip file
+  ci:
+    appliance:      "{{ inventory_hostname }}"
+    client_id:      "{{ client_id }}"
+    client_secret:  "{{ client_secret }}"
+    lmi_port:       "{{ lmi_port }}"
+    log:            "{{ log_level }}"
+    force:          "{{ force }}"
+    ciapi:
+      file:         "{{ file }}"
+    action: ibmsecurity.ci.customization.upload_zip

@@ -1,0 +1,64 @@
+{
+   "contentMaxSize": 100,
+   "description": "A page to store the Risk Trusteer US snippets",
+   "id": {
+      "component": "risk",
+      "name": "trusteer_snippets_us",
+      "revision": 7
+   },
+   "isServiceTemplate": false,
+   "parameters": {
+      "optional": [
+      ],
+      "required": [
+         {
+            "description": "The tenant url.",
+            "key": "@TENANT_URL@"
+         },
+         {
+            "description": "The Trusteer snippet id.",
+            "key": "@SNIPPET_ID@"
+         },
+         {
+            "description": "The domain name.",
+            "key": "@DOMAIN_NAME@"
+         },
+         {
+            "description": "The customer session from iv-creds.",
+            "key": "@TAGVALUE_SESSION_INDEX@"
+         },
+         {
+            "description": "The target url to submit to.",
+            "key": "@TARGET_URL@"
+         },
+         {
+            "description": "The target url query parameters to post.",
+            "key": "@TARGET_URL_QUERY_PARAMETERS@"
+         },
+         {
+            "description": "The Trusteer junction to be used by the front end.",
+            "key": "@TRUSTEER_JUNCTION@"
+         },
+         {
+            "description": "The Malware detection JS name.",
+            "key": "@MALWARE_DETECTION_JS_NAME@"
+         },
+         {
+            "description": "The Passive detection JS name.",
+            "key": "@PASSIVE_DETECTION_JS_NAME@"
+         },
+         {
+            "description": "The Criminal detection JS name.",
+            "key": "@CRIMINAL_DETECTION_JS_NAME@"
+         },
+         {
+            "description": "The Pinpoint endpoint name.",
+            "key": "@TRUSTEER_PINPOINT_END_POINT@"
+         },
+         {
+            "description": "The noscript javascript file name.",
+            "key": "@TRUSTEER_NOSCRIPT_JAVASCRIPT_FILE_NAME@"
+         }
+      ]
+   }
+}

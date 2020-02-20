@@ -1,0 +1,12 @@
+
+- name: Get All Users
+  hosts: all
+  no_log: False
+  connection: local
+  gather_facts: no
+  vars:
+    log_level: "DEBUG"
+  roles:
+    - role: start_ci_config
+    
+    - role: get_all_users

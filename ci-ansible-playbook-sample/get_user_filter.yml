@@ -1,0 +1,13 @@
+
+- name: Get User Filter
+  hosts: all
+  no_log: False
+  connection: local
+  gather_facts: no
+  vars:
+    log_level: "DEBUG"
+  roles:
+    - role: start_ci_config
+
+    - role: get_user_filter
+      filter: 'name.formatted eq \"Jessica Bretton\" and emails.value eq \"jessica@....nl\"'

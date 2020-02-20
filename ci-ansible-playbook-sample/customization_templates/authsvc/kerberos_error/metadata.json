@@ -1,0 +1,21 @@
+{
+   "contentMaxSize": 100,
+   "description": "Kerberos error",
+   "id": {
+      "component": "authsvc",
+      "name": "kerberos_error",
+      "revision": 8
+   },
+   "isServiceTemplate": false,
+   "parameters": {
+      "optional": [
+         {
+            "default": null,
+            "description": "Error message.",
+            "key": "@ERROR_MESSAGE@"
+         }
+      ],
+      "required": [
+      ]
+   }
+}

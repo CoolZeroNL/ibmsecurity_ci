@@ -1,0 +1,15 @@
+
+- name: Download templates
+  hosts: all
+  no_log: False
+  connection: local
+  gather_facts: no
+  vars:
+    log_level: "DEBUG"
+  roles:
+    - role: start_ci_config
+    
+    - role: get_customization_download
+      customized: true                    # 	Includes customizations if true. Only returns the default templates if false
+      filename: "templates.zip"
+

@@ -1,0 +1,20 @@
+
+- name: Add a User to a Group. 
+  hosts: all
+  no_log: False
+  connection: local
+  gather_facts: no
+  vars:
+    log_level: "DEBUG"
+  roles:
+    - role: start_ci_config
+    - role: add_user_to_group
+      group: "Sales"
+      user: "Jacob Jackson"
+      email: "jacob@.....nl"
+      
+    - role: add_user_to_group
+      group: "Sales"
+      user: "Jessica Bretton"
+      email: "jessica@.....nl"          
+    

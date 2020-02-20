@@ -1,0 +1,20 @@
+
+- name: add signer cert 
+  hosts: all
+  no_log: False
+  connection: local
+  gather_facts: no
+  vars:
+    log_level: "DEBUG"
+  roles:
+    - role: start_ci_config
+
+    # format your pem to one liner with \n, and a \ for ignoring the \ in yml.
+    # oneliner : awk 'NF {sub(/\r/, ""); printf "%s\\\\n",$0;}' 1571753451crt.pem
+
+    # use `pemcertfile` or `pemcert`
+    - role: add_signercert
+      pemcertfile: "filename.pem"
+      pemcert: ""
+      label: "1234"
+

@@ -1,0 +1,32 @@
+{
+   "contentMaxSize": 100,
+   "description": "Email templates for factors service.  The email template file contains a sender, subject, and contents section for customization.  Macros are replaced in the email before it is sent.  Macros are described below and must start and end with @ sign.",
+   "id": {
+      "component": "factors",
+      "name": "EmailNotification",
+      "revision": 1
+   },
+   "isServiceTemplate": false,
+   "parameters": {
+      "optional": [
+      ],
+      "required": [
+         {
+            "description": "The recovery link that is emailed to the end user.  The macro is used by the email_password_recovery.xml template.",
+            "key": "@PASSWORD_RECOVERY_LINK@"
+         },
+         {
+            "description": "The email address of the sender. The macro is used by the email_password_recovery.xml template.",
+            "key": "@@SENDER_EMAIL@@"
+         },
+         {
+            "description": "The tenant name. The macro is used by all of the email templates.",
+            "key": "@TENANT@"
+         },
+         {
+            "description": "The user name. The macro is used by the email_password_recovery.xml template.",
+            "key": "@USERNAME@"
+         }
+      ]
+   }
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="142px" height="17px" viewBox="0 0 142 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>IBM Cloud Identity</title>
+    <desc>Created with Sketch.</desc>
+    <g id="workflow-and-screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="22">
+        <g id="03.00-perform" transform="translate(-832.000000, -148.000000)" fill="#13171A">
+            <g id="content---right" transform="translate(830.000000, 144.000000)">
+                <g id="text/shared/D-—-heading/gray/100" transform="translate(2.000000, 0.000000)">
+                    <text id="IBM-Cloud-Identity">
+                        <tspan x="0" y="16">IBM</tspan>
+                        <tspan x="29.84" y="16" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-weight="500"> </tspan>
+                        <tspan x="33.616" y="16" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-weight="bold">Cloud Identity</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

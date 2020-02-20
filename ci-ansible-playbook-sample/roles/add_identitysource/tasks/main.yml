@@ -1,0 +1,27 @@
+- name: Creates a Identity Source in IBM Cloud Identity Cloud Directory. 
+  ci:
+    appliance:      "{{ inventory_hostname }}"
+    client_id:      "{{ client_id }}"
+    client_secret:  "{{ client_secret }}"
+    lmi_port:       "{{ lmi_port }}"
+    log:            "{{ log_level }}"
+    force:          "{{ force }}"
+    # header:         "application/scim+json"
+    ciapi:
+      sourcetypeid: "{{ sourcetypeid }}"
+      instancename: "{{ instancename }}"
+      enabled:      "{{ enabled }}"
+      # FB
+      properties_client_id_sensitive:                         "{{ properties_client_id_sensitive }}"
+      properties_client_id_value:                             "{{ properties_client_id_value }}"
+      properties_client_secret_sensitive:                     "{{ properties_client_secret_sensitive }}"
+      properties_client_secret_value:                         "{{ properties_client_secret_value }}"
+      properties_identitylinkingenabled_sensitive:            "{{ properties_identitylinkingenabled_sensitive }}"
+      properties_identitylinkingenabled_value:                "{{ properties_identitylinkingenabled_value }}"
+      properties_identitylinkingjitenabled_sensitive:         "{{ properties_identitylinkingjitenabled_sensitive }}"
+      properties_identitylinkingjitenabled_value:             "{{ properties_identitylinkingjitenabled_value }}"
+      properties_identitylinkingprincipalattribute_sensitive: "{{ properties_identitylinkingprincipalattribute_sensitive }}"
+      properties_identitylinkingprincipalattribute_value:     "{{ properties_identitylinkingprincipalattribute_value }}"
+      properties_realm_sensitive:                             "{{ properties_realm_sensitive }}"
+      properties_realm_value:                                 "{{ properties_realm_value }}"
+    action: ibmsecurity.ci.configuration.identitysources.add

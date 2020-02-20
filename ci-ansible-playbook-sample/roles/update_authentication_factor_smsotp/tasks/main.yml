@@ -1,0 +1,18 @@
+- name: Update - Security - Authentication Factors - SMS One-Time Password
+  ci:
+    appliance:      "{{ inventory_hostname }}"
+    client_id:      "{{ client_id }}"
+    client_secret:  "{{ client_secret }}"
+    lmi_port:       "{{ lmi_port }}"
+    log:            "{{ log_level }}"
+    force:          "{{ force }}"
+    # header:         "application/scim+json"
+    ciapi:
+      charset:                  "{{ charset }}"
+      maxtries:                 "{{ maxtries }}"
+      lifetimesec:              "{{ lifetimesec }}"
+      length:                   "{{ length }}"
+      enablevalidationonenroll: "{{ enablevalidationonenroll }}"
+      enabled:                  "{{ enabled }}"
+    action: ibmsecurity.ci.security.authentication_factors.update_smsotp
+

@@ -1,0 +1,3 @@
+appliance_name                        : "<yourtenant>.ice.ibmcloud.com"
+client_id                             : "<your client_id>"                          # Cloud Identity Client ID
+client_secret                         : "{{ vault_client_secret }}"                 # Cloud Identity Client Secret --> see vault.yml

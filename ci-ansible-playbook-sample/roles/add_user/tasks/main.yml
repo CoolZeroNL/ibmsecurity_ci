@@ -1,0 +1,18 @@
+- name: Creates a user in IBM Cloud Identity Cloud Directory. 
+  ci:
+    appliance:      "{{ inventory_hostname }}"
+    client_id:      "{{ client_id }}"
+    client_secret:  "{{ client_secret }}"
+    lmi_port:       "{{ lmi_port }}"
+    log:            "{{ log_level }}"
+    force:          "{{ force }}"
+    header:         "application/scim+json"
+    ciapi:
+      emails:       "{{ emails }}"
+      username:     "{{ username }}"
+      givenname:    "{{ givenname }}"
+      familyname:   "{{ familyname }}"
+      phonenumbers: "{{ phonenumbers }}"
+      active:       "{{ active }}"
+    action: ibmsecurity.ci.users.add
+

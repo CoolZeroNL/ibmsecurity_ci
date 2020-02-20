@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+        <link rel='shortcut icon' type='image/x-icon' href='/ui/assets/img/favicon.ico' />
+		<link rel='stylesheet' href='/usc/css/stateless.css'>
+		<link rel='stylesheet' href='/idaas/mtfim/static/styles.css'>
+        <title>Sign In - IBM Cloud Identity</title>
+        <script>
+			const idSources = @ID_SOURCES@;
+        </script>
+        <script type="text/javascript" src="/idaas/mtfim/static/lsp.js"></script>
+    </head>
+
+	<body>
+		<div class='cs-content'>
+			<div class='heading'>
+				<h1 id="ibm-header" class="ng-binding">IBM<small class="r">®</small></h1>
+				<h2 id="product-header" class="ng-binding">Cloud Identity</h2>
+			</div>
+			<div class="login-main">
+				<p class='cs-select-login-provider-instructions'></p>
+				<div class="passwordless-signin" id="passwordless-signin">
+					<div class="passwordless-options cs-flex-row">
+					</div>
+				</div>
+				<div class="cloud-directory" id="cloud-directory">
+					<form id="cloud-directory-form" method="post">
+						<div class="bx--form-item bx--text-input-wrapper">
+							<label for="user-name-input" class="bx--label label" id="user-name-label">@USERNAME@</label>
+							<div class="bx--text-input__field-wrapper">
+							<input id="user-name-input" type="text" class="bx--text-input" name="username" placeholder="@USERNAME@" value="@LOGIN_HINT@">
+							</div>
+						</div>
+						<div class="bx--form-item bx--text-input-wrapper">
+							<label for="password-input" class="bx--label label" id="password-label">@PASSWORD@</label>
+							<div class="bx--text-input__field-wrapper">
+							<input id="password-input" type="password" class="bx--text-input" name="password" placeholder="@PASSWORD@">
+							</div>
+						</div>
+						<input type="hidden" name="operation" value="verify">
+						<div class="submit-wrapper">
+							<button class="button cs-hide-focus" id="login-button" value="login" type="submit">@SIGNIN_BUTTON@</button>
+						</div>
+					</form>
+				</div>
+				<div class="alternate-options-dropdown separator" id="alternate-options-dropdown">
+					<div class="bx--form-item">
+						<div class="bx--dropdown__wrapper ">
+							<ul data-dropdown data-value id="dropdown-id" class="bx--dropdown" tabindex="0">
+								<li class="bx--dropdown-text" id="dropdown-text">@ALTERNATE_SIGNIN@</li>
+								<li class="bx--dropdown__arrow-container">
+									<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--dropdown__arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 11L3 6l.7-.7L8 9.6l4.3-4.3.7.7z"></path></svg>
+								</li>
+								<li>
+									<ul class="bx--dropdown-list" id="id-sources"></ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="alternate-signin-toggle" class="alternate-signin-toggle">
+					<a class="bx--link" id="alternate-signin-link">@ALTERNATE_SIGNIN@</a>
+				</div>
+				<footer class="login-footer" role="contentinfo">
+					<span id="login-copyright-0" class="ng-binding ng-scope">Licensed Materials - Property of IBM</span>
+					<span id="login-copyright-1" class="ng-binding ng-scope">5725-X36</span>
+					<span id="login-copyright-2" class="ng-binding ng-scope">© Copyright IBM Corp. 2017, 2019  All rights reserved. </span>
+					<span id="login-copyright-3" class="ng-binding ng-scope">* Trademark of International Business Machines</span>
+				</footer>
+			</div>
+		</div>
+		<script type="text/javascript" src="/usc/js/ieCheck.js"></script>
+	</body>
+</html>

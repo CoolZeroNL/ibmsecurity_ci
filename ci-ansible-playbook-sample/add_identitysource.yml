@@ -1,0 +1,28 @@
+
+- name: Add a Idenity Source.
+  hosts: all
+  no_log: False
+  connection: local
+  gather_facts: no
+  vars:
+    log_level: "DEBUG"
+  roles:
+    - role: start_ci_config
+
+    - role: add_identitysource
+      sourcetypeid: "1"
+      instancename: "Facebook"
+      enabled: false
+      # FB
+      properties_client_id_sensitive: false
+      properties_client_id_value: ""
+      properties_client_secret_sensitive: false
+      properties_client_secret_value: ""
+      properties_identitylinkingenabled_sensitive: false
+      properties_identitylinkingenabled_value: "false"
+      properties_identitylinkingjitenabled_sensitive: false
+      properties_identitylinkingjitenabled_value: "false"
+      properties_identitylinkingprincipalattribute_sensitive: false
+      properties_identitylinkingprincipalattribute_value: ""
+      properties_realm_sensitive: false
+      properties_realm_value: "www.facebook.com"

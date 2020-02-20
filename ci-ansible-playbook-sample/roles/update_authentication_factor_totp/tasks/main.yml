@@ -1,0 +1,19 @@
+- name: Update - Security - Authentication Factors - Time-Based One-Time Password
+  ci:
+    appliance:      "{{ inventory_hostname }}"
+    client_id:      "{{ client_id }}"
+    client_secret:  "{{ client_secret }}"
+    lmi_port:       "{{ lmi_port }}"
+    log:            "{{ log_level }}"
+    force:          "{{ force }}"
+    # header:         "application/scim+json"
+    ciapi:
+      timestepskew:    "{{ timestepskew }}"
+      secretkeyurl:    "{{ secretkeyurl }}"
+      length:          "{{ length }}"
+      onetimeuse:      "{{ onetimeuse }}"
+      timestepsizesec: "{{ timestepsizesec }}"
+      enabled:         "{{ enabled }}"
+      algorithm:       "{{ algorithm }}"
+    action: ibmsecurity.ci.security.authentication_factors.update_totp
+

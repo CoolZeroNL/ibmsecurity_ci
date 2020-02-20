@@ -1,0 +1,12 @@
+- name: Download
+  ci:
+    appliance:      "{{ inventory_hostname }}"
+    client_id:      "{{ client_id }}"
+    client_secret:  "{{ client_secret }}"
+    lmi_port:       "{{ lmi_port }}"
+    log:            "{{ log_level }}"
+    force:          "{{ force }}"
+    ciapi:
+      customized:       "{{ customized }}"        # 	Includes customizations if true. Only returns the default templates if false
+      filename:         "{{ filename }}"
+    action: ibmsecurity.ci.customization.download

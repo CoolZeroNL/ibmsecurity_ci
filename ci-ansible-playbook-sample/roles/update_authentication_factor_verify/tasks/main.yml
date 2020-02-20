@@ -1,0 +1,22 @@
+- name: Update - Security - Authentication Factors - IBM Verify Authentication
+  ci:
+    appliance:      "{{ inventory_hostname }}"
+    client_id:      "{{ client_id }}"
+    client_secret:  "{{ client_secret }}"
+    lmi_port:       "{{ lmi_port }}"
+    log:            "{{ log_level }}"
+    force:          "{{ force }}"
+    # header:         "application/scim+json"
+    ciapi:
+      face_supportedalgorithms:         "{{ face_supportedalgorithms }}"
+      face_enabled:                     "{{ face_enabled }}"
+      face_algorithm:                   "{{ face_algorithm }}"
+      userpresence_supportedalgorithms: "{{ userpresence_supportedalgorithms }}"
+      userpresence_enabled:             "{{ userpresence_enabled }}"
+      userpresence_algorithm:           "{{ userpresence_algorithm }}"
+      fingerprint_supportedalgorithms:  "{{ fingerprint_supportedalgorithms }}"
+      fingerprint_enabled:              "{{ fingerprint_enabled }}"
+      fingerprint_algorithm:            "{{ fingerprint_algorithm }}"
+      enabled:                          "{{ enabled }}"
+    action: ibmsecurity.ci.security.authentication_factors.update_verify
+

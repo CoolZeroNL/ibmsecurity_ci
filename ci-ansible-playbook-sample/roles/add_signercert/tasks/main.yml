@@ -1,0 +1,16 @@
+- name: add signer cert. 
+  ci:
+    appliance:      "{{ inventory_hostname }}"
+    client_id:      "{{ client_id }}"
+    client_secret:  "{{ client_secret }}"
+    lmi_port:       "{{ lmi_port }}"
+    log:            "{{ log_level }}"
+    force:          "{{ force }}"
+    # header:         "application/json"
+    ciapi:
+      pemcertfile:   "{{ pemcertfile | default(None) }}"
+      pemcert:       "{{ pemcert | default(None) }}"
+      label:         "{{ label }}"
+
+    action: ibmsecurity.ci.configuration.certificates.add_signercert
+

@@ -1,0 +1,13 @@
+
+- name: Reset templates
+  hosts: all
+  no_log: False
+  connection: local
+  gather_facts: no
+  vars:
+    log_level: "DEBUG"
+  roles:
+    - role: start_ci_config
+    
+    - role: delete_customization_reset
+

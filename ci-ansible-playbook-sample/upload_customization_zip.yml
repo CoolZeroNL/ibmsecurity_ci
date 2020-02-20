@@ -1,0 +1,14 @@
+
+- name: Upload templates (complete zip)
+  hosts: all
+  no_log: False
+  connection: local
+  gather_facts: no
+  vars:
+    log_level: "DEBUG"
+  roles:
+    - role: start_ci_config
+
+    - role: upload_customization_zip
+      file: "templates.zip"
+    

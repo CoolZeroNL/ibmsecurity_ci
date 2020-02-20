@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <!-- https://community.ibm.com/community/user/security/viewdocument/customizing-ibm-cloud-identity-ho-1?CommunityKey=e7c36119-46d7-42f2-97a9-b44f0cc89c6d&tab=librarydocuments -->
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="EN" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multi-factor authentication</title>
+    <link rel="stylesheet" href="https://unpkg.com/carbon-components@latest/css/carbon-components.min.css">
+    <script src="https://unpkg.com/carbon-components/scripts/carbon-components.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      background-color:#000;
+      background-image: url("https://i.ibb.co/HCCqPKs/aurora-bg.jpg");
+      background-position: center top;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+    }
+
+    </style>
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+    $("#tile").hide(0).delay(0).fadeIn(1000)
+    });
+    </script>
+  </head>
+  <body class="" onload="" style="">
+      <div class="bx--grid bgimg-1">
+        <div style="height:100%;width:100%;position: absolute;top: 20%;left: 0%;">
+          <div class="bx--row">
+            <div class="bx--col-lg-6 bx--offset-lg-3">
+              <h2 class="content-wrapper-title" style="font-size:2rem;color:#ffffff;margin-top:2rem;margin-bottom:1rem;">
+               Verify yourself
+              </h2>
+            </div>
+          </div>
+          <div class="bx--tile-container" style="width: 100%">
+            <div class="bx--row">
+              <div class="bx--col-lg-6 bx--offset-lg-3">
+                <div id="tile" class="bx--tile" style="">
+                  <form id="otp" method="POST" action="@ACTION@">
+                    <div class="bx--form-item" style="margin-bottom:1rem;">
+                      Choose how to prove yourself.
+                    </div>
+                    <!--  START NON-TRANSLATABLE  -->
+                        [RPT otpMethods]
+                        <div class="bx--form-item" style="margin-bottom:1rem;">
+                          <a id="@OTP_METHOD_ID@" href="#" onClick="postForm('@OTP_METHOD_ID@','@ACTION@')">@OTP_METHOD_LABEL@</a>
+                        </div>
+                        [ERPT otpMethods]
+                    <!--  END NON-TRANSLATABLE  -->
+                    <input type="hidden" id="operation" name="operation" value="generate">
+                    <input type="hidden" name="otp.user.otp-method.id" value="" id="otp.user.otp-method.id">
+                  </form>
+                  <div class="bx--form-item" style="margin-bottom:1rem;">
+                    <span class="">Having issues? <a href="#">Click here.</a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script type="text/javascript">
+		function postForm(id, action) {
+				var form = document.getElementById("otp");
+		    form.setAttribute('action', action);
+		    document.getElementById('otp.user.otp-method.id').value = id;
+		    form.submit();
+		}
+    </script>
+  </body>
+</html>

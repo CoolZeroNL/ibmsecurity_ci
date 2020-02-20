@@ -1,0 +1,26 @@
+
+- name: Creates a user in IBM Cloud Identity Cloud Directory. 
+  hosts: all
+  no_log: False
+  connection: local
+  gather_facts: no
+  vars:
+    log_level: "DEBUG"
+  roles:
+    - role: start_ci_config
+    - role: add_user
+      emails:       "jacob@....nl"
+      username:     "jacob@<yourtentant>.ice.ibmcloud.com"
+      givenname:    "Jacob"
+      familyname:   "Jackson"
+      phonenumbers: "+31612345678"
+      active:       "True"
+
+    - role: add_user
+      emails:       "jessica@....nl"
+      username:     "jessica@<yourtentant>.ice.ibmcloud.com"
+      givenname:    "Jessica"
+      familyname:   "Bretton"
+      phonenumbers: "+31612345678"
+      active:       "True"
+

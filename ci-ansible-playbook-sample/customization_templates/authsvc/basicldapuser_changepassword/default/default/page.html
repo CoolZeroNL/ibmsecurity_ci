@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html ng-app="app">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<base href="/" />
+	<script type="text/javascript" src="ui/assets/_js?include=login/changePassword"></script>
+	<title id="loginTitle" ng-bind="messages.login['loginTitle']"></title>
+	<link rel="shortcut icon" type="image/x-icon" href="ui/assets/img/favicon.ico" />
+	<link rel="stylesheet" href="usc/css/stateless.css" />
+</head>
+
+<body action="@ACTION@" action-base-href="" cs-change-password error="@ERROR_MESSAGE@" oldpassword="@OLDPASSWORD@"
+ passwordwarning="@PASSWORDWARNING@" username="@USERNAME@">
+	<ol>
+		<!--  START NON-TRANSLATABLE  -->
+		[RPT PolicyDetails]
+		<li><span data-name="@POLICYMESSAGE@">@POLICYMESSAGE@</span></li>
+		[ERPT PolicyDetails]
+		<!--  END NON-TRANSLATABLE  -->
+	</ol>
+</body>
+
+</html>
