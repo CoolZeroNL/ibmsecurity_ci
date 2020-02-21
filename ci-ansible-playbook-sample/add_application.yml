@@ -23,11 +23,11 @@
 
     # Delete Applications ############################################################################################################################################################################
 
-    - role: delete_application
-      appname: "IBM Security 00"
+    # - role: delete_application
+    #   appname: "IBM Security 00"
 
-    - role: delete_application
-      appname: "Google"
+    # - role: delete_application
+    #   appname: "Google"
 
     # Bookmarks Applications ############################################################################################################################################################################
 
