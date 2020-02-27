@@ -232,14 +232,6 @@ class AWXAppliance(IBMAppliance):
                 'Accept': 'text/html,application/xhtml+xml,application/xml'
             }
             
-        ## NEW
-        access_token = self.fetch_access_token()
-
-        if access_token:
-            headers.update({
-                'Authorization': 'Bearer {0}'.format(access_token),
-            })                   
-            
         self.logger.debug("Headers are: {0}".format(headers))
 
         if data_as_files is False:
@@ -302,15 +294,7 @@ class AWXAppliance(IBMAppliance):
         else:
             headers = {
                 'Accept': 'application/json,application/octet-stream'
-            }
-            
-        ## NEW
-        access_token = self.fetch_access_token()
-
-        if access_token:
-            headers.update({
-                'Authorization': 'Bearer {0}'.format(access_token),
-            })             
+            }        
             
         self.logger.debug("Headers are: {0}".format(headers))
 
