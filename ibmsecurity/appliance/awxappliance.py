@@ -1,6 +1,5 @@
 import json
 import requests
-from requests.auth import HTTPBasicAuth
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 import logging
 from .ibmappliance import IBMAppliance
