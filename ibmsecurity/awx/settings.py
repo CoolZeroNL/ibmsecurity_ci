@@ -82,11 +82,5 @@ def update(awxAppliance,
          
     return awxAppliance.invoke_patch("AWX - Update Settings", "/api/v2/settings/all/", client_json)
         
-    # if force is True:
-    #     if check_mode is True:
-    #         return ciAppliance.create_return_object(changed=True)
-    #     else:
-    #         return ciAppliance.invoke_post("Add Attributes","v1.0/attributes")
-
     return awxAppliance.create_return_object()
     
