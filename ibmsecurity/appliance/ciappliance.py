@@ -217,15 +217,6 @@ class CIAppliance(IBMAppliance):
         response = self._invoke_request(self.session.put, description, uri, ignore_error, data, warnings=warnings)
         return response
 
-    def invoke_patch(self, description, uri, data, ignore_error=False, warnings=[]):
-        """
-        Send a PATCH request to the LMI.
-        """
-
-        self._log_request("PATCH", uri, description)
-        response = self._invoke_request(self.session.patch, description, uri, ignore_error, data, warnings=warnings)
-        return response
-
     def invoke_post(self, description, uri, data, ignore_error=False, warnings=[]):
         """
         Send a POST request to the LMI.
