@@ -13,6 +13,8 @@
 
     # One Liner Certificate into one string: awk 'NF {sub(/\r/, ""); printf "%s\\n",$0;}' cert.crt
 
+    # Only the fields that you want to updated need to be filled in.
+
     # AWX Update Settings
     - role: awx_update_settings
       SOCIAL_AUTH_SAML_CALLBACK_URL: "https://awx.domain.nl/sso/complete/saml/"
@@ -54,6 +56,8 @@
       SOCIAL_AUTH_SAML_ORGANIZATION_MAP: ""
       SOCIAL_AUTH_SAML_ORGANIZATION_ATTR: ""
       SOCIAL_AUTH_SAML_TEAM_MAP: ""
+
+      # need PR: https://github.com/ansible/awx/pull/6076
       SOCIAL_AUTH_SAML_TEAM_ATTR: |
         {
           "saml_attr": "groupIds",
@@ -78,6 +82,20 @@
           "auditors_remove": true,
           "superusers_remove": true
         }
+
+      # Orginal Payload:
+      # SOCIAL_AUTH_SAML_TEAM_ATTR: |        
+      #   {
+      #   "team_org_map": [
+      #     {
+      #     "organization": "Default",
+      #     "team": "awx-admins"
+      #     }
+      #   ],
+      #   "saml_attr": "groupIds",
+      #   "remove": true
+      #   }
+      
       SOCIAL_AUTH_SAML_SECURITY_CONFIG: |
         {
           "requestedAuthnContext": false
