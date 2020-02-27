@@ -1,5 +1,6 @@
 import json
 import requests
+from requests.auth import HTTPBasicAuth
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 import logging
 from .ibmappliance import IBMAppliance
@@ -12,12 +13,11 @@ try:
 except NameError:
     basestring = (str, bytes)
 
-class CIAppliance(IBMAppliance):
-    # def __init__(self, hostname, user, client_id, client_secret, lmi_port=443):
-    def __init__(self, hostname, client_id, client_secret, header=None, lmi_port=443):
+class AWXAppliance(IBMAppliance):
+    def __init__(self, hostname, awx_user, awx_password, header=None, lmi_port=443):
 
         self.logger = logging.getLogger(__name__)
-        self.logger.debug('Creating an CIAppliance')
+        self.logger.debug('Creating an AWXAppliance')
 
         if isinstance(lmi_port, basestring):
             self.lmi_port = int(lmi_port)
@@ -25,50 +25,34 @@ class CIAppliance(IBMAppliance):
             self.lmi_port = lmi_port
 
         self.session = requests.session()
-        self.client_id = client_id
-        self.client_secret = client_secret
+        self.awx_user = awx_user
+        self.awx_password = awx_password
         self.header = header
         
+        self.logger.debug(hostname)
+        self.logger.debug(lmi_port)
+        
         IBMAppliance.__init__(self, hostname, user=None)    # 
-    
-    def _url(self, uri):
-        # Build up the URL
-        url = "https://" + self.hostname + ":" + str(self.lmi_port) + uri
-        self.logger.debug("Issuing request to: " + url)
-        return url
-    
-    # New implemented for Requesting Access Token ###################################################################
+        
+    # New implemented for Requesting Access ###################################################################
 
-    def check_arguments(self):        
-        if self.client_id is None or self.client_id == '':
-            raise IBMFatal("!! CLIENT_ID = none")
-            
-        if self.client_secret is None or self.client_secret == '':
-            raise IBMFatal("!! CLIENT_SECRET = none")
-      
-    def fetch_access_token(self):
         self.check_arguments()
 
-        data = {'grant_type':'client_credentials',
-                'client_id':self.client_id,
-                'client_secret':self.client_secret,
-                'scope':'openid'} 
-
-        # r = requests.post(url = 'https://'+ self.hostname +'/v1.0/endpoint/default/token', data = data) 
-        r = requests.post(url=self._url('/v1.0/endpoint/default/token'), data = data, verify=False)
-                
-        if r.status_code == 200:
-            data = r.json()
-            access_token = data['access_token']
-        else:
-            raise IBMError("HTTP Return code: {0}".format(r.status_code), r.text)
-
-        return access_token
-                
+    def check_arguments(self):        
+        if self.awx_user is None or self.awx_user == '':
+            raise IBMFatal("!! awx_user = none")
+            
+        if self.awx_password is None or self.awx_password == '':
+            raise IBMFatal("!! awx_password = none")
+      
+    def _url(self, uri):
+        # Build up the URL + injecting the username and password of awx.
+        url = "https://" + self.awx_user + ":" + self.awx_password + "@" + self.hostname + ":" + str(self.lmi_port) + uri
+        self.logger.debug("Issuing request to: " + self.hostname + ":" + str(self.lmi_port) + uri)
+        return url
+          
     #######################################################################################################
-
-
-
+    
     def _log_desc(self, description):
         if description != "":
             self.logger.info('*** ' + description + ' ***')
@@ -163,14 +147,7 @@ class CIAppliance(IBMAppliance):
             'Content-type': 'application/json',
         }
         
-        ## NEW
-        access_token = self.fetch_access_token()
-
-        if access_token:
-            headers.update({
-                'Authorization': 'Bearer {0}'.format(access_token),
-            })       
-              
+        ## NEW     
         # this will overright the header, if applied in role
         if self.header:                 
             headers.update({

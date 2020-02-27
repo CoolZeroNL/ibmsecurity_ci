@@ -8,7 +8,7 @@ from ansible.module_utils.basic import AnsibleModule
 from io import StringIO
 import datetime
 
-from ibmsecurity.appliance.ciappliance import CIAppliance
+from ibmsecurity.appliance.awxappliance import AWXAppliance
 from ibmsecurity.appliance.ibmappliance import IBMError
 
 logger = logging.getLogger(sys.argv[0])
@@ -26,10 +26,10 @@ def main():
             lmi_port=dict(required=False, default=443, type='int'),
             action=dict(required=True),
             force=dict(required=False, default=False, type='bool'),
-            ciapi=dict(required=False, type='dict'),
+            awxapi=dict(required=False, type='dict'),
             header=dict(required=False),
-            client_id=dict(required=False),
-            client_secret=dict(required=False)
+            awx_user=dict(required=False),
+            awx_password=dict(required=False)
         ),
         supports_check_mode=True
     )
@@ -43,8 +43,8 @@ def main():
     appliance = module.params['appliance']
     lmi_port = module.params['lmi_port']
     header = module.params['header']
-    client_id = module.params['client_id']
-    client_secret = module.params['client_secret']
+    awx_user = module.params['awx_user']
+    awx_password = module.params['awx_password']
 
     # Setup logging for format, set log level and redirect to string
     strlog = StringIO()
@@ -79,16 +79,16 @@ def main():
     }
     logging.config.dictConfig(DEFAULT_LOGGING)
 
-    # define ci_server
-    ci_server = CIAppliance(hostname=appliance, header=header, lmi_port=lmi_port, client_id=client_id, client_secret=client_secret)
+    # define awx_server
+    awx_server = AWXAppliance(hostname=appliance, header=header, lmi_port=lmi_port, awx_user=awx_user, awx_password=awx_password)
     
     # Create options string to pass to action method
-    options = 'ciAppliance=ci_server, force=' + str(force)
+    options = 'awxAppliance=awx_server, force=' + str(force)
     
     if module.check_mode is True:
         options = options + ', check_mode=True'
-    if isinstance(module.params['ciapi'], dict):
-        for key, value in module.params['ciapi'].items():
+    if isinstance(module.params['awxapi'], dict):
+        for key, value in module.params['awxapi'].items():
             if isinstance(value, basestring):
                 options = options + ', ' + key + '="' + value + '"'
             else:
@@ -96,8 +96,8 @@ def main():
     module.debug('Option to be passed to action: ' + options)
 
     # Dynamically process the action to be invoked
-    # Simple check to restrict calls to just "CI" ones for safety
-    if action.startswith('ibmsecurity.ci.'):
+    # Simple check to restrict calls to just "AWX" ones for safety
+    if action.startswith('ibmsecurity.awx.'):    
         try:
             
             module_name, method_name = action.rsplit('.', 1)
@@ -122,7 +122,7 @@ def main():
             ret_obj['end'] = str(endd)
             ret_obj['delta'] = str(delta)
             ret_obj['cmd'] = action + "(" + options + ")"
-            ret_obj['ansible_facts'] = ci_server.facts
+            ret_obj['ansible_facts'] = awx_server.facts
 
             module.exit_json(**ret_obj)
 

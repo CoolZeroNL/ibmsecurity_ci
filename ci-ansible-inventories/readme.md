@@ -6,6 +6,7 @@ Changes the following files/folders. This is needed before you can run the ansib
     - inventories/`<yourtenant>`.ice.ibmcloud.com/host_vars/`<yourtenant>`.ice.ibmcloud.com
 
 - Files:
+    - inventories/< yourtenant >.ice.ibmcloud.com/`hosts`
     - inventories/< yourtenant >.ice.ibmcloud.com/group_vars/all/`vars.yml`
     - inventories/< yourtenant >.ice.ibmcloud.com/host_vars/< yourtenant >.ice.ibmcloud.com/`vars.yml`
     - inventories/< yourtenant >.ice.ibmcloud.com/host_vars/< yourtenant >.ice.ibmcloud.com/`vault.yml`

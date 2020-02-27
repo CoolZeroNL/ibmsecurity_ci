@@ -1,0 +1,27 @@
+- name: AWX - Update Settings. 
+  awx:
+    appliance:      "{{ inventory_hostname }}"
+    awx_user:       "{{ awx_user }}"
+    awx_password:   "{{ awx_password }}"
+    lmi_port:       "{{ lmi_port }}"
+    log:            "{{ log_level }}"
+    force:          "{{ force }}"
+    # header:       "application/json"
+    awxapi:
+      SOCIAL_AUTH_SAML_SP_ENTITY_ID:          "{{ SOCIAL_AUTH_SAML_SP_ENTITY_ID }}"
+      SOCIAL_AUTH_SAML_CALLBACK_URL:          "{{ SOCIAL_AUTH_SAML_CALLBACK_URL | default(None) }}"
+      SOCIAL_AUTH_SAML_METADATA_URL:          "{{ SOCIAL_AUTH_SAML_METADATA_URL | default(None) }}"
+      SOCIAL_AUTH_SAML_SP_PUBLIC_CERT:        "{{ SOCIAL_AUTH_SAML_SP_PUBLIC_CERT | default(None) }}"
+      SOCIAL_AUTH_SAML_SP_PRIVATE_KEY:        "{{ SOCIAL_AUTH_SAML_SP_PRIVATE_KEY | default(None) }}"
+      SOCIAL_AUTH_SAML_ORG_INFO:              "{{ SOCIAL_AUTH_SAML_ORG_INFO | default(None) }}"
+      SOCIAL_AUTH_SAML_TECHNICAL_CONTACT:     "{{ SOCIAL_AUTH_SAML_TECHNICAL_CONTACT | default(None) }}"
+      SOCIAL_AUTH_SAML_SUPPORT_CONTACT:       "{{ SOCIAL_AUTH_SAML_SUPPORT_CONTACT | default(None) }}"
+      SOCIAL_AUTH_SAML_ENABLED_IDPS:          "{{ SOCIAL_AUTH_SAML_ENABLED_IDPS | default(None) }}"
+      SOCIAL_AUTH_SAML_ORGANIZATION_MAP:      "{{ SOCIAL_AUTH_SAML_ORGANIZATION_MAP | default(None) }}"
+      SOCIAL_AUTH_SAML_ORGANIZATION_ATTR:     "{{ SOCIAL_AUTH_SAML_ORGANIZATION_ATTR | default(None) }}"
+      SOCIAL_AUTH_SAML_TEAM_MAP:              "{{ SOCIAL_AUTH_SAML_TEAM_MAP | default(None) }}"
+      SOCIAL_AUTH_SAML_TEAM_ATTR:             "{{ SOCIAL_AUTH_SAML_TEAM_ATTR | default(None) }}"
+      SOCIAL_AUTH_SAML_SECURITY_CONFIG:       "{{ SOCIAL_AUTH_SAML_SECURITY_CONFIG | default(None) }}"
+      SOCIAL_AUTH_SAML_SP_EXTRA:              "{{ SOCIAL_AUTH_SAML_SP_EXTRA | default(None) }}"
+      SOCIAL_AUTH_SAML_EXTRA_DATA:            "{{ SOCIAL_AUTH_SAML_EXTRA_DATA | default(None) }}"
+    action: ibmsecurity.awx.settings.update

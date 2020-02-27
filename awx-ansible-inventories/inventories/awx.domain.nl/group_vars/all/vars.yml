@@ -1,0 +1,19 @@
+# Set the Python interpreter path to use
+ansible_python_interpreter: /usr/bin/python3          # for python 3.x
+# ansible_python_interpreter: /usr/bin/python           # for python 2.x
+
+# Use local connection for making all calls
+connection: local
+ansible_connection: local
+
+# Ansible root path
+ansible_root_path: "{{ lookup('env','HOME') }}/Ansible"
+
+# Default LMI port
+lmi_port: 443         # dev = 8043
+
+# Logging set to maximum, output will not show until -vvv flag is used
+log_level: DEBUG
+
+# Idempotent functions are the default - no need to force any calls
+force: False
