@@ -1,0 +1,22 @@
+- name: AWX - Add Inventory. 
+  awx:
+    appliance:      "{{ inventory_hostname }}"
+    awx_user:       "{{ awx_user }}"
+    awx_password:   "{{ awx_password }}"
+    lmi_port:       "{{ lmi_port }}"
+    log:            "{{ log_level }}"
+    force:          "{{ force }}"
+    # header:       "application/json"
+    awxapi:
+      name:          "{{ name }}"
+      organization:  "{{ organization | default(1) }}"
+      variables:     "{{ variables | default(---) }}"
+
+    action: ibmsecurity.awx.inventories.add
+
+
+# {
+# 	"name": "AWX - Localhost",
+# 	"organization": 1,
+# 	"variables": "---"
+# }
