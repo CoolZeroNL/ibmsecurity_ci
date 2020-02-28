@@ -11,7 +11,7 @@
 
         # Clone IBM Python Modules
         git clone https://github.com/ibm-security/ibmsecurity.git
-        cp -R ibmsecurity /var/lib/awx/.local/lib/python3.6/site-packages/
+        # cp -R ibmsecurity /var/lib/awx/.local/lib/python3.6/site-packages/
         cp -R ibmsecurity /usr/local/lib/python3.6/site-packages
 
         # Clone CIC Python Modules
@@ -19,7 +19,7 @@
         
         # Copy them to the right location.
         cd ibmsecurity_ci/
-        cp -R ibmsecurity /var/lib/awx/.local/lib/python3.6/site-packages/
+        # cp -R ibmsecurity /var/lib/awx/.local/lib/python3.6/site-packages/
         cp -R ibmsecurity /usr/local/lib/python3.6/site-packages
 
         # back, and cleanup.
