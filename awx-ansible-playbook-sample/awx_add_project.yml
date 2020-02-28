@@ -27,20 +27,3 @@
       allow_override: False               # True / False
       scm_update_cache_timeout: "0"
       custom_virtualenv: "null"
-
-# {
-# 	"name": "test",
-# 	"description": "desc",
-# 	"organization": 1,
-# 	"scm_type": "git",
-# 	"base_dir": "/var/lib/awx/projects/",
-# 	"scm_url": "https://github.com/CoolZeroNL/Ansible-AWX.git",
-# 	"scm_branch": "branch/tag/commit",
-# 	"scm_refspec": "refspec",
-# 	"scm_clean": true,
-# 	"scm_delete_on_update": true,
-# 	"scm_update_on_launch": true,
-# 	"allow_override": true,
-# 	"scm_update_cache_timeout": "0",
-# 	"custom_virtualenv": null
-# }      
