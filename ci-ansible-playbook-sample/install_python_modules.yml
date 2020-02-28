@@ -22,8 +22,8 @@
         # cp -R ibmsecurity /usr/local/lib/python3.6/site-packages
 
         # back, and cleanup.
-        cd ..
-        rm -R ibmsecurity_ci
+        # cd ..
+        # rm -R ibmsecurity_ci
 
       register: stdout
 
