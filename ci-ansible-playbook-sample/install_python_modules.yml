@@ -7,12 +7,12 @@
     - name: multiline shell command
       shell: |
         # Install IBMSecurity Python Modules
-        # pip3 install --user --upgrade git+https://github.com/ibm-security/ibmsecurity#egg=ibmsecurity
+        pip3 install --user --upgrade git+https://github.com/ibm-security/ibmsecurity#egg=ibmsecurity
 
         # Clone IBM Python Modules
-        git clone https://github.com/ibm-security/ibmsecurity.git
-        cd ibmsecurity/
-        cp -R ibmsecurity/ /usr/local/lib/python3.6/site-packages
+        # git clone https://github.com/ibm-security/ibmsecurity.git
+        # cd ibmsecurity/
+        # cp -R ibmsecurity/ /usr/local/lib/python3.6/site-packages
 
         # Clone CIC Python Modules
         # git clone https://github.com/CoolZeroNL/ibmsecurity_ci.git
