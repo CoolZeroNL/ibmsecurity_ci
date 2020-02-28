@@ -1,0 +1,46 @@
+
+- name: AWX - Add Project. 
+  hosts: all
+  no_log: False
+  connection: local
+  gather_facts: no
+  vars:
+    log_level: "DEBUG"
+  roles:
+    - role: start_awx_config
+
+    #############################################################################################################################################################################
+
+    # AWX Update Settings
+    - role: awx_add_project
+      name: "ibmsecurity_ci (master)"
+      organization: "1"   # 1 = default
+      description: ""
+      scm_type: "git"                     # git / hg / svn / 
+      base_dir: "/var/lib/awx/projects/"
+      scm_url: "https://github.com/CoolZeroNL/ibmsecurity_ci.git"
+      scm_branch: ""
+      scm_refspec: ""
+      scm_clean: True                     # True / False
+      scm_delete_on_update: True          # True / False
+      scm_update_on_launch: False         # True / False
+      allow_override: False               # True / False
+      scm_update_cache_timeout: "0"
+      custom_virtualenv: "null"
+
+# {
+# 	"name": "test",
+# 	"description": "desc",
+# 	"organization": 1,
+# 	"scm_type": "git",
+# 	"base_dir": "/var/lib/awx/projects/",
+# 	"scm_url": "https://github.com/CoolZeroNL/Ansible-AWX.git",
+# 	"scm_branch": "branch/tag/commit",
+# 	"scm_refspec": "refspec",
+# 	"scm_clean": true,
+# 	"scm_delete_on_update": true,
+# 	"scm_update_on_launch": true,
+# 	"allow_override": true,
+# 	"scm_update_cache_timeout": "0",
+# 	"custom_virtualenv": null
+# }      

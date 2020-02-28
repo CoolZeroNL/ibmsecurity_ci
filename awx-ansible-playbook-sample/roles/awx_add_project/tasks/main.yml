@@ -1,0 +1,32 @@
+- name: AWX - Add Project. 
+  awx:
+    appliance:      "{{ inventory_hostname }}"
+    awx_user:       "{{ awx_user }}"
+    awx_password:   "{{ awx_password }}"
+    lmi_port:       "{{ lmi_port }}"
+    log:            "{{ log_level }}"
+    force:          "{{ force }}"
+    # header:       "application/json"
+    awxapi:
+      name:                     "{{ name }}"
+      organization:             "{{ organization | default(1) }}"
+      description:              "{{ description | default(None) }}"
+      scm_type:                 "{{ scm_type }}" 
+      base_dir:                 "{{ base_dir | default(None) }}"
+      scm_url:                  "{{ scm_url | default(None) }}"
+      scm_branch:               "{{ scm_branch | default(None) }}"
+      scm_refspec:              "{{ scm_refspec | default(None) }}"
+      scm_clean:                "{{ scm_clean | default(None) }}"
+      scm_delete_on_update:     "{{ scm_delete_on_update | default(None) }}"
+      scm_update_on_launch:     "{{ scm_update_on_launch | default(None) }}"
+      allow_override:           "{{ allow_override | default(None) }}"
+      scm_update_cache_timeout: "{{ scm_update_cache_timeout | default(None) }}"
+      custom_virtualenv:        "{{ custom_virtualenv | default(None) }}"
+    action: ibmsecurity.awx.projects.add
+
+
+# {
+# 	"name": "AWX - Localhost",
+# 	"organization": 1,
+# 	"variables": "---"
+# }

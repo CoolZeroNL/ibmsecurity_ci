@@ -1,0 +1,47 @@
+
+- name: AWX - Add Template. 
+  hosts: all
+  no_log: False
+  connection: local
+  gather_facts: no
+  vars:
+    log_level: "DEBUG"
+  roles:
+    - role: start_awx_config
+
+    #############################################################################################################################################################################
+
+    # AWX Update Settings
+    - role: awx_add_template
+      name: "ibmsecurity_ci (master) 2"
+      description: "desc"
+      job_type: "run"
+      inventory: 2
+      project: 8
+      playbook: "awx-ansible-playbook-sample/awx_add_inventory.yml"
+      verbosity: 0
+      job_tags: ""
+      skip_tags: ""
+      custom_virtualenv: null
+      job_slice_count: 1
+      timeout: 0
+      become_enabled: False
+      allow_callbacks: False
+      enable_webhook: False
+      allow_simultaneous: False
+      use_fact_cache: False
+      host_config_key: ""
+      ebhook_credential: null
+      forks: 0
+      ask_diff_mode_on_launch: False
+      ask_scm_branch_on_launch: False
+      ask_tags_on_launch: False
+      ask_skip_tags_on_launch: False
+      ask_limit_on_launch: False
+      ask_job_type_on_launch: False
+      ask_verbosity_on_launch: False
+      ask_inventory_on_launch: False
+      ask_variables_on_launch: False
+      ask_credential_on_launch: False
+      extra_vars: ""
+      survey_enabled: False
