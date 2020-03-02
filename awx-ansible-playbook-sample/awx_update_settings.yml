@@ -35,11 +35,12 @@
     #         email: "mail"
     #         first_name: "givenName"
     #         last_name: "surname"        
-
-    - name: Set -> SOCIAL_AUTH_SAML_CALLBACK_URL
+    
+    - name: Set SOCIAL_AUTH_SAML_CALLBACK_URL
       tower_settings:
-        settings:
-          SOCIAL_AUTH_SAML_CALLBACK_URL: "https://awx.domain.nl/sso/complete/saml/"
+        name: "SOCIAL_AUTH_SAML_CALLBACK_URL"
+        value: "https://awx.domain.nl/sso/complete/saml/"
+      no_log: true
 
 # options: #######################################################################        
 
