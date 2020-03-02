@@ -40,7 +40,7 @@
       tower_settings:
         name: "SOCIAL_AUTH_SAML_SP_ENTITY_ID"
         value: "awx.domain.nl"
-      no_log: true
+      no_log: false
 
 # options: #######################################################################        
 
