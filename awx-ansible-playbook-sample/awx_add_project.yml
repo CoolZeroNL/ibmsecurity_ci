@@ -8,6 +8,7 @@
         tower_host: "127.0.0.1:8013"
         tower_username: "admin"
         tower_password: "coolzero"
+        validate_certs: no
         name: "openstack-builder-testing"
         organization: Default
         state: present
