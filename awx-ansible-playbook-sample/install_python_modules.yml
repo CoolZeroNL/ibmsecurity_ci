@@ -4,7 +4,19 @@
   connection: local
   tasks:
     - name: multiline shell command
-      shell: ansible-galaxy collection install awx.awx
+      shell: |
+        pip3 install ansible-tower-cli
+
+        # awx_collection
+        git clone https://github.com/ansible/awx.git
+        cd awx
+        cp -R awx_collection /var/lib/awx/.ansible/collections/
+  
+        # Housecleaning
+        rm -R awx
+
+        # ansible-galaxy collection install awx.awx
+
       register: stdout
 
     - name: debug output
