@@ -5,11 +5,11 @@
   tasks:
     - name: Configure projects
       tower_project:
-        # tower_host:       --> see inventory
-        # tower_username:   --> see inventory
-        # tower_password:   --> see inventory
-        # tower_verify_ssl: --> see inventory
-        # tower_oauthtoken: --> see inventory
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
         name: "ibmsecurity_ci (master)"
         description: ""
         scm_type: git
@@ -18,21 +18,18 @@
         scm_branch: master
         # scm_refspec:
         # scm_credential:
-        scm_clean: yes
-        scm_delete_on_update: yes
-        scm_update_on_launch: yes   
+        scm_clean: yes                # yes / no # Remove any local modifications prior to performing an update.
+        scm_delete_on_update: yes     # yes / no # Delete the local repository in its entirety prior to performing an update.
+        scm_update_on_launch: yes     # yes / no # Each time a job runs using this project, update the revision of the project prior to starting the job.
+        # scm_allow_override:         # yes / no # Allow changing the SCM branch or revision in a job template that uses this project.
         # scm_update_cache_timeout:
-        # scm_allow_override:
         # job_timeout:
         custom_virtualenv:
         organization: Default
         state: present
         # wait:
 
-        tower_username: "{{admin_username}}"
-        tower_password: "{{admin_password}}"
-        tower_host: "{{tower_url}}"
-        tower_verify_ssl: False        
+     
         
 # options: #######################################################################        
 
