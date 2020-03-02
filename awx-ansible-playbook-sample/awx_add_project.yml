@@ -28,6 +28,11 @@
         organization: Default
         state: present
         # wait:
+
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False        
         
 # options: #######################################################################        
 

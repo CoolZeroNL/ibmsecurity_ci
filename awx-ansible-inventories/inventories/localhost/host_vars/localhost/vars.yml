@@ -1,5 +1,3 @@
-tower_host                            : "127.0.0.1:8043"
-tower_username                        : "admin"
-tower_password                        : "{{ vault_awx_password_secret }}"
-tower_verify_ssl                      : False
-tower_oauthtoken                      : "{{ vault_awx_oauthtoken }}"
+tower_url: "http://localhost:8013"
+admin_username: "admin"
+admin_password: "{{ vault_awx_password_secret }}"

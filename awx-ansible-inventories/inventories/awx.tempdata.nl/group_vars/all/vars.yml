@@ -9,4 +9,3 @@ ansible_connection: local
 # Ansible root path
 ansible_root_path: "{{ lookup('env','HOME') }}/Ansible"
 
-log_level: DEBUG

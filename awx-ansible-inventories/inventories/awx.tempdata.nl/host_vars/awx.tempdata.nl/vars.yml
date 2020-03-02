@@ -1,0 +1,8 @@
+tower_url: "https://awx.tempdata.nl:8043"
+admin_username: "admin"
+admin_password: "{{ vault_awx_password_secret }}"
+
+tower_host:       "https://awx.tempdata.nl:8043"
+tower_username:   "admin"
+tower_password:   "coolzero"
+tower_verify_ssl: False

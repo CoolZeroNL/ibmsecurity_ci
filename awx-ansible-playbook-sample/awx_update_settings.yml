@@ -1,6 +1,6 @@
 - name: Update Settings
   hosts: all
-  gather_facts: true
+  gather_facts: false
   connection: local
   tasks:
         # tower_host:       --> see inventory
@@ -35,17 +35,100 @@
     #         email: "mail"
     #         first_name: "givenName"
     #         last_name: "surname"        
-    
-    - name: Set SOCIAL_AUTH_SAML_SP_ENTITY_ID
+
+    - name: Display all variables/facts known for a host
+      debug:
+        var: hostvars[inventory_hostname]
+
+    # - name: Set SOCIAL_AUTH_SAML_SP_ENTITY_ID
+    #   tower_settings:
+    #     tower_username: "{{admin_username}}"
+    #     tower_password: "{{admin_password}}"
+    #     tower_host: "{{tower_url}}"
+    #     tower_verify_ssl: False   
+    #     ####################################
+    #     name: "SOCIAL_AUTH_SAML_SP_ENTITY_ID"
+    #     value: "awx.domain.nl"
+    #   no_log: false
+
+    - name: Settings * only supported by the awx module. (awx_collection)
       tower_settings:
-        # tower_host: '127.0.0.1:8043'
-        # tower_verify_ssl: false
-        # tower_username: "admin"
-        # tower_password: "coolzero"
-        ask_variables_on_launch: true
-        name: "SOCIAL_AUTH_SAML_SP_ENTITY_ID"
-        value: "awx.domain.nl"
-      no_log: false
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        settings:
+          SOCIAL_AUTH_SAML_CALLBACK_URL: "https://awx.domain.nl/sso/complete/saml/"
+          
+          SOCIAL_AUTH_SAML_METADATA_URL: "https://awx.domain.nl/sso/metadata/saml/"
+          
+          SOCIAL_AUTH_SAML_SP_ENTITY_ID: "awx.domain.nl"
+          
+          # SOCIAL_AUTH_SAML_SP_PUBLIC_CERT: "-----BEGIN CERTIFICATE-----\nMIIDRTCCAi2gAwIBAgIJAIC8KS2n8a7DMA0GCSqGSIb3DQEBCwUAMDkxFDASBgNV\n-----END CERTIFICATE-----"
+          # SOCIAL_AUTH_SAML_SP_PRIVATE_KEY: "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDAwBtAy9IBYhEs\n-----END PRIVATE KEY-----"
+          
+          SOCIAL_AUTH_SAML_ORG_INFO:
+            en-US:
+              url: "https://whocares.com"
+              name: "who cares it is not important"
+              displayname: "This is only a name, it is not of importance"
+
+          SOCIAL_AUTH_SAML_TECHNICAL_CONTACT:
+            givenName: "aa"
+            emailAddress: "your@email.com"
+
+          SOCIAL_AUTH_SAML_SUPPORT_CONTACT:
+            givenName: "aa"
+            emailAddress: "your@email.com"
+
+          SOCIAL_AUTH_SAML_ENABLED_IDPS:
+            ibmcic:
+              entity_id: "https://poc.ice.ibmcloud.com/saml/sps/saml20ip/saml20"
+              url: "https://poc.ice.ibmcloud.com/saml/sps/saml20ip/saml20/login"
+              attr_email: "userID"
+              attr_first_name: "given_name"
+              attr_last_name: "family_name"
+              attr_user_permanent_id: "userID"
+              attr_username: "preferred_username"
+              x509cert: "MIIDKDCCAhCgAwIBAgIECPYTzTANBgkqhkiG9w0BAQsFADBWMQkwBwYDVQQGEwAxCTAHBgNVBAgTADEJMAcGA1UEBxMAMQkwBwYDVQQKEwAxCTAHBgNVBAsTADEdMBsGA1UEAxMUcG9jLmljZS5pYm1jbG91ZC5jb20wHhcNMTkxMTI1MDkxMDIyWhcNMjkxMTIyMDkxMDIyWjBWMQkwBwYDVQQGEwAxCTAHBgNVBAgTADEJMAcGA1UEBxMAMQkwBwYDVQQKEwAxCTAHBgNVBAsTADEdMBsGA1UEAxMUcG9jLmljZS5pYm1jbG91ZC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCK6a7G64+9vzf0MuTaMR/5VBvrWGYF38v2iYEW4tyz6dkdu0aJQ2qocwHd3aTdY8PzuBFcpCN8CvVY3/7mSZMhoMUZV5/g81XpwGnqOpczS17A6MYvCeXbZarjaT7UayopXQXqaNeo0BVsyZF9eFRRAIWA5JB9q/FMM2FeLFFAwdNTCsslPy8zFusLH7Pslgu1/rjzAyjHRB5WAPzKZTAyNO654isC2/uz7H+fMLnU7VPFk5S14qk7Qo4xaloXIRkctYdhrC2J8NG7YXEnidYMwGat3iIa7c5F1IicQcXJTnY2glr7xM3K0r6MfdgwBmEmgkDpkNbbGXijDhSpyqUDAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAEpFlgmJ7NjY0OTRYmXOLC4qMOX1Z3TnJ9Q2vsFPs80rphzd/k1IoapE5/5E+p/OJp6ruksbp8SgzPK/wTQxAunWUrzBvcgbIDnKhX5AimfQUFzRd4332N7M/lewdiM+5nQJIImNPYZY0MFpV4pSwae0hc4KRaSvq3L3/QAitNb6XPRx6K3f2phZJkTudbL2AePcymDufWST708Uex4UzoN0EkP3uQIGG/K8nxXVdEwFgCFPWSqu6VE3IxMxPwOAuUfolZ9WWarFU0q/2F3pUBSGW0PuDGCmKa+8Ie5sqkj8p9GlWq9mmG0J8gpFnYXpoM0nr+GNA6KMfmBx8Iox8jU="
+
+          SOCIAL_AUTH_SAML_ORGANIZATION_MAP: 
+
+          SOCIAL_AUTH_SAML_ORGANIZATION_ATTR: 
+          
+          SOCIAL_AUTH_SAML_TEAM_MAP: 
+          
+          # need PR: https://github.com/ansible/awx/pull/6076
+          SOCIAL_AUTH_SAML_TEAM_ATTR:
+            team_org_map: [{
+              "team": "awx-members",
+              "organization": "awx-members"
+            }, {
+              "admins": true,
+              "team": "awx-admins",
+              "organization": "awx-admins"
+            }, {
+              "auditors": true,
+              "team": "awx-auditors",
+              "organization": "awx-auditors"
+            }, {
+              "superusers": true,
+              "team": "awx-superusers",
+              "organization": "awx-superusers"
+            }]
+            saml_attr: "GroupIds"
+            remove: true
+            admins_remove: true
+            auditors_remove: true
+            superusers_remove: true
+
+          SOCIAL_AUTH_SAML_SECURITY_CONFIG:
+            requestedAuthnContext: false
+
+          SOCIAL_AUTH_SAML_SP_EXTRA:
+          
+          SOCIAL_AUTH_SAML_EXTRA_DATA:
 
 # options: #######################################################################        
 

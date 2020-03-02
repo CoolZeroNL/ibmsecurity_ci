@@ -5,17 +5,31 @@
   tasks:
     - name: multiline shell command
       shell: |
-        pip3 install ansible-tower-cli
+        # pip3 install ansible-tower-cli
+
+        # ansible-galaxy collection install awx.awx
 
         # awx_collection
         git clone https://github.com/ansible/awx.git
         cd awx
-        cp -R awx_collection /var/lib/awx/.ansible/collections/
-  
+
+        # install for AWX Tower.
+        if [ -d /var/lib/awx/ ] 
+        then
+           echo "Installing into: /var/lib/awx/.ansible/collections/"
+           cp -R awx_collection /var/lib/awx/.ansible/collections/
+        fi
+
+        # install for AWX Tower.
+        # if [ -d ~/.ansible ] 
+        # then
+           echo "Installing into: ~/.ansible/collections/"
+          #  cp -R awx_collection ~/.ansible/collections/
+            #  ~/.local/lib/python3.6/site-packages/ansible
+        # fi
+
         # Housecleaning
         rm -R awx
-
-        # ansible-galaxy collection install awx.awx
 
       register: stdout
 

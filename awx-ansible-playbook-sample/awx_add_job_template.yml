@@ -5,11 +5,11 @@
   tasks:
     - name: Create tower job template
       tower_job_template:      
-        # tower_host:       --> see inventory
-        # tower_username:   --> see inventory
-        # tower_password:   --> see inventory
-        # tower_verify_ssl: --> see inventory
-        # tower_oauthtoken: --> see inventory
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
         name: "Ping"
         # description:
         job_type: "run"
