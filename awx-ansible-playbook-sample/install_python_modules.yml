@@ -5,7 +5,7 @@
   tasks:
     - name: multiline shell command
       shell: |
-        # pip3 install ansible-tower-cli
+        pip3 install ansible-tower-cli
 
         # ansible-galaxy collection install awx.awx
 
