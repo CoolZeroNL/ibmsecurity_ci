@@ -1,4 +1,4 @@
-- name: Playbook - Install / update IBM Security Toolkit (Python Modules). 
+- name: Playbook - Install / update AWX (Python Collections). 
   hosts: all
   gather_facts: false
   connection: local

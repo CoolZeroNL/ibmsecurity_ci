@@ -5,6 +5,9 @@
   tasks:
     - name: Configure projects
       tower_project:
+        tower_host: "127.0.0.1:8013"
+        tower_username: "admin"
+        tower_password: "coolzero"
         name: "openstack-builder-testing"
         organization: Default
         state: present
