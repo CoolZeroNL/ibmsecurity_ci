@@ -1,4 +1,3 @@
-
 - name: Playbook - Install / update IBM Security Toolkit (Python Modules). 
   hosts: all
   gather_facts: false
