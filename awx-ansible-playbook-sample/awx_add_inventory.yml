@@ -1,0 +1,72 @@
+- name: Add tower inventory
+  hosts: all
+  gather_facts: false
+  connection: local
+  tasks:
+    - name: Configure inventory
+      tower_inventory:      
+        # tower_host:       --> see inventory
+        # tower_username:   --> see inventory
+        # tower_password:   --> see inventory
+        # tower_verify_ssl: --> see inventory
+        # tower_oauthtoken: --> see inventory
+        name: "Foo Inventory"
+        description: "Our Foo Cloud Servers"
+        organization: "Default"
+        # variables: ""
+        # kind: ""
+        # host_filter: ""
+        state: present
+
+        
+# options: #######################################################################        
+#     name:
+#       description:
+#         - The name to use for the inventory.
+#       required: True
+#       type: str
+
+#     description:
+#       description:
+#         - The description to use for the inventory.
+#       type: str
+
+#     organization:
+#       description:
+#         - Organization the inventory belongs to.
+#       required: True
+#       type: str
+
+#     variables:
+#       description:
+#         - Inventory variables.
+#       required: False
+#       type: dict
+
+#     kind:
+#       description:
+#         - The kind field. Cannot be modified after created.
+#       default: ""
+#       choices: ["", "smart"]
+#       version_added: "2.7"
+#       type: str
+
+#     host_filter:
+#       description:
+#         -  The host_filter field. Only useful when C(kind=smart).
+#       version_added: "2.7"
+#       type: str
+
+#     state:
+#       description:
+#         - Desired state of the resource.
+#       default: "present"
+#       choices: ["present", "absent"]
+#       type: str
+
+#     tower_oauthtoken:
+#       description:
+#         - The Tower OAuth token to use.
+#       required: False
+#       type: str
+#       version_added: "3.7"

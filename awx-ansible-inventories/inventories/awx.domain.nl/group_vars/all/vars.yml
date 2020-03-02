@@ -1,0 +1,10 @@
+# Set the Python interpreter path to use
+ansible_python_interpreter: /usr/bin/python3          # for python 3.x
+# ansible_python_interpreter: /usr/bin/python           # for python 2.x
+
+# Use local connection for making all calls
+connection: local
+ansible_connection: local
+
+# Ansible root path
+ansible_root_path: "{{ lookup('env','HOME') }}/Ansible"

@@ -5,17 +5,151 @@
   tasks:
     - name: Configure projects
       tower_project:
-        tower_host: "127.0.0.1:8043"
-        tower_username: "admin"
-        tower_password: "coolzero"
-        tower_verify_ssl: False
-        name: "openstack-builder-testing"
+        # tower_host:       --> see inventory
+        # tower_username:   --> see inventory
+        # tower_password:   --> see inventory
+        # tower_verify_ssl: --> see inventory
+        # tower_oauthtoken: --> see inventory
+        name: "ibmsecurity_ci (master)"
+        description: ""
+        scm_type: git
+        scm_url: "https://github.com/CoolZeroNL/ibmsecurity_ci.git"
+        # local_path: ""
+        scm_branch: master
+        # scm_refspec:
+        # scm_credential:
+        scm_clean: yes
+        scm_delete_on_update: yes
+        scm_update_on_launch: yes   
+        # scm_update_cache_timeout:
+        # scm_allow_override:
+        # job_timeout:
+        custom_virtualenv:
         organization: Default
         state: present
-        scm_type: git
-        scm_url: "https://github.com/leifmadsen/openstack-inventory-builder.git"
-        scm_branch: master
-        scm_clean: yes
-        #scm_credential: Git
-        scm_delete_on_update: yes
-        scm_update_on_launch: yes    
+        # wait:
+        
+# options: #######################################################################        
+
+#     name:
+#       description:
+#         - Name to use for the project.
+#       required: True
+#       type: str
+
+#     description:
+#       description:
+#         - Description to use for the project.
+#       type: str
+
+#     scm_type:
+#       description:
+#         - Type of SCM resource.
+#       choices: ["manual", "git", "hg", "svn", "insights"]
+#       default: "manual"
+#       type: str
+
+#     scm_url:
+#       description:
+#         - URL of SCM resource.
+#       type: str
+
+#     local_path:
+#       description:
+#         - The server playbook directory for manual projects.
+#       type: str
+
+#     scm_branch:
+#       description:
+#         - The branch to use for the SCM resource.
+#       type: str
+#       default: ''
+
+#     scm_refspec:
+#       description:
+#         - The refspec to use for the SCM resource.
+#       type: str
+#       default: ''
+#       version_added: "3.7"
+
+#     scm_credential:
+#       description:
+#         - Name of the credential to use with this SCM resource.
+#       type: str
+
+#     scm_clean:
+#       description:
+#         - Remove local modifications before updating.
+#       type: bool
+#       default: 'no'
+
+#     scm_delete_on_update:
+#       description:
+#         - Remove the repository completely before updating.
+#       type: bool
+#       default: 'no'
+
+#     scm_update_on_launch:
+#       description:
+#         - Before an update to the local repository before launching a job with this project.
+#       type: bool
+#       default: 'no'
+
+#     scm_update_cache_timeout:
+#       version_added: "2.8"
+#       description:
+#         - Cache Timeout to cache prior project syncs for a certain number of seconds.
+#             Only valid if scm_update_on_launch is to True, otherwise ignored.
+#       type: int
+#       default: 0
+
+#     scm_allow_override:
+#       description:
+#         - Allow changing the SCM branch or revision in a job template that uses this project.
+#       type: bool
+#       version_added: "3.7"
+
+#     job_timeout:
+#       version_added: "2.8"
+#       description:
+#         - The amount of time (in seconds) to run before the SCM Update is canceled. A value of 0 means no timeout.
+#       default: 0
+#       type: int
+
+#     custom_virtualenv:
+#       version_added: "2.8"
+#       description:
+#         - Local absolute file path containing a custom Python virtualenv to use
+#       type: str
+#       required: False
+#       default: ''
+
+#     organization:
+#       description:
+#         - Name of organization for project.
+#       type: str
+#       required: True
+
+#     state:
+#       description:
+#         - Desired state of the resource.
+#       default: "present"
+#       choices: ["present", "absent"]
+#       type: str
+
+#     wait:
+#       description:
+#         - Provides option (True by default) to wait for completed project sync
+#           before returning
+#         - Can assure playbook files are populated so that job templates that rely
+#           on the project may be successfully created
+#       type: bool
+#       default: True
+
+#     tower_oauthtoken:
+#       description:
+#         - The Tower OAuth token to use.
+#       required: False
+#       type: str
+#       version_added: "3.7"      
+

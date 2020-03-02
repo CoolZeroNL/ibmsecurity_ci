@@ -1,0 +1,2 @@
+vault_awx_password_secret: password
+vault_awx_oauthtoken: ""
