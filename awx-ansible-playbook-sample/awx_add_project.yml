@@ -18,5 +18,4 @@
         scm_clean: yes
         #scm_credential: Git
         scm_delete_on_update: yes
-        scm_update_on_launch: yes
-        tower_verify_ssl: False    
+        scm_update_on_launch: yes    
