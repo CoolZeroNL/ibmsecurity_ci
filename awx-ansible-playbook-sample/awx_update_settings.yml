@@ -42,6 +42,7 @@
         # tower_verify_ssl: false
         # tower_username: "admin"
         # tower_password: "coolzero"
+        ask_variables_on_launch: true
         name: "SOCIAL_AUTH_SAML_SP_ENTITY_ID"
         value: "awx.domain.nl"
       no_log: false
