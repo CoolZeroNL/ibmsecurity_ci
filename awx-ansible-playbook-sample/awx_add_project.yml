@@ -20,11 +20,11 @@
         # scm_credential:
         scm_clean: yes                # yes / no # Remove any local modifications prior to performing an update.
         scm_delete_on_update: yes     # yes / no # Delete the local repository in its entirety prior to performing an update.
-        scm_update_on_launch: yes     # yes / no # Each time a job runs using this project, update the revision of the project prior to starting the job.
+        scm_update_on_launch: no     # yes / no # Each time a job runs using this project, update the revision of the project prior to starting the job.
         # scm_allow_override:         # yes / no # Allow changing the SCM branch or revision in a job template that uses this project.
         # scm_update_cache_timeout:
         # job_timeout:
-        custom_virtualenv:
+        # custom_virtualenv:
         organization: Default
         state: present
         # wait:

@@ -27,11 +27,15 @@
         tower_verify_ssl: False   
         ####################################
         settings:
-          SOCIAL_AUTH_SAML_CALLBACK_URL: "https://awx.domain.nl/sso/complete/saml/"
+          # SETTINGS -> SYSTEM:
+          TOWER_URL_BASE: "https://tempdata.nl:8043"
+
+          # SETTINGS -> AUTHENTICATION -> SAML:
+          SOCIAL_AUTH_SAML_CALLBACK_URL: "https://awx.tempdata.nl/sso/complete/saml/"
           
-          SOCIAL_AUTH_SAML_METADATA_URL: "https://awx.domain.nl/sso/metadata/saml/"
+          SOCIAL_AUTH_SAML_METADATA_URL: "https://awx.tempdata.nl/sso/metadata/saml/"
           
-          SOCIAL_AUTH_SAML_SP_ENTITY_ID: "awx.domain.nl"
+          SOCIAL_AUTH_SAML_SP_ENTITY_ID: "awx.tempdata.nl"
           
           # SOCIAL_AUTH_SAML_SP_PUBLIC_CERT: "-----BEGIN CERTIFICATE-----\nMIIDRTCCAi2gAwIBAgIJAIC8KS2n8a7DMA0GCSqGSIb3DQEBCwUAMDkxFDASBgNV\n-----END CERTIFICATE-----"
           # SOCIAL_AUTH_SAML_SP_PRIVATE_KEY: "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDAwBtAy9IBYhEs\n-----END PRIVATE KEY-----"

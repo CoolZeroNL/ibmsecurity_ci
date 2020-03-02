@@ -10,27 +10,27 @@
         tower_host: "{{tower_url}}"
         tower_verify_ssl: False   
         ####################################
-        name: "source-inventory"
+        name: "localhost"
         # new_name:
-        description: Source for inventory
-        inventory: previously-created-inventory
-        # source:
-        # source_path:
+        description: "awx localhost inventory"
+        inventory: "AWX-localhost"
+        source: "scm"
+        source_project: "ibmsecurity_ci (master)"
+        source_path: "awx-ansible-inventories/inventories/localhost/hosts"
         # source_script:
-        source_vars:
-          private: false
-        credential: previously-created-credential
+        # source_vars:
+          # private: false
+        # credential: previously-created-credential
         # source_regions:
         # instance_filters:
         # group_by:
-        # overwrite: True
-        # overwrite_vars:
+        overwrite: True                     # True / False # If checked, any hosts and groups that were previously present on the external source but are now removed will be removed from the Tower inventory. Hosts and groups that were not managed by the inventory source will be promoted to the next manually created group or if there is no manually created group to promote them into, they will be left in the "all" default group for the inventory. When not checked, local child hosts and groups not found on the external source will remain untouched by the inventory update process.
+        overwrite_vars: True                # True / False # If checked, all variables for child groups and hosts will be removed and replaced by those found on the external source. When not checked, a merge will be performed, combining local variables with those found on the external source.
+        update_on_launch: True              # True / False # Each time a job runs using this inventory, refresh the inventory from the selected source before executing job tasks.
+        update_on_project_update: False     # True / False # After every project update where the SCM revision changes, refresh the inventory from the selected source before executing job tasks. This is intended for static content, like the Ansible inventory .ini file format
         # custom_virtualenv:
         # timeout:
-        # update_on_launch: True
         # update_cache_timeout:
-        # source_project:
-        # update_on_project_update:
         # state:
 
         

@@ -1,0 +1,14 @@
+---
+# THIS PLAYBOOK MUST BE RUN FROM CLI
+- name: Check if Python module is installed
+  hosts: all
+  connection: local
+  become: yes
+  gather_facts: no
+  tasks:   
+    - command: "{{ ansible_python_interpreter | default('/usr/bin/python3') }} -c 'import {{ module }}; print({{ module }}.__version__)'"
+      vars:
+        module: ibmsecurity
+      register: test
+    - debug:
+        var: test.stdout

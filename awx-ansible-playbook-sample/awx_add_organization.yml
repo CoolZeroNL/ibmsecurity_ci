@@ -1,61 +1,48 @@
-- name: Add tower inventory
+- name: Add tower Organization
   hosts: all
   gather_facts: false
   connection: local
   tasks:
-    - name: Configure inventory
-      tower_inventory:      
+    - name: Configure Organization
+      tower_organization:
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
         tower_host: "{{tower_url}}"
         tower_verify_ssl: False   
         ####################################
-        name: "AWX-localhost"
+        name: "Default"
         description: ""
-        organization: "Default"
-        # variables: ""
-        # kind: ""
-        # host_filter: ""
-        state: present
+        # custom_virtualenv: "/var/lib/awx/venv/foo-venv/"
+        state: present       
 
-        
 # options: #######################################################################        
+
 #     name:
 #       description:
-#         - The name to use for the inventory.
+#         - Name to use for the organization.
 #       required: True
 #       type: str
 
 #     description:
 #       description:
-#         - The description to use for the inventory.
+#         - The description to use for the organization.
 #       type: str
 
-#     organization:
+#     custom_virtualenv:
+#       version_added: "2.9"
 #       description:
-#         - Organization the inventory belongs to.
-#       required: True
+#         - Local absolute file path containing a custom Python virtualenv to use.
 #       type: str
-
-#     variables:
-#       description:
-#         - Inventory variables.
 #       required: False
-#       type: dict
+#       default: ''
 
-#     kind:
+#     max_hosts:
 #       description:
-#         - The kind field. Cannot be modified after created.
-#       default: ""
-#       choices: ["", "smart"]
-#       version_added: "2.7"
-#       type: str
-
-#     host_filter:
-#       description:
-#         -  The host_filter field. Only useful when C(kind=smart).
-#       version_added: "2.7"
-#       type: str
+#         - The max hosts allowed in this organizations
+#       default: "0"
+#       type: int
+#       required: False
+#       version_added: "3.7"
 
 #     state:
 #       description:
