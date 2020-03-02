@@ -1,3 +1,34 @@
+- name: Playbook - Install / update IBM Security Toolkit (Python Modules). 
+  hosts: all
+  gather_facts: false
+  connection: local
+  tasks:
+    - name: multiline shell command
+      shell: |
+        
+        # Clone IBM Python Modules
+        # git clone https://github.com/ibm-security/ibmsecurity.git
+        # cd ibmsecurity
+        # cp -R ibmsecurity /usr/local/lib/python3.6/site-packages
+
+        # Clone CIC Python Modules
+        # git clone https://github.com/CoolZeroNL/ibmsecurity_ci.git
+        
+        # Copy them to the right location.
+        # cd ibmsecurity_ci/
+        # cp -R ibmsecurity /usr/local/lib/python3.6/site-packages
+
+        # back, and cleanup.
+        # cd ..
+        # rm -R ibmsecurity_ci
+
+        ansible-galaxy collection install awx.awx
+
+      register: stdout
+
+    - name: debug output
+      debug: msg={{ stdout }}
+      
 - name: Add tower project
   tower_project:
     name: "ibmsecurity_ci (master)"
