@@ -3,9 +3,14 @@
   gather_facts: false
   connection: local
   tasks:
+    - pip:
+      name: ansible-tower-cli
+
     - name: multiline shell command
       shell: |
-        pip3 install --user ansible-tower-cli
+        # pip3 install --user ansible-tower-cli
+        # /usr/local/lib/python3.6/site-packages
+
 
         # ansible-galaxy collection install awx.awx
 
