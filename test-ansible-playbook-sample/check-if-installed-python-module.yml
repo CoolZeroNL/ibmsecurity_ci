@@ -6,7 +6,7 @@
   become: yes
   gather_facts: no
   tasks:   
-    - command: "{{ ansible_python_interpreter | default('/usr/bin/python3') }} -c 'import {{ module }}; print({{ module }}.__version__)'"
+    - command: "{{ ansible_python_interpreter | default('/usr/bin/python3') }} -c 'import {{ module }}; print({{ module }})'"
       vars:
         module: ibmsecurity
       register: test

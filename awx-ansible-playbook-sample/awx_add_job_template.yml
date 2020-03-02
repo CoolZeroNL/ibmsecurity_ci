@@ -47,6 +47,21 @@
         # timeout:
         # custom_virtualenv: "/var/lib/awx/venv/custom-venv/"
         state: "present"
+    
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "Test - Installed Python Modules"
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "test-ansible-playbook-sample/check-if-installed-python-module.yml"
+        become_enabled: yes
+        state: "present"
 
 # options: #######################################################################        
 
