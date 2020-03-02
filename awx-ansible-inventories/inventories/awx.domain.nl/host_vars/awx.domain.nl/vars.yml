@@ -1,3 +1,0 @@
-appliance_name                        : "awx.domain.nl"
-awx_user                              : "admin"
-awx_password                          : "{{ vault_awx_assword_secret }}"

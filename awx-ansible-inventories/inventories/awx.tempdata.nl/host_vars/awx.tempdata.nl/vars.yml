@@ -1,0 +1,3 @@
+appliance_name                        : "awx.tempdata.nl"
+tower_username                        : "admin"
+tower_password                        : "{{ vault_awx_password_secret }}"
