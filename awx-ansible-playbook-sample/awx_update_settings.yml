@@ -38,10 +38,10 @@
     
     - name: Set SOCIAL_AUTH_SAML_SP_ENTITY_ID
       tower_settings:
-        tower_host: '127.0.0.1:8043'
-        tower_verify_ssl: false
-        tower_username: "admin"
-        tower_password: "coolzero"
+        # tower_host: '127.0.0.1:8043'
+        # tower_verify_ssl: false
+        # tower_username: "admin"
+        # tower_password: "coolzero"
         name: "SOCIAL_AUTH_SAML_SP_ENTITY_ID"
         value: "awx.domain.nl"
       no_log: false
