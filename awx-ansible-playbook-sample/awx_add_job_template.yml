@@ -47,7 +47,22 @@
         # timeout:
         # custom_virtualenv: "/var/lib/awx/venv/custom-venv/"
         state: "present"
-    
+
+    - name: AWX-Update Settings
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "AWX-Update Settings"
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "awx-ansible-playbook-sample/install_python_modules.yml"
+        become_enabled: yes
+        state: "present"
+
     - name: Create tower job template
       tower_job_template:      
         tower_username: "{{admin_username}}"

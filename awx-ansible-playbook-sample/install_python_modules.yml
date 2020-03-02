@@ -22,22 +22,19 @@
 
         echo $PYPATH
 
-          git clone https://github.com/ansible/awx.git
-          cd awx
-          cp -R awx_collection /var/lib/awx/.ansible/collections/
-          
-          cd awx/awx_collection/plugins
-          
-          cp modules/* $PYPATH/ansible/modules/web_infrastructure/ansible_tower/
-          cp module_utils/* $PYPATH/ansible/module_utils/
-          cp doc_fragments/* $PYPATH/ansible/plugins/doc_fragments
-          cp inventory/* $PYPATH/ansible/plugins/inventory  
+        # git clone https://github.com/ansible/awx.git
+        # cd awx
+        # cp -R awx_collection /var/lib/awx/.ansible/collections/
         
-
-
-
+        # cd awx/awx_collection/plugins
+        
+        # cp modules/* $PYPATH/ansible/modules/web_infrastructure/ansible_tower/
+        # cp module_utils/* $PYPATH/ansible/module_utils/
+        # cp doc_fragments/* $PYPATH/ansible/plugins/doc_fragments
+        # cp inventory/* $PYPATH/ansible/plugins/inventory  
+    
         # Housecleaning
-        rm -R awx
+        # rm -R awx
 
       register: stdout
 
