@@ -5,12 +5,7 @@
   tasks:
     - name: multiline shell command
       shell: |
-        pip3 install --target=/usr/local/lib/python3.6/site-packages rsa
-        pip3 install --target=/usr/local/lib/python3.6/site-packages wheel==0.30.0
-        pip3 install --target=/usr/local/lib/python3.6/site-packages ansible-tower-cli
-
-        ansible-galaxy collection install awx.awx
-
+        
         # install for AWX Tower.
         if [ -d /usr/lib/python3.6/site-packages/ansible/ ] 
         then
@@ -24,19 +19,28 @@
 
         echo $PYPATH
 
-        # git clone https://github.com/ansible/awx.git
-        # cd awx
-        # cp -R awx_collection /var/lib/awx/.ansible/collections/
+        pip3 install --target=$PYPATH rsa
+        pip3 install --target=$PYPATH wheel==0.30.0
+        pip3 install --target=$PYPATH ansible-tower-cli
+
+        # delete current tower_* modules
+        if [ -d /usr/lib/python3.6/site-packages/ansible/modules/web_infrastructure/ansible_tower/ ] 
+        then
+          rm -R /usr/lib/python3.6/site-packages/ansible/modules/web_infrastructure/ansible_tower/
+        fi
         
-        # cd awx/awx_collection/plugins
+        cd /tmp
+        git clone https://github.com/ansible/awx.git
+        cd awx/awx_collection/plugins
         
-        # cp modules/* $PYPATH/ansible/modules/web_infrastructure/ansible_tower/
-        # cp module_utils/* $PYPATH/ansible/module_utils/
-        # cp doc_fragments/* $PYPATH/ansible/plugins/doc_fragments
-        # cp inventory/* $PYPATH/ansible/plugins/inventory  
-    
+        cp modules/* $PYPATH/ansible/modules/
+        cp module_utils/* $PYPATH/ansible/module_utils/
+        cp doc_fragments/* $PYPATH/ansible/plugins/doc_fragments
+        cp inventory/* $PYPATH/ansible/inventory  
+
         # Housecleaning
-        # rm -R awx
+        cd /tmp
+        rm -R awx
 
       register: stdout
 
