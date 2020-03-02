@@ -5,7 +5,7 @@
   tasks:
     - name: Configure projects
       tower_project:
-        tower_host: "127.0.0.1:8013"
+        tower_host: "127.0.0.1:8043"
         tower_username: "admin"
         tower_password: "coolzero"
         tower_verify_ssl: False
