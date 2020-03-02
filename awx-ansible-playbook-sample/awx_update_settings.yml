@@ -36,10 +36,10 @@
     #         first_name: "givenName"
     #         last_name: "surname"        
     
-    - name: Set SOCIAL_AUTH_SAML_CALLBACK_URL
+    - name: Set SOCIAL_AUTH_SAML_SP_ENTITY_ID
       tower_settings:
-        name: "SOCIAL_AUTH_SAML_CALLBACK_URL"
-        value: "https://awx.domain.nl/sso/complete/saml/"
+        name: "SOCIAL_AUTH_SAML_SP_ENTITY_ID"
+        value: "awx.domain.nl"
       no_log: true
 
 # options: #######################################################################        
