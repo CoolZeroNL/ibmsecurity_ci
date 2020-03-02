@@ -8,9 +8,7 @@
 
     - name: multiline shell command
       shell: |
-        # pip3 install --user ansible-tower-cli
-        # /usr/local/lib/python3.6/site-packages
-
+        pip3 install --target=/usr/local/lib/python3.6/site-packages ansible-tower-cli
 
         # ansible-galaxy collection install awx.awx
 
