@@ -1,6 +1,6 @@
 - name: Update Settings
   hosts: all
-  gather_facts: false
+  gather_facts: true
   connection: local
   tasks:
         # tower_host:       --> see inventory
