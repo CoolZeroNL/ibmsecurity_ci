@@ -9,24 +9,32 @@
 
         # ansible-galaxy collection install awx.awx
 
-        # awx_collection
-        git clone https://github.com/ansible/awx.git
-        cd awx
-
         # install for AWX Tower.
-        if [ -d /var/lib/awx/ ] 
+        if [ -d /usr/lib/python3.6/site-packages/ansible/ ] 
         then
-           echo "Installing into: /var/lib/awx/.ansible/collections/"
-           cp -R awx_collection /var/lib/awx/.ansible/collections/
+          PYPATH='/usr/lib/python3.6/site-packages'
         fi
 
-        # install for AWX Tower.
-        # if [ -d ~/.ansible ] 
-        # then
-           echo "Installing into: ~/.ansible/collections/"
-          #  cp -R awx_collection ~/.ansible/collections/
-            #  ~/.local/lib/python3.6/site-packages/ansible
-        # fi
+        if [ -d /usr/local/lib/python3.6/site-packages/ansible/ ] 
+        then
+          PYPATH='/usr/local/lib/python3.6/site-packages'          
+        fi
+
+        echo $PYPATH
+
+          git clone https://github.com/ansible/awx.git
+          cd awx
+          cp -R awx_collection /var/lib/awx/.ansible/collections/
+          
+          cd awx/awx_collection/plugins
+          
+          cp modules/* $PYPATH/ansible/modules/web_infrastructure/ansible_tower/
+          cp module_utils/* $PYPATH/ansible/module_utils/
+          cp doc_fragments/* $PYPATH/ansible/plugins/doc_fragments
+          cp inventory/* $PYPATH/ansible/plugins/inventory  
+        
+
+
 
         # Housecleaning
         rm -R awx
