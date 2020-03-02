@@ -2,6 +2,8 @@
   hosts: all
   gather_facts: false
   connection: local
+  collections:
+   - awx.awx
   tasks:
 
     # - name: Display all variables/facts known for a host

@@ -9,7 +9,7 @@
         pip3 install --target=/usr/local/lib/python3.6/site-packages wheel==0.30.0
         pip3 install --target=/usr/local/lib/python3.6/site-packages ansible-tower-cli
 
-        # ansible-galaxy collection install awx.awx
+        ansible-galaxy collection install awx.awx
 
         # install for AWX Tower.
         if [ -d /usr/lib/python3.6/site-packages/ansible/ ] 
