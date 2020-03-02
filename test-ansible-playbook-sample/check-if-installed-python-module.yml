@@ -12,3 +12,10 @@
       register: test
     - debug:
         var: test.stdout
+
+    - command: "{{ ansible_python_interpreter | default('/usr/bin/python3') }} -c 'import {{ module }}; print({{ module }})'"
+      vars:
+        module: ansible_tower_cli
+      register: test
+    - debug:
+        var: test.stdout
