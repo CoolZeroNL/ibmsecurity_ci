@@ -25,7 +25,7 @@
         tower_host: "{{tower_url}}"
         tower_verify_ssl: False   
         ####################################
-        name: "AWX-localhost"
+        name: "Multi-Brand"
         description: ""
         organization: "Default"
         # variables: ""
