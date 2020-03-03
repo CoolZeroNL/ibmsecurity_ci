@@ -40,7 +40,7 @@
         tower_host: "{{tower_url}}"
         tower_verify_ssl: False   
         ####################################
-        name: "localhost"
+        name: "ibmsecurity_ci (master)"
         # new_name:
         description: ""
         inventory: "Multi-Brand"
