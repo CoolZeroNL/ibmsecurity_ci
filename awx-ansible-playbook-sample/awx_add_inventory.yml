@@ -18,6 +18,20 @@
         # host_filter: ""
         state: present
 
+    - name: Configure inventory
+      tower_inventory:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "AWX-localhost"
+        description: ""
+        organization: "Default"
+        # variables: ""
+        # kind: ""
+        # host_filter: ""
+        state: present        
         
 # options: #######################################################################        
 #     name:
