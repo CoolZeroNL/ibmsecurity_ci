@@ -18,10 +18,11 @@ def get_all(ciAppliance, check_mode=False, force=False):
     """
     return ciAppliance.invoke_get("Retrieving applications", "/v1.0/applications")
 
-def resolve_name_to_id(ciAppliance, appname):
+def delete(ciAppliance, appname, check_mode=False, force=False):
     """
-    resolve
-    """ 
+    delete app. 
+    """   
+    # convert the name of the app to lowercase.
     appname = appname.lower()
     
     # Find app id:
@@ -31,26 +32,7 @@ def resolve_name_to_id(ciAppliance, appname):
             ref = node['_links']['self']['href']
             appid = os.path.basename(os.path.normpath(ref))
             if appid != '':    
-                return appid
-            else:
-                return None
-            
-def delete(ciAppliance, appname, check_mode=False, force=False):
-    """
-    delete app. 
-    """   
-    # convert the name of the app to lowercase.
-    appname = appname.lower()
-
-    #resolve appname id
-    appid = resolve_name_to_id(ciAppliance, appname)
-    
-    # check result resolving appname to id, if not none
-    if appid is not None:
-        return ciAppliance.invoke_delete("Delete a application", "/v1.0/applications/" + appid)
-    else:
-        from ibmsecurity.appliance.ibmappliance import IBMFatal
-        raise IBMFatal("Application dont exist!")  
+                return ciAppliance.invoke_delete("Delete a application", "/v1.0/applications/" + appid)
     
     return ciAppliance.create_return_object()
 
@@ -61,7 +43,6 @@ def add(ciAppliance,
                applicationstate, 
                templateid, 
                appname, 
-               new_appname, 
                description, 
                providers_saml_properties_signauthnresponse, 
                providers_saml_properties_signaturealgorithm, 
@@ -122,7 +103,7 @@ def add(ciAppliance,
    # Create base Json
     client_json = {
         "visibleOnLaunchpad": visibleonlaunchpad,
-        'name': new_appname if new_appname else appname,
+        "name": appname,
         "applicationState": applicationstate,
         "description": description,
         "templateId": templateid,
@@ -393,30 +374,22 @@ def add(ciAppliance,
                 if providers_oidc_token_attributemappings != '':
                     client_json['providers']['oidc']['token']['attributeMappings'] = [ providers_oidc_token_attributemappings ]
 
-    ## check if there is a app with the same name.
-    appid = resolve_name_to_id(ciAppliance, appname)            
-    if appid is None:
-        
-        # check
-        if entitlement != '':
-            ret_obj = ciAppliance.invoke_post("Add Application Entitlements", "/v1.0/applications", client_json)
-            ref = ret_obj['data']['_links']['self']['href']
-            appid = os.path.basename(os.path.normpath(ref))
-                    
-            from ibmsecurity.ci.entitlements import add as add_application_entitlements
-            add_application_entitlements(ciAppliance=ciAppliance, appid=appid, entitlement=entitlement)
             
-            return ret_obj
-        
-        else:
-            return ciAppliance.invoke_post("Add Appliation", "/v1.0/applications", client_json)
 
+
+    # check
+    if entitlement != '':
+        ret_obj = ciAppliance.invoke_post("Add Application Entitlements", "/v1.0/applications", client_json)
+        ref = ret_obj['data']['_links']['self']['href']
+        appid = os.path.basename(os.path.normpath(ref))
+                
+        from ibmsecurity.ci.entitlements import add as add_application_entitlements
+        add_application_entitlements(ciAppliance=ciAppliance, appid=appid, entitlement=entitlement)
+        
+        return ret_obj
+    
     else:
-        
-        if entitlement != '':
-            logging.debug("TODO: entitlement update")
-        
-        return ciAppliance.invoke_put("PUT Appliation", "/v1.0/applications/" + appid, client_json)    
-            
+        return ciAppliance.invoke_post("Add Appliation", "/v1.0/applications", client_json)
+    
     return ciAppliance.create_return_object()
     

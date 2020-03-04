@@ -12,6 +12,7 @@
       applicationstate:                                       "{{ applicationstate }}"
       templateid:                                             "{{ templateid }}"
       appname:                                                "{{ appname }}"
+      new_appname:                                            "{{ new_appname | default(None) }}"
       description:                                            "{{ description }}"
       providers_saml_properties_companyname:                  "{{ providers_saml_properties_companyname }}"
       entitlement:                                            "{{ entitlement | default(None) }}"

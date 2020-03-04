@@ -14,7 +14,7 @@ def get(ciAppliance, appid, check_mode=False, force=False):
         return ciAppliance.invoke_get("Updates entitlements to an application.", "/v1.0/owner/applications/"+ appid +"/entitlements")
     else:
         from ibmsecurity.appliance.ibmappliance import IBMFatal
-        raise IBMFatal("!! appid = none")           
+        raise IBMFatal("!! entitlements.get: appid = none")           
         
 def add(ciAppliance, appid, entitlement, check_mode=False, force=False):
     """
