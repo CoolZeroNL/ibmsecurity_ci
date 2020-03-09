@@ -67,12 +67,7 @@ class CIAppliance(IBMAppliance):
                 
     #######################################################################################################
 
-    def _is_json(myjson):
-    try:
-        json_object = json.loads(myjson)
-    except ValueError as e:
-        return False
-    return True
+
 
     def _log_desc(self, description):
         if description != "":
@@ -117,10 +112,7 @@ class CIAppliance(IBMAppliance):
 
         self.logger.debug("Status Code: {0}".format(http_response.status_code))
         if http_response.text != "":
-            if _is_json(http_response.content.decode("utf-8")):
-                self.logger.debug(json.dumps(http_response.content.decode("utf-8"), indent=4, sort_keys=True))
-            else:
-                self.logger.debug("Text: " + http_response.content.decode("utf-8"))
+            self.logger.debug("Text: " + http_response.content.decode("utf-8"))
 
         for key in http_response.headers:
             if key == 'g-type':
