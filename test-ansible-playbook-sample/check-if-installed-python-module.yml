@@ -1,7 +1,7 @@
 ---
 # THIS PLAYBOOK MUST BE RUN FROM CLI
 - name: Check if Python module is installed
-  hosts: all
+  hosts: "{{ hosts | default('all') }}"
   connection: local
   become: yes
   gather_facts: no
