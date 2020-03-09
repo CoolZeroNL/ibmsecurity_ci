@@ -12,7 +12,7 @@
 #
 #
 - name: Add a Application. 
-  hosts: "{{ hosts | default('none') }}"
+  hosts: "{{ hosts | default('all') }}"
   no_log: False
   connection: local
   gather_facts: no
