@@ -1,20 +1,20 @@
 [00-Development]
-brand01.dev.ice.ibmcloud.com
-brand02.dev.ice.ibmcloud.com
-brand03.dev.ice.ibmcloud.com
-brand04.dev.ice.ibmcloud.com
+brand01-dev.ice.ibmcloud.com
+brand02-dev.ice.ibmcloud.com
+brand03-dev.ice.ibmcloud.com
+brand04-dev.ice.ibmcloud.com
 
 [01-Testing]
-brand01.tst.ice.ibmcloud.com
-brand02.tst.ice.ibmcloud.com
-brand03.tst.ice.ibmcloud.com
-brand04.tst.ice.ibmcloud.com
+brand01-tst.ice.ibmcloud.com
+brand02-tst.ice.ibmcloud.com
+brand03-tst.ice.ibmcloud.com
+brand04-tst.ice.ibmcloud.com
 
 [02-Acceptance]
-brand01.acp.ice.ibmcloud.com
-brand02.acp.ice.ibmcloud.com
-brand03.acp.ice.ibmcloud.com
-brand04.acp.ice.ibmcloud.com
+brand01-acp.ice.ibmcloud.com
+brand02-acp.ice.ibmcloud.com
+brand03-acp.ice.ibmcloud.com
+brand04-acp.ice.ibmcloud.com
 
 [03-Production]
 brand01.ice.ibmcloud.com
@@ -24,24 +24,24 @@ brand04.ice.ibmcloud.com
 
 [brand01]
 brand01.ice.ibmcloud.com
-brand01.dev.ice.ibmcloud.com
-brand01.tst.ice.ibmcloud.com
-brand01.acp.ice.ibmcloud.com
+brand01-dev.ice.ibmcloud.com
+brand01-tst.ice.ibmcloud.com
+brand01-acp.ice.ibmcloud.com
 
 [brand02]
 brand02.ice.ibmcloud.com
-brand02.dev.ice.ibmcloud.com
-brand02.tst.ice.ibmcloud.com
-brand02.acp.ice.ibmcloud.com
+brand02-dev.ice.ibmcloud.com
+brand02-tst.ice.ibmcloud.com
+brand02-acp.ice.ibmcloud.com
 
 [brand03]
 brand03.ice.ibmcloud.com
-brand03.dev.ice.ibmcloud.com
-brand03.tst.ice.ibmcloud.com
-brand03.acp.ice.ibmcloud.com
+brand03-dev.ice.ibmcloud.com
+brand03-tst.ice.ibmcloud.com
+brand03-acp.ice.ibmcloud.com
 
 [brand04]
 brand04.ice.ibmcloud.com
-brand04.dev.ice.ibmcloud.com
-brand04.tst.ice.ibmcloud.com
-brand04.acp.ice.ibmcloud.com
+brand04-dev.ice.ibmcloud.com
+brand04-tst.ice.ibmcloud.com
+brand04-acp.ice.ibmcloud.com
