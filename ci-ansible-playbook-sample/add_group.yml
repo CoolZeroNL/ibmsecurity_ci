@@ -1,6 +1,6 @@
 
 - name: Creates a group. 
-  hosts: all
+  hosts: "{{ hosts | default('all') }}"
   no_log: False
   connection: local
   gather_facts: no

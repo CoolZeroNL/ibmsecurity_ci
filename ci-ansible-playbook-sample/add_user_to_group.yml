@@ -1,6 +1,6 @@
 
 - name: Add a User to a Group. 
-  hosts: all
+  hosts: "{{ hosts | default('all') }}"
   no_log: False
   connection: local
   gather_facts: no

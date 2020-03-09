@@ -1,6 +1,6 @@
 
 - name: Playbook - Install / update IBM Security Toolkit (Python Modules). 
-  hosts: all
+  hosts: "{{ hosts | default('all') }}"
   gather_facts: false
   connection: local
   tasks:

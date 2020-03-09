@@ -1,6 +1,6 @@
 
 - name: Creates a user in IBM Cloud Identity Cloud Directory. 
-  hosts: all
+  hosts: "{{ hosts | default('all') }}"
   no_log: False
   connection: local
   gather_facts: no
