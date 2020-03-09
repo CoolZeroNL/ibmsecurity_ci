@@ -12,7 +12,7 @@
 #
 #
 - name: Add a Application. 
-  hosts: all
+  # hosts: all
   no_log: False
   connection: local
   gather_facts: no
