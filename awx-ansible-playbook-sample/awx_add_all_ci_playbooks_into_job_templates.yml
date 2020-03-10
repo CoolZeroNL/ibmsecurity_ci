@@ -1,0 +1,470 @@
+
+- name: Add tower job template
+  hosts: "{{ hosts | default('all') }}"
+  gather_facts: false
+  connection: local
+  tasks:
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add application"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add application"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add application entitlements"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add application entitlements"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add attribute"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add attribute"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add certificates"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add certificates"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add group"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add group"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add identitysource"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add identitysource"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add personalcert"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add personalcert"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add signercert"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add signercert"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add user"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add user"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add user to group"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add user to group"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - delete application"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/delete application"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - delete attribute"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/delete attribute"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - delete customization reset"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/delete customization reset"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get all accesspolicies"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/get all accesspolicies"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get all applications"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/get all applications"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get all attributes"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/get all attributes"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get all certificates"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/get all certificates"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get all groups"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/get all groups"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get all headernames group"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/get all headernames group"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get all headernames user"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/get all headernames user"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get all identitysources"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/get all identitysources"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get all users"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/get all users"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get customization download"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/get customization download"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get group filter"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/get group filter"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get user filter"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/get user filter"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - install python modules"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/install python modules"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - update authentication factos properties"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/update authentication factos properties"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - upload customization page"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/upload customization page"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - upload customization zip"
+        # description:
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/upload customization zip"
+        become_enabled: yes
+        state: "present"
+
