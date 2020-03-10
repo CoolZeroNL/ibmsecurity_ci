@@ -18,7 +18,10 @@
         playbook: "ci-ansible-playbook-sample/add_application.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - add application entitlements
       tower_job_template:      
@@ -34,7 +37,10 @@
         playbook: "ci-ansible-playbook-sample/add_application_entitlements.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - add attribute
       tower_job_template:      
@@ -50,7 +56,13 @@
         playbook: "ci-ansible-playbook-sample/add_attribute.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
+
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - add certificates
       tower_job_template:      
@@ -66,7 +78,13 @@
         playbook: "ci-ansible-playbook-sample/add_certificates.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
+
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - add group
       tower_job_template:      
@@ -82,7 +100,10 @@
         playbook: "ci-ansible-playbook-sample/add_group.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - add identitysource
       tower_job_template:      
@@ -98,7 +119,10 @@
         playbook: "ci-ansible-playbook-sample/add_identitysource.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - add personalcert
       tower_job_template:      
@@ -114,7 +138,10 @@
         playbook: "ci-ansible-playbook-sample/add_personalcert.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - add signercert
       tower_job_template:      
@@ -130,7 +157,10 @@
         playbook: "ci-ansible-playbook-sample/add_signercert.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - add user
       tower_job_template:      
@@ -146,7 +176,10 @@
         playbook: "ci-ansible-playbook-sample/add_user.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - add user to group
       tower_job_template:      
@@ -162,7 +195,10 @@
         playbook: "ci-ansible-playbook-sample/add_user_to_group.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - delete application
       tower_job_template:      
@@ -178,7 +214,10 @@
         playbook: "ci-ansible-playbook-sample/delete_application.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - delete attribute
       tower_job_template:      
@@ -194,7 +233,10 @@
         playbook: "ci-ansible-playbook-sample/delete_attribute.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - delete customization reset
       tower_job_template:      
@@ -210,7 +252,10 @@
         playbook: "ci-ansible-playbook-sample/delete_customization_reset.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - get all accesspolicies
       tower_job_template:      
@@ -226,7 +271,10 @@
         playbook: "ci-ansible-playbook-sample/get_all_accesspolicies.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - get all applications
       tower_job_template:      
@@ -242,7 +290,10 @@
         playbook: "ci-ansible-playbook-sample/get_all_applications.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - get all attributes
       tower_job_template:      
@@ -258,7 +309,10 @@
         playbook: "ci-ansible-playbook-sample/get_all_attributes.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - get all certificates
       tower_job_template:      
@@ -274,7 +328,13 @@
         playbook: "ci-ansible-playbook-sample/get_all_certificates.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
+
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - get all groups
       tower_job_template:      
@@ -290,7 +350,10 @@
         playbook: "ci-ansible-playbook-sample/get_all_groups.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - get all headernames group
       tower_job_template:      
@@ -306,7 +369,10 @@
         playbook: "ci-ansible-playbook-sample/get_all_headernames_group.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - get all headernames user
       tower_job_template:      
@@ -322,7 +388,10 @@
         playbook: "ci-ansible-playbook-sample/get_all_headernames_user.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - get all identitysources
       tower_job_template:      
@@ -338,7 +407,10 @@
         playbook: "ci-ansible-playbook-sample/get_all_identitysources.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - get all users
       tower_job_template:      
@@ -354,7 +426,10 @@
         playbook: "ci-ansible-playbook-sample/get_all_users.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - get customization download
       tower_job_template:      
@@ -370,7 +445,10 @@
         playbook: "ci-ansible-playbook-sample/get_customization_download.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - get group filter
       tower_job_template:      
@@ -386,7 +464,10 @@
         playbook: "ci-ansible-playbook-sample/get_group_filter.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - get user filter
       tower_job_template:      
@@ -402,7 +483,10 @@
         playbook: "ci-ansible-playbook-sample/get_user_filter.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - install python modules
       tower_job_template:      
@@ -418,8 +502,8 @@
         playbook: "ci-ansible-playbook-sample/install_python_modules.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
-
     - name: Create tower job template - update authentication factos properties
       tower_job_template:      
         tower_username: "{{admin_username}}"
@@ -434,7 +518,22 @@
         playbook: "ci-ansible-playbook-sample/update_authentication_factos_properties.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
+
+        extra_vars: "Sample: > \n"
+          "hoi"
+
+        extra_vars: "Sample: > \n"
+          "hoi"
+
+        extra_vars: "Sample: > \n"
+          "hoi"
+
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - upload customization page
       tower_job_template:      
@@ -450,7 +549,10 @@
         playbook: "ci-ansible-playbook-sample/upload_customization_page.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
     - name: Create tower job template - upload customization zip
       tower_job_template:      
@@ -466,5 +568,8 @@
         playbook: "ci-ansible-playbook-sample/upload_customization_zip.yml"
         become_enabled: yes
         ask_inventory: yes
+        ask_extra_vars: yes
         state: "present"
+        extra_vars: "Sample: > \n"
+          "hoi"
 
