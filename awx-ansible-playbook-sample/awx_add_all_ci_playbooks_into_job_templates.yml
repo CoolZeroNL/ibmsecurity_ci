@@ -4,7 +4,7 @@
   gather_facts: false
   connection: local
   tasks:
-    - name: Create tower job template
+    - name: Create tower job template - add application
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -14,14 +14,13 @@
         name: "CIC - add application"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/add_application.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - add application entitlements
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -31,14 +30,13 @@
         name: "CIC - add application entitlements"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/add_application_entitlements.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - add attribute
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -48,14 +46,13 @@
         name: "CIC - add attribute"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/add_attribute.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - add certificates
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -65,14 +62,13 @@
         name: "CIC - add certificates"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/add_certificates.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - add group
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -82,14 +78,13 @@
         name: "CIC - add group"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/add_group.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - add identitysource
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -99,14 +94,13 @@
         name: "CIC - add identitysource"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/add_identitysource.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - add personalcert
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -116,14 +110,13 @@
         name: "CIC - add personalcert"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/add_personalcert.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - add signercert
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -133,14 +126,13 @@
         name: "CIC - add signercert"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/add_signercert.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - add user
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -150,14 +142,13 @@
         name: "CIC - add user"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/add_user.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - add user to group
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -167,14 +158,13 @@
         name: "CIC - add user to group"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/add_user_to_group.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - delete application
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -184,14 +174,13 @@
         name: "CIC - delete application"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/delete_application.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - delete attribute
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -201,14 +190,13 @@
         name: "CIC - delete attribute"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/delete_attribute.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - delete customization reset
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -218,14 +206,13 @@
         name: "CIC - delete customization reset"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/delete_customization_reset.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - get all accesspolicies
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -235,14 +222,13 @@
         name: "CIC - get all accesspolicies"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/get_all_accesspolicies.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - get all applications
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -252,14 +238,13 @@
         name: "CIC - get all applications"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/get_all_applications.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - get all attributes
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -269,14 +254,13 @@
         name: "CIC - get all attributes"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/get_all_attributes.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - get all certificates
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -286,14 +270,13 @@
         name: "CIC - get all certificates"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/get_all_certificates.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - get all groups
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -303,14 +286,13 @@
         name: "CIC - get all groups"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/get_all_groups.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - get all headernames group
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -320,14 +302,13 @@
         name: "CIC - get all headernames group"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/get_all_headernames_group.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - get all headernames user
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -337,14 +318,13 @@
         name: "CIC - get all headernames user"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/get_all_headernames_user.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - get all identitysources
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -354,14 +334,13 @@
         name: "CIC - get all identitysources"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/get_all_identitysources.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - get all users
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -371,14 +350,13 @@
         name: "CIC - get all users"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/get_all_users.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - get customization download
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -388,14 +366,13 @@
         name: "CIC - get customization download"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/get_customization_download.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - get group filter
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -405,14 +382,13 @@
         name: "CIC - get group filter"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/get_group_filter.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - get user filter
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -422,14 +398,13 @@
         name: "CIC - get user filter"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/get_user_filter.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - install python modules
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -439,14 +414,13 @@
         name: "CIC - install python modules"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/install_python_modules.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - update authentication factos properties
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -456,14 +430,13 @@
         name: "CIC - update authentication factos properties"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/update_authentication_factos_properties.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - upload customization page
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -473,14 +446,13 @@
         name: "CIC - upload customization page"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/upload_customization_page.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
-    - name: Create tower job template
+    - name: Create tower job template - upload customization zip
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
@@ -490,10 +462,9 @@
         name: "CIC - upload customization zip"
         # description:
         job_type: "run"
-        inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/upload_customization_zip.yml"
         become_enabled: yes
-        ask_verbosity: yes
+        ask_inventory: yes
         state: "present"
 
