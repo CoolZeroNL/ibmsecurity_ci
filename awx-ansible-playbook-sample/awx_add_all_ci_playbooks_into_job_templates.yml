@@ -20,9 +20,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - add application entitlements
       tower_job_template:      
@@ -40,9 +42,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - add attribute
       tower_job_template:      
@@ -60,13 +64,16 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - add certificates
       tower_job_template:      
@@ -84,13 +91,16 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - add group
       tower_job_template:      
@@ -108,9 +118,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - add identitysource
       tower_job_template:      
@@ -128,9 +140,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - add personalcert
       tower_job_template:      
@@ -148,9 +162,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - add signercert
       tower_job_template:      
@@ -168,9 +184,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - add user
       tower_job_template:      
@@ -188,9 +206,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - add user to group
       tower_job_template:      
@@ -208,9 +228,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - delete application
       tower_job_template:      
@@ -228,9 +250,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - delete attribute
       tower_job_template:      
@@ -248,9 +272,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - delete customization reset
       tower_job_template:      
@@ -268,9 +294,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - get all accesspolicies
       tower_job_template:      
@@ -288,9 +316,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - get all applications
       tower_job_template:      
@@ -308,9 +338,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - get all attributes
       tower_job_template:      
@@ -328,9 +360,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - get all certificates
       tower_job_template:      
@@ -348,13 +382,16 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - get all groups
       tower_job_template:      
@@ -372,9 +409,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - get all headernames group
       tower_job_template:      
@@ -392,9 +431,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - get all headernames user
       tower_job_template:      
@@ -412,9 +453,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - get all identitysources
       tower_job_template:      
@@ -432,9 +475,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - get all users
       tower_job_template:      
@@ -452,9 +497,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - get customization download
       tower_job_template:      
@@ -472,9 +519,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - get group filter
       tower_job_template:      
@@ -492,9 +541,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - get user filter
       tower_job_template:      
@@ -512,9 +563,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - install python modules
       tower_job_template:      
@@ -532,6 +585,7 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
+        extra_vars: >-
     - name: Create tower job template - update authentication factos properties
       tower_job_template:      
         tower_username: "{{admin_username}}"
@@ -548,25 +602,31 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - upload customization page
       tower_job_template:      
@@ -584,9 +644,11 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
     - name: Create tower job template - upload customization zip
       tower_job_template:      
@@ -604,7 +666,9 @@
         ask_inventory: yes
         ask_extra_vars: yes
         state: "present"
-        extra_vars: >-\n
-          "Sample: > \n"
-          "  hoi"
+        extra_vars: >-
+          sample: >
+            - hoi
+            - hoi
+            - hoi
 
