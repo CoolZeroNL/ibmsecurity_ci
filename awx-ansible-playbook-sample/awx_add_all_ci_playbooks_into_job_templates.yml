@@ -16,7 +16,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/add application"
+        playbook: "ci-ansible-playbook-sample/add_application.yml"
         become_enabled: yes
         state: "present"
 
@@ -32,7 +32,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/add application entitlements"
+        playbook: "ci-ansible-playbook-sample/add_application_entitlements.yml"
         become_enabled: yes
         state: "present"
 
@@ -48,7 +48,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/add attribute"
+        playbook: "ci-ansible-playbook-sample/add_attribute.yml"
         become_enabled: yes
         state: "present"
 
@@ -64,7 +64,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/add certificates"
+        playbook: "ci-ansible-playbook-sample/add_certificates.yml"
         become_enabled: yes
         state: "present"
 
@@ -80,7 +80,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/add group"
+        playbook: "ci-ansible-playbook-sample/add_group.yml"
         become_enabled: yes
         state: "present"
 
@@ -96,7 +96,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/add identitysource"
+        playbook: "ci-ansible-playbook-sample/add_identitysource.yml"
         become_enabled: yes
         state: "present"
 
@@ -112,7 +112,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/add personalcert"
+        playbook: "ci-ansible-playbook-sample/add_personalcert.yml"
         become_enabled: yes
         state: "present"
 
@@ -128,7 +128,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/add signercert"
+        playbook: "ci-ansible-playbook-sample/add_signercert.yml"
         become_enabled: yes
         state: "present"
 
@@ -144,7 +144,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/add user"
+        playbook: "ci-ansible-playbook-sample/add_user.yml"
         become_enabled: yes
         state: "present"
 
@@ -160,7 +160,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/add user to group"
+        playbook: "ci-ansible-playbook-sample/add_user_to_group.yml"
         become_enabled: yes
         state: "present"
 
@@ -176,7 +176,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/delete application"
+        playbook: "ci-ansible-playbook-sample/delete_application.yml"
         become_enabled: yes
         state: "present"
 
@@ -192,7 +192,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/delete attribute"
+        playbook: "ci-ansible-playbook-sample/delete_attribute.yml"
         become_enabled: yes
         state: "present"
 
@@ -208,7 +208,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/delete customization reset"
+        playbook: "ci-ansible-playbook-sample/delete_customization_reset.yml"
         become_enabled: yes
         state: "present"
 
@@ -224,7 +224,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/get all accesspolicies"
+        playbook: "ci-ansible-playbook-sample/get_all_accesspolicies.yml"
         become_enabled: yes
         state: "present"
 
@@ -240,7 +240,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/get all applications"
+        playbook: "ci-ansible-playbook-sample/get_all_applications.yml"
         become_enabled: yes
         state: "present"
 
@@ -256,7 +256,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/get all attributes"
+        playbook: "ci-ansible-playbook-sample/get_all_attributes.yml"
         become_enabled: yes
         state: "present"
 
@@ -272,7 +272,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/get all certificates"
+        playbook: "ci-ansible-playbook-sample/get_all_certificates.yml"
         become_enabled: yes
         state: "present"
 
@@ -288,7 +288,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/get all groups"
+        playbook: "ci-ansible-playbook-sample/get_all_groups.yml"
         become_enabled: yes
         state: "present"
 
@@ -304,7 +304,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/get all headernames group"
+        playbook: "ci-ansible-playbook-sample/get_all_headernames_group.yml"
         become_enabled: yes
         state: "present"
 
@@ -320,7 +320,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/get all headernames user"
+        playbook: "ci-ansible-playbook-sample/get_all_headernames_user.yml"
         become_enabled: yes
         state: "present"
 
@@ -336,7 +336,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/get all identitysources"
+        playbook: "ci-ansible-playbook-sample/get_all_identitysources.yml"
         become_enabled: yes
         state: "present"
 
@@ -352,7 +352,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/get all users"
+        playbook: "ci-ansible-playbook-sample/get_all_users.yml"
         become_enabled: yes
         state: "present"
 
@@ -368,7 +368,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/get customization download"
+        playbook: "ci-ansible-playbook-sample/get_customization_download.yml"
         become_enabled: yes
         state: "present"
 
@@ -384,7 +384,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/get group filter"
+        playbook: "ci-ansible-playbook-sample/get_group_filter.yml"
         become_enabled: yes
         state: "present"
 
@@ -400,7 +400,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/get user filter"
+        playbook: "ci-ansible-playbook-sample/get_user_filter.yml"
         become_enabled: yes
         state: "present"
 
@@ -416,7 +416,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/install python modules"
+        playbook: "ci-ansible-playbook-sample/install_python_modules.yml"
         become_enabled: yes
         state: "present"
 
@@ -432,7 +432,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/update authentication factos properties"
+        playbook: "ci-ansible-playbook-sample/update_authentication_factos_properties.yml"
         become_enabled: yes
         state: "present"
 
@@ -448,7 +448,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/upload customization page"
+        playbook: "ci-ansible-playbook-sample/upload_customization_page.yml"
         become_enabled: yes
         state: "present"
 
@@ -464,7 +464,7 @@
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/upload customization zip"
+        playbook: "ci-ansible-playbook-sample/upload_customization_zip.yml"
         become_enabled: yes
         state: "present"
 
