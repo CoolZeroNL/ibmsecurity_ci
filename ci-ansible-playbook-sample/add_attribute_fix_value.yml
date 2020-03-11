@@ -1,0 +1,42 @@
+- name: Add a Attribute. 
+  hosts: "{{ hosts | default('all') }}"
+  no_log: False
+  connection: local
+  gather_facts: no
+  vars:
+    log_level: "DEBUG"
+  roles:
+    - role: start_ci_config
+
+    # - role: delete_attribute
+    #   attributename: "testname3"
+
+    # Fix Value Attribute ############################################################################################################################################################################
+
+    - role: add_attribute
+
+    # Name and Description
+      attributename: "testname3"     
+      attributedescription: "desc"
+
+    # Type and availability
+      sourcetype: "static"
+        # schema      == Create a custom user profile attribute.
+        # credential  == Add an attribute sent from any of your connected identity sources during login.
+        # static      == Static value that applies to all users.
+
+    # Attributes can be used for multiple purposes. Set the purposes you want this attribute to be available for.
+    # Make available for (select all that apply)
+      singlesignon: "sso"       
+        # sso == checkbox checked. 
+        # empty = checkbox not checked.
+
+      datatype: "string"                            # The expected format of this value
+        # string    == String
+        # string[]  == Multivalue String
+        # number    == Number
+        # boolean   == Boolean
+
+      scope: "tenant"
+
+      value: "fix"                                  # Static value that applies to all users.
