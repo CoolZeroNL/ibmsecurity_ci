@@ -9,6 +9,7 @@
     # header:       "application/json"
     ciapi:
       attributename:                                          "{{ attributename }}"
+      new_attributename:                                      "{{ new_attributename | default(None) }}"
       attributedescription:                                   "{{ attributedescription }}"
       sourcetype:                                             "{{ sourcetype }}"
       singlesignon:                                           "{{ singlesignon }}"
