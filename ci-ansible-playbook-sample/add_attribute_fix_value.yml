@@ -16,7 +16,8 @@
     - role: add_attribute
 
     # Name and Description
-      attributename: "testname3"     
+      attributename: "testname3" 
+      # new_attributename: ""
       attributedescription: "desc"
 
     # Type and availability
