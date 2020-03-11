@@ -74,7 +74,7 @@ def add(ciAppliance,
     """
    # Create base Json
     client_json = {
-        "name": attributename,
+	'name': new_attributename if new_attributename else attributename,
         "description": attributedescription,
         "sourceType": sourcetype,
         "scope": scope,
