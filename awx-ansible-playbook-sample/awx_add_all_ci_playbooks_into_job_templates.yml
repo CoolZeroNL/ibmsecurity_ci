@@ -257,6 +257,75 @@
         ask_credential: yes
         state: "present"
 
+    - name: Create tower job template - add attribute custom
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add attribute custom"
+        # description:
+        job_type: "run"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add_attribute_custom.yml"
+        ask_diff_mode: yes
+        ask_extra_vars: yes
+        ask_limit: yes
+        ask_tags: yes
+        ask_skip_tags: yes
+        ask_job_type: yes
+        ask_verbosity: yes
+        ask_inventory: yes
+        ask_credential: yes
+        state: "present"
+
+    - name: Create tower job template - add attribute fix value
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add attribute fix value"
+        # description:
+        job_type: "run"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add_attribute_fix_value.yml"
+        ask_diff_mode: yes
+        ask_extra_vars: yes
+        ask_limit: yes
+        ask_tags: yes
+        ask_skip_tags: yes
+        ask_job_type: yes
+        ask_verbosity: yes
+        ask_inventory: yes
+        ask_credential: yes
+        state: "present"
+
+    - name: Create tower job template - add attribute identiy source credential
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add attribute identiy source credential"
+        # description:
+        job_type: "run"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add_attribute_identiy_source_credential.yml"
+        ask_diff_mode: yes
+        ask_extra_vars: yes
+        ask_limit: yes
+        ask_tags: yes
+        ask_skip_tags: yes
+        ask_job_type: yes
+        ask_verbosity: yes
+        ask_inventory: yes
+        ask_credential: yes
+        state: "present"
+
     - name: Create tower job template - add certificates
       tower_job_template:      
         tower_username: "{{admin_username}}"
