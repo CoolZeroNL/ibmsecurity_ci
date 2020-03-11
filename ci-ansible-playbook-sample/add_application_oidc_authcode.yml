@@ -1,0 +1,53 @@
+- name: Add a Application. 
+  hosts: "{{ hosts | default('all') }}"
+  no_log: False
+  connection: local
+  gather_facts: no
+  vars:
+    log_level: "DEBUG"
+  roles:
+    - role: start_ci_config
+
+    #############################################################################################################################################################################
+
+    # # APP: OIDC application - Demo
+    - role: add_application
+      entitlement:
+        - for: "all"                                        # == Automatic access for all users and groups
+      visibleonlaunchpad: false
+      applicationstate: true
+      templateid: "1"                     # Template 1 = Custom Application
+      appname: "OIDC - Demo"
+      description: "OIDC provider" 
+      providers_saml_properties_companyname: "abc Inc."
+      providers_saml_properties_generateuniqueid: false
+      providers_saml_properties_validateauthnrequest: false
+      providers_saml_properties_encryptassertion: false
+      providers_saml_properties_ici_reserved_subjectnameid: "1"
+      providers_saml_properties_includeallattributes: false
+      providers_saml_properties_signauthnresponse: true
+      providers_saml_properties_signaturealgorithm: "RSA-SHA256"
+      providers_saml_properties_defaultnameidformat: "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
+      providers_saml_assertionconsumerservice_default: true
+      providers_saml_assertionconsumerservice_index: "1"
+      providers_oidc_restrictscopes: true
+      providers_oidc_properties_granttypes_authorizationcode: true
+      providers_oidc_properties_granttypes_implicit: false
+      providers_oidc_properties_granttypes_deviceflow: false
+      providers_oidc_properties_granttypes_ropc: false
+      providers_oidc_properties_donotgenerateclientsecret: false
+      providers_oidc_properties_generaterefreshtoken: false
+      providers_oidc_properties_sendallknownuserattributes: false
+      providers_oidc_properties_accesstokenexpiry: "7200"
+      providers_oidc_properties_idtokensigningalg: "RS256"
+      providers_oidc_properties_redirecturis: "https://demo.nl/oauth/callback"
+      providers_oidc_token_accesstokentype: "default"
+      providers_oidc_requirepkceverification: false
+      providers_oidc_consentaction: "always_prompt"
+      providers_oidc_applicationurl: "https://demo.nl/"
+      providers_oidc_restrictentitlements: true
+      providers_oidc_entitlements: [ "accessAdminConsole", "accessDevPortal", "authn", "authnAnyUser", "generateOTP", "manageAPIClients", "manageAccessPolicies", "manageAllUserGroups", "manageAppAccessAdmin", "manageAppAccessOwner", "manageAttributes", "manageAuthenticatorsAnyUser", "manageAuthenticatorsConfig", "manageCerts", "manageEnrollMFAMethodAnyUser", "manageFederations", "manageIdentitySources", "manageMFAMethods", "manageOIDCConsents", "manageOIDCGrants", "managePushCreds", "managePwdPolicy", "manageReports", "manageTemplates", "manageUserGroups", "manageUserStandardGroups", "readAccessPolicies", "readAppConfig", "readAttributes", "readAuthenticatorsAnyUser", "readAuthenticatorsConfig", "readCerts", "readEnrollMFAMethodAnyUser", "readFederations", "readIdentitySources", "readMFAMethods", "readOIDCConsents", "readOIDCGrants", "readPushCreds", "readPwdPolicy", "readReports", "readTemplates", "readTenantProperties", "readUserGroups", "recoverUsername", "resetPassword", "resetPasswordAnyUser", "reviewCertRecords", "updateAnyUser" ] 
+      providers_sso_useroptions: "oidc"
+      providers_sso_idpinitiatedssosupport: "false"
+
+    #############################################################################################################################################################################

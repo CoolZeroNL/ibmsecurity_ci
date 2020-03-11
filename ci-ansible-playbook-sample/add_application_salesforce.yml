@@ -1,0 +1,40 @@
+
+- name: Add a Application. 
+  hosts: "{{ hosts | default('all') }}"
+  no_log: False
+  connection: local
+  gather_facts: no
+  vars:
+    log_level: "DEBUG"
+  roles:
+    - role: start_ci_config
+
+    #############################################################################################################################################################################
+
+    # APP: Salseforce
+    - role: add_application
+      entitlement:
+        - for: "all"                                        # == Automatic access for all users and groups   
+      visibleonlaunchpad: true
+      applicationstate: true
+      templateid: "3"                     # Template 3 = Salesforce
+      appname: "Salesforce"
+      description: "An enterprise with focus on cloud computing" 
+      providers_saml_properties_companyname: "Salesforce"  
+      providers_saml_properties_providerid: "https://demo.my.salesforce.com"
+      providers_saml_properties_generateuniqueid: false
+      providers_saml_properties_validateauthnrequest: false
+      providers_saml_properties_encryptassertion: false
+      providers_saml_properties_ici_reserved_subjectnameid: "1"
+      providers_saml_properties_includeallattributes: false
+      providers_saml_properties_assertionconsumerserviceurl: "https://demo.my.salesforce.com"
+      providers_saml_justintimeprovisioning: false
+      providers_sso_domainname: "demo"
+      target_connectedapp:
+        - connectedApp_SalesforceChatter: true
+          connectedApp_DataDotcom: true
+          connectedApp_SalesforceSalesCloud: true
+          connectedApp_SalesforceServiceCloud: true
+    
+    #############################################################################################################################################################################
+    

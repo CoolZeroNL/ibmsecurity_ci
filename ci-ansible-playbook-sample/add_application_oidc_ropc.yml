@@ -1,0 +1,53 @@
+
+- name: Add a Application. 
+  hosts: "{{ hosts | default('all') }}"
+  no_log: False
+  connection: local
+  gather_facts: no
+  vars:
+    log_level: "DEBUG"
+  roles:
+    - role: start_ci_config
+
+    #############################################################################################################################################################################
+
+    # APP: OIDC application ROPC
+    - role: add_application
+      entitlement:
+        - for: "all"                      # == Automatic access for all users and groups    
+      visibleonlaunchpad: false
+      applicationstate: true
+      templateid: "1"                     # Template 1 = Custom Application
+      appname: "OIDC APP - ROPC"
+      description: "OIDC provider" 
+      providers_saml_properties_companyname: "abc Inc."
+      providers_saml_properties_generateuniqueid: false
+      providers_saml_properties_validateauthnrequest: false
+      providers_saml_properties_encryptassertion: false
+      providers_saml_properties_ici_reserved_subjectnameid: "1"
+      providers_saml_properties_includeallattributes: false
+      providers_saml_properties_signauthnresponse: true
+      providers_saml_properties_signaturealgorithm: "RSA-SHA256"
+      providers_saml_properties_defaultnameidformat: "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
+      providers_saml_assertionconsumerservice_default: true
+      providers_saml_assertionconsumerservice_index: "1"
+      providers_oidc_restrictscopes: true
+      providers_oidc_properties_granttypes_authorizationcode: false
+      providers_oidc_properties_granttypes_implicit: false
+      providers_oidc_properties_granttypes_deviceflow: false
+      providers_oidc_properties_granttypes_ropc: true
+      providers_oidc_properties_donotgenerateclientsecret: true
+      providers_oidc_properties_generaterefreshtoken: false
+      providers_oidc_properties_sendallknownuserattributes: false
+      providers_oidc_properties_accesstokenexpiry: "7200"
+      providers_oidc_properties_idtokensigningalg: "RS256"
+      providers_oidc_properties_redirecturis: ""
+      providers_oidc_token_accesstokentype: "default"
+      providers_oidc_requirepkceverification: true
+      providers_oidc_consentaction: "always_prompt"
+      providers_oidc_applicationurl: "https://<yourtentant>.ice.ibmcloud.com/"
+      providers_oidc_restrictentitlements: false
+      providers_oidc_entitlements: [ ] 
+      providers_sso_useroptions: "oidc"
+      providers_sso_idpinitiatedssosupport: "false"
+

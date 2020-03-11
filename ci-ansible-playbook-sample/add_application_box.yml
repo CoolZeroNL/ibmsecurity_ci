@@ -1,0 +1,64 @@
+
+- name: Add a Application. 
+  hosts: "{{ hosts | default('all') }}"
+  no_log: False
+  connection: local
+  gather_facts: no
+  vars:
+    log_level: "DEBUG"
+  roles:
+    - role: start_ci_config
+
+    #############################################################################################################################################################################
+    
+    # APP: Box.com
+    - role: add_application
+      entitlement:
+        - for: "all"                                        # == Automatic access for all users and groups  
+      visibleonlaunchpad: true
+      applicationstate: true
+      templateid: "6"                     # Template 6 = Box.com
+      appname: "Box"
+      description: "A cloud storage and file sharing service" 
+      providers_saml_properties_companyname: "Box"
+      providers_saml_properties_providerid: "box.net"
+      providers_saml_properties_generateuniqueid: false
+      providers_saml_properties_assertionconsumerserviceurl: "https://sso.services.box.net/sp/ACS.saml2"
+      providers_saml_properties_validateauthnrequest: false
+      providers_saml_properties_encryptassertion: false
+      providers_saml_properties_ici_reserved_subjectnameid: "1"
+      providers_saml_properties_includeallattributes: false
+      providers_saml_properties_generateuniqueid: false
+      providers_saml_justintimeprovisioning: true
+      providers_sso_domainname: "https://demo.account.box.com/login"
+      attributemappings:    
+        - targetName: "firstname"
+          sourceId: "6"
+          targetAttrFormat: "urn:oasis:names:tc:SAML:2.0:attrname-format:basic"
+        - targetName: "lastname"
+          sourceId: "7"
+          targetAttrFormat: "urn:oasis:names:tc:SAML:2.0:attrname-format:basic"
+
+          # box.com certificate: https://cloud.app.box.com/s/go7186m1jlw8vixwpbxjp8n2tuohy9uf
+          # box.com metadata: https://cloud.app.box.com/s/9y0zm1sqgvkxe8ha2qa3dfhwoivpoyy4
+          
+          ## List of numbers for: attributemappings
+          # preferred_username = sourceID 1
+          # realmName          = sourceID 2                  
+          # email              = sourceId 3
+          # groupIds           = sourceID 4
+          # uid                = sourceID 5
+          # given_name         = sourceId 6
+          # family_name        = sourceId 7
+          # name               = sourceID 8
+          # tenantId           = sourceID 9
+          # employee_id        = sourceId 10
+          # mobile_number      = sourceID 11
+          # department         = sourceId 12
+          # job_title          = sourceID 13
+          # upn                = sourceID 14          
+          # language           = sourceID 15
+          # work_country       = sourceID 16
+          # display_name       = sourceId 19
+    
+    #############################################################################################################################################################################          

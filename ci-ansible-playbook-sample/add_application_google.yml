@@ -1,0 +1,57 @@
+
+- name: Add a Application. 
+  hosts: "{{ hosts | default('all') }}"
+  no_log: False
+  connection: local
+  gather_facts: no
+  vars:
+    log_level: "DEBUG"
+  roles:
+    - role: start_ci_config
+
+    #############################################################################################################################################################################
+    
+    # APP: G Suite
+    - role: add_application
+      entitlement:
+        - for: "all"                                        # == Automatic access for all users and groups 
+      visibleonlaunchpad: true
+      applicationstate: true
+      templateid: "4"                     # Template 4 = G Suite
+      appname: "G Suite"
+      description: "A brand of cloud computing, productivity and collaboration tools from Google" 
+      providers_saml_properties_companyname: "Google"
+      providers_saml_properties_providerid: "google.com"
+      providers_saml_properties_generateuniqueid: false
+      providers_saml_properties_assertionconsumerserviceurl: "https://www.google.com/a/domain.com/acs"
+      providers_saml_properties_ici_reserved_subjectnameid: "1"
+      providers_saml_properties_includeallattributes: false
+      providers_saml_properties_generateuniqueid: false
+      providers_saml_justintimeprovisioning: true
+      providers_sso_domainname: "domain.com"   
+      target_connectedapp:
+        - connectedApp_GoogleAppsAdmin: true
+          connectedApp_GoogleAnalytics: true
+          connectedApp_GoogleBooks: true
+          connectedApp_GoogleDocs: true
+          connectedApp_GoogleForms: true
+          connectedApp_GoogleGroups: true
+          connectedApp_GoogleHangouts: true
+          connectedApp_GoogleKeep: true
+          connectedApp_GoogleMaps: true
+          connectedApp_GooglePhotos: true
+          connectedApp_GooglePlay: true
+          connectedApp_GoogleSheets: true
+          connectedApp_GoogleSites: true
+          connectedApp_GoogleSlides: true
+          connectedApp_GoogleTranslate: true
+          connectedApp_GoogleTrends: true
+          connectedApp_GoogleVideos: true
+          connectedApp_GooglePlus: true
+          connectedApp_YouTube: true
+          connectedApp_Gmail: true
+          connectedApp_GoogleFinance: true
+          connectedApp_GoogleCalendar: true
+          connectedApp_GoogleDrive: true
+
+    #############################################################################################################################################################################
