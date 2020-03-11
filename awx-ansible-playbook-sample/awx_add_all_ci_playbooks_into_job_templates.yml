@@ -27,6 +27,98 @@
         ask_credential: yes
         state: "present"
 
+    - name: Create tower job template - add application awx
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add application awx"
+        # description:
+        job_type: "run"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add_application_awx.yml"
+        ask_diff_mode: yes
+        ask_extra_vars: yes
+        ask_limit: yes
+        ask_tags: yes
+        ask_skip_tags: yes
+        ask_job_type: yes
+        ask_verbosity: yes
+        ask_inventory: yes
+        ask_credential: yes
+        state: "present"
+
+    - name: Create tower job template - add application bookmark
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add application bookmark"
+        # description:
+        job_type: "run"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add_application_bookmark.yml"
+        ask_diff_mode: yes
+        ask_extra_vars: yes
+        ask_limit: yes
+        ask_tags: yes
+        ask_skip_tags: yes
+        ask_job_type: yes
+        ask_verbosity: yes
+        ask_inventory: yes
+        ask_credential: yes
+        state: "present"
+
+    - name: Create tower job template - add application bookmark gov
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add application bookmark gov"
+        # description:
+        job_type: "run"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add_application_bookmark_gov.yml"
+        ask_diff_mode: yes
+        ask_extra_vars: yes
+        ask_limit: yes
+        ask_tags: yes
+        ask_skip_tags: yes
+        ask_job_type: yes
+        ask_verbosity: yes
+        ask_inventory: yes
+        ask_credential: yes
+        state: "present"
+
+    - name: Create tower job template - add application box
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add application box"
+        # description:
+        job_type: "run"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add_application_box.yml"
+        ask_diff_mode: yes
+        ask_extra_vars: yes
+        ask_limit: yes
+        ask_tags: yes
+        ask_skip_tags: yes
+        ask_job_type: yes
+        ask_verbosity: yes
+        ask_inventory: yes
+        ask_credential: yes
+        state: "present"
+
     - name: Create tower job template - add application entitlements
       tower_job_template:      
         tower_username: "{{admin_username}}"
@@ -39,6 +131,98 @@
         job_type: "run"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/add_application_entitlements.yml"
+        ask_diff_mode: yes
+        ask_extra_vars: yes
+        ask_limit: yes
+        ask_tags: yes
+        ask_skip_tags: yes
+        ask_job_type: yes
+        ask_verbosity: yes
+        ask_inventory: yes
+        ask_credential: yes
+        state: "present"
+
+    - name: Create tower job template - add application google
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add application google"
+        # description:
+        job_type: "run"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add_application_google.yml"
+        ask_diff_mode: yes
+        ask_extra_vars: yes
+        ask_limit: yes
+        ask_tags: yes
+        ask_skip_tags: yes
+        ask_job_type: yes
+        ask_verbosity: yes
+        ask_inventory: yes
+        ask_credential: yes
+        state: "present"
+
+    - name: Create tower job template - add application oidc authcode
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add application oidc authcode"
+        # description:
+        job_type: "run"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add_application_oidc_authcode.yml"
+        ask_diff_mode: yes
+        ask_extra_vars: yes
+        ask_limit: yes
+        ask_tags: yes
+        ask_skip_tags: yes
+        ask_job_type: yes
+        ask_verbosity: yes
+        ask_inventory: yes
+        ask_credential: yes
+        state: "present"
+
+    - name: Create tower job template - add application oidc ropc
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add application oidc ropc"
+        # description:
+        job_type: "run"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add_application_oidc_ropc.yml"
+        ask_diff_mode: yes
+        ask_extra_vars: yes
+        ask_limit: yes
+        ask_tags: yes
+        ask_skip_tags: yes
+        ask_job_type: yes
+        ask_verbosity: yes
+        ask_inventory: yes
+        ask_credential: yes
+        state: "present"
+
+    - name: Create tower job template - add application salesforce
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add application salesforce"
+        # description:
+        job_type: "run"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add_application_salesforce.yml"
         ask_diff_mode: yes
         ask_extra_vars: yes
         ask_limit: yes
