@@ -1,0 +1,16 @@
+- name: Add tower job template workflow
+  hosts: all
+  gather_facts: false
+  connection: local
+  tasks:
+    - name: Create tower job templatew workflow
+      tower_workflow_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: Workflow Template
+        description: My very first Workflow Template
+        organization: Default
+        schema: "{{ lookup('file', 'awx_add_job_template_workflow_schema.yml') }}"

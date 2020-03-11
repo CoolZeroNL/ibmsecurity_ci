@@ -1,0 +1,10 @@
+---
+- job_template: Hello world
+  failure:
+  - inventory_source: AWS servers (AWS servers - 42)
+  success:
+  - project: Ansible Examples
+    always:
+    - job_template: Echo variable
+      success:
+      - job_template: Scan localhost
