@@ -1,10 +1,10 @@
 ---
-- job_template: Hello world
+- job_template: CIC - add application
   failure:
-  - inventory_source: AWS servers (AWS servers - 42)
+  - inventory_source: Brand 01
   success:
-  - project: Ansible Examples
+  - project: ibmsecurity_ci (master)
     always:
-    - job_template: Echo variable
+    - job_template: CIC - add application awx
       success:
-      - job_template: Scan localhost
+      - job_template: CIC - add application bookmark
