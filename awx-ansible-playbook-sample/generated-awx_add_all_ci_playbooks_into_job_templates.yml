@@ -4,29 +4,6 @@
   gather_facts: false
   connection: local
   tasks:
-    - name: Create tower job template - add application
-      tower_job_template:      
-        tower_username: "{{admin_username}}"
-        tower_password: "{{admin_password}}"
-        tower_host: "{{tower_url}}"
-        tower_verify_ssl: False   
-        ####################################
-        name: "CIC - add application"
-        # description:
-        job_type: "run"
-        project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/add_application.yml"
-        ask_diff_mode: yes
-        ask_extra_vars: yes
-        ask_limit: yes
-        ask_tags: yes
-        ask_skip_tags: yes
-        ask_job_type: yes
-        ask_verbosity: yes
-        ask_inventory: yes
-        ask_credential: yes
-        state: "present"
-
     - name: Create tower job template - add application awx
       tower_job_template:      
         tower_username: "{{admin_username}}"
@@ -50,29 +27,6 @@
         ask_credential: yes
         state: "present"
 
-    - name: Create tower job template - add application bookmark
-      tower_job_template:      
-        tower_username: "{{admin_username}}"
-        tower_password: "{{admin_password}}"
-        tower_host: "{{tower_url}}"
-        tower_verify_ssl: False   
-        ####################################
-        name: "CIC - add application bookmark"
-        # description:
-        job_type: "run"
-        project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/add_application_bookmark.yml"
-        ask_diff_mode: yes
-        ask_extra_vars: yes
-        ask_limit: yes
-        ask_tags: yes
-        ask_skip_tags: yes
-        ask_job_type: yes
-        ask_verbosity: yes
-        ask_inventory: yes
-        ask_credential: yes
-        state: "present"
-
     - name: Create tower job template - add application bookmark gov
       tower_job_template:      
         tower_username: "{{admin_username}}"
@@ -85,6 +39,29 @@
         job_type: "run"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/add_application_bookmark_gov.yml"
+        ask_diff_mode: yes
+        ask_extra_vars: yes
+        ask_limit: yes
+        ask_tags: yes
+        ask_skip_tags: yes
+        ask_job_type: yes
+        ask_verbosity: yes
+        ask_inventory: yes
+        ask_credential: yes
+        state: "present"
+
+    - name: Create tower job template - add application bookmark
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add application bookmark"
+        # description:
+        job_type: "run"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add_application_bookmark.yml"
         ask_diff_mode: yes
         ask_extra_vars: yes
         ask_limit: yes
@@ -234,18 +211,18 @@
         ask_credential: yes
         state: "present"
 
-    - name: Create tower job template - add attribute
+    - name: Create tower job template - add application
       tower_job_template:      
         tower_username: "{{admin_username}}"
         tower_password: "{{admin_password}}"
         tower_host: "{{tower_url}}"
         tower_verify_ssl: False   
         ####################################
-        name: "CIC - add attribute"
+        name: "CIC - add application"
         # description:
         job_type: "run"
         project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/add_attribute.yml"
+        playbook: "ci-ansible-playbook-sample/add_application.yml"
         ask_diff_mode: yes
         ask_extra_vars: yes
         ask_limit: yes
@@ -315,6 +292,29 @@
         job_type: "run"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/add_attribute_identiy_source_credential.yml"
+        ask_diff_mode: yes
+        ask_extra_vars: yes
+        ask_limit: yes
+        ask_tags: yes
+        ask_skip_tags: yes
+        ask_job_type: yes
+        ask_verbosity: yes
+        ask_inventory: yes
+        ask_credential: yes
+        state: "present"
+
+    - name: Create tower job template - add attribute
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add attribute"
+        # description:
+        job_type: "run"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add_attribute.yml"
         ask_diff_mode: yes
         ask_extra_vars: yes
         ask_limit: yes
@@ -441,29 +441,6 @@
         ask_credential: yes
         state: "present"
 
-    - name: Create tower job template - add user
-      tower_job_template:      
-        tower_username: "{{admin_username}}"
-        tower_password: "{{admin_password}}"
-        tower_host: "{{tower_url}}"
-        tower_verify_ssl: False   
-        ####################################
-        name: "CIC - add user"
-        # description:
-        job_type: "run"
-        project: "ibmsecurity_ci (master)"
-        playbook: "ci-ansible-playbook-sample/add_user.yml"
-        ask_diff_mode: yes
-        ask_extra_vars: yes
-        ask_limit: yes
-        ask_tags: yes
-        ask_skip_tags: yes
-        ask_job_type: yes
-        ask_verbosity: yes
-        ask_inventory: yes
-        ask_credential: yes
-        state: "present"
-
     - name: Create tower job template - add user to group
       tower_job_template:      
         tower_username: "{{admin_username}}"
@@ -476,6 +453,29 @@
         job_type: "run"
         project: "ibmsecurity_ci (master)"
         playbook: "ci-ansible-playbook-sample/add_user_to_group.yml"
+        ask_diff_mode: yes
+        ask_extra_vars: yes
+        ask_limit: yes
+        ask_tags: yes
+        ask_skip_tags: yes
+        ask_job_type: yes
+        ask_verbosity: yes
+        ask_inventory: yes
+        ask_credential: yes
+        state: "present"
+
+    - name: Create tower job template - add user
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add user"
+        # description:
+        job_type: "run"
+        project: "ibmsecurity_ci (master)"
+        playbook: "ci-ansible-playbook-sample/add_user.yml"
         ask_diff_mode: yes
         ask_extra_vars: yes
         ask_limit: yes

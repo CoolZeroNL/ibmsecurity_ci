@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export='generated-awx_delete_all_ci_playbooks_from_job_template.yml'
+export='../generated-awx_delete_all_ci_playbooks_from_job_template.yml'
 
 echo "" > $export
 
@@ -13,10 +13,10 @@ cat <<EOT >> $export
 EOT
 
 
-for OUTPUT in $(ls ../ci-ansible-playbook-sample/*.yml)
+for OUTPUT in $(ls ../../ci-ansible-playbook-sample/*.yml)
 do
-	filename=$(echo "$OUTPUT" | awk -F"/" '{print $3}')
-	stripedfilename=$(echo "$OUTPUT" | awk -F"/" '{print $3}' | sed 's/.yml//g' | sed 's/_/ /g')
+	filename=$(echo "$OUTPUT" | awk -F"/" '{print $4}')
+	stripedfilename=$(echo "$OUTPUT" | awk -F"/" '{print $4}' | sed 's/.yml//g' | sed 's/_/ /g')
 	echo "-----------------------------------"
   echo $filename
 
