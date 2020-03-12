@@ -48,4 +48,16 @@ cat <<EOT >> $export
 
 EOT
 
+# options=`cat ../ci-ansible-playbook-sample/$filename | sed -n -e '/role:/,$p' | grep -Ev 'start_ci_config' | sed -e 's/^[ \t]*//' | grep -v '^ *#' | sed '/^$/d' | awk -F"#" '{print $1}'`
+# echo "$options" 
+
+# roles=`cat ../ci-ansible-playbook-sample/$filename | grep role: | grep -v '#' | sort -n | uniq | awk -F": " '{print $2}' | grep -v 'start_ci_config' ` 
+# for val in $roles; do
+#     echo $val
+#     # options from role....
+#     # options=`cat ../ci-ansible-playbook-sample/roles/$val/tasks/main.yml | grep {{ | grep -Ev 'inventory_hostname|client_id|client_secret|lmi_port|log_level|force' | awk -F"{{ " '{print $2}' | awk -F" |" '{print $1}'`
+#     # echo "$options"
+#     echo ""
+# done
+
 done
