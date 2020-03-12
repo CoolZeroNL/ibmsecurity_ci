@@ -1,0 +1,17 @@
+
+- name: delete tower job template
+  hosts: "{{ hosts | default('all') }}"
+  gather_facts: false
+  connection: local
+  tasks:
+    - name: delete tower job template - add application
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add application awx"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"

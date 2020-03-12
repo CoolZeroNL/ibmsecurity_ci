@@ -25,14 +25,119 @@
         tower_host: "{{tower_url}}"
         tower_verify_ssl: False   
         ####################################
-        name: "Multi-Brand"
+        name: "Multi-Brands"
         description: ""
         organization: "Default"
         # variables: ""
         # kind: ""
         # host_filter: ""
         state: present        
-        
+
+    - name: Configure inventory
+      tower_inventory:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "Brand01"
+        description: ""
+        organization: "Default"
+        # variables: ""
+        # kind: ""
+        # host_filter: ""
+        state: present  
+
+    - name: Configure inventory
+      tower_inventory:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "Brand02"
+        description: ""
+        organization: "Default"
+        # variables: ""
+        # kind: ""
+        # host_filter: ""
+        state: present  
+
+    - name: Configure inventory
+      tower_inventory:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "Brand03"
+        description: ""
+        organization: "Default"
+        # variables: ""
+        # kind: ""
+        # host_filter: ""
+        state: present  
+
+    - name: Configure inventory
+      tower_inventory:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "Brand04"
+        description: ""
+        organization: "Default"
+        # variables: ""
+        # kind: ""
+        # host_filter: ""
+        state: present      
+
+    - name: Configure inventory
+      tower_inventory:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - POC"
+        description: ""
+        organization: "Default"
+        # variables: ""
+        # kind: ""
+        # host_filter: ""
+        state: present               
+
+    - name: Configure inventory
+      tower_inventory:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - MY"
+        description: ""
+        organization: "Default"
+        # variables: ""
+        # kind: ""
+        # host_filter: ""
+        state: present    
+
+    - name: Configure inventory
+      tower_inventory:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - SecurIT"
+        description: ""
+        organization: "Default"
+        # variables: ""
+        # kind: ""
+        # host_filter: ""
+        state: present          
+
 # options: #######################################################################        
 #     name:
 #       description:

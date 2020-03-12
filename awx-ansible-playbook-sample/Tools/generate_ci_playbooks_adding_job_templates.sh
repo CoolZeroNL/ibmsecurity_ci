@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export='awx_add_all_ci_playbooks_into_job_templates.yml'
+export='generated-awx_add_all_ci_playbooks_into_job_templates'
 
 echo "" > $export
 

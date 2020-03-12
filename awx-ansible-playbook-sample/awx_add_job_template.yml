@@ -55,7 +55,7 @@
         tower_host: "{{tower_url}}"
         tower_verify_ssl: False   
         ####################################
-        name: "INSTALL - AWX (awx_collection) Python Modules"
+        name: "INSTALL - AWX Python Modules"
         job_type: "run"
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
@@ -75,6 +75,36 @@
         inventory: "AWX-localhost"
         project: "ibmsecurity_ci (master)"
         playbook: "awx-ansible-playbook-sample/awx_update_settings.yml"
+        become_enabled: yes
+        state: "present"
+    
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "INSTALL - Add All CIC Playbooks"
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "awx-ansible-playbook-sample/generated-awx_add_all_ci_playbooks_into_job_templates.yml"
+        become_enabled: yes
+        state: "present"
+
+    - name: Create tower job template
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "DELETE - Add All CIC Playbooks"
+        job_type: "run"
+        inventory: "AWX-localhost"
+        project: "ibmsecurity_ci (master)"
+        playbook: "awx-ansible-playbook-sample/generated-awx_delete_all_ci_playbooks_from_job_template.yml"
         become_enabled: yes
         state: "present"
 

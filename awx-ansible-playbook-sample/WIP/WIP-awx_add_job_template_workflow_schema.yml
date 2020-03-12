@@ -1,0 +1,61 @@
+---
+- job_template: CIC - add application
+  failure:
+  - inventory_source: Brand 01
+  success:
+  - project: ibmsecurity_ci (master)
+    always:
+    - job_template: CIC - add application awx
+      success:
+      - job_template: CIC - add application bookmark
+
+
+# https://github.com/ansible/tower-cli/tree/master/docs/source/cli_ref/examples/data
+### schema_a.yml
+ 
+# Branch that has deeply nested content removed  going to schema B
+- job_template: workflow JT
+  failure_nodes:
+    - inventory_source: tower script1 (workflow demo
+  success_nodes:
+  - project: Ansible Examples
+    always_nodes:
+    - job_template: workflow JT
+      success_nodes:
+      - job_template: workflow JT
+
+# Branch that is modified going to schema B
+- job_template: workflow JT2
+  failure_nodes:
+  - job_template: workflow JT2
+  - job_template: workflow JT
+  success_nodes:
+  - job_template: workflow JT2
+  - job_template: workflow JT
+
+# Branch that is deleted going to schema B
+- project: Ansible Examples
+  always_nodes:
+  - inventory_source: tower script1 (workflow demo
+  - inventory_source: tower script2 (workflow demo
+
+
+  ### schema_b.yml
+   
+# Branch that has deeply nested content removed  going to schema B
+- job_template: workflow JT
+  failure_nodes:
+    - inventory_source: tower script1 (workflow demo
+  success_nodes:
+  - project: Ansible Examples
+    always_nodes:
+    - job_template: workflow JT
+
+# Branch that is modified going to schema B
+- job_template: workflow JT2
+  failure_nodes:
+  - inventory_source: tower script1 (workflow demo
+  - inventory_source: tower script2 (workflow demo
+  success_nodes:
+  - project: Ansible Examples
+  - job_template: workflow JT

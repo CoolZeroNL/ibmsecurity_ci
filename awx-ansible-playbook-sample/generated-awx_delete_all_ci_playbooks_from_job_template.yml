@@ -1,0 +1,486 @@
+
+- name: Delete tower job template
+  hosts: "{{ hosts | default('all') }}"
+  gather_facts: false
+  connection: local
+  tasks:
+    - name: Delete tower job template - add application awx
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add application awx"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - add application bookmark gov
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add application bookmark gov"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - add application bookmark
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add application bookmark"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - add application box
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add application box"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - add application entitlements
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add application entitlements"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - add application google
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add application google"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - add application oidc authcode
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add application oidc authcode"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - add application oidc ropc
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add application oidc ropc"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - add application salesforce
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add application salesforce"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - add application
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add application"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - add attribute custom
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add attribute custom"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - add attribute fix value
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add attribute fix value"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - add attribute identiy source credential
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add attribute identiy source credential"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - add attribute
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add attribute"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - add certificates
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add certificates"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - add group
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add group"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - add identitysource
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add identitysource"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - add personalcert
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add personalcert"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - add signercert
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add signercert"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - add user to group
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add user to group"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - add user
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - add user"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - delete application
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - delete application"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - delete attribute
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - delete attribute"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - delete customization reset
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - delete customization reset"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - get all accesspolicies
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get all accesspolicies"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - get all applications
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get all applications"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - get all attributes
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get all attributes"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - get all certificates
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get all certificates"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - get all groups
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get all groups"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - get all headernames group
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get all headernames group"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - get all headernames user
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get all headernames user"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - get all identitysources
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get all identitysources"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - get all users
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get all users"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - get customization download
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get customization download"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - get group filter
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get group filter"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - get user filter
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - get user filter"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - install python modules
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - install python modules"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - update authentication factos properties
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - update authentication factos properties"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - upload customization page
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - upload customization page"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
+    - name: Delete tower job template - upload customization zip
+      tower_job_template:      
+        tower_username: "{{admin_username}}"
+        tower_password: "{{admin_password}}"
+        tower_host: "{{tower_url}}"
+        tower_verify_ssl: False   
+        ####################################
+        name: "CIC - upload customization zip"
+        project: "ibmsecurity_ci (master)"
+        playbook: "null"
+        state: "absent"
+
