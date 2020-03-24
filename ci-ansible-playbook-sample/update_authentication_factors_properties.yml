@@ -1,4 +1,4 @@
-- name: Update Authentication Factos Properties
+- name: Update Authentication Factors Properties
   hosts: "{{ hosts | default('all') }}"
   no_log: False
   connection: local

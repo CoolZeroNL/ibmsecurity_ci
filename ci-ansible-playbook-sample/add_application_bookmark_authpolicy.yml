@@ -25,4 +25,17 @@
       authpolicy:
         - id: "18"        
         - name: "Require 2FA each session in all devices"      
+
+      #authpolicy:
+      #-------      
+      # ID: 1
+		  # NAME: Allow access from all devices
+      #-------
+      # ID: 17
+		  # NAME: Always require 2FA in all devices
+      #-------
+      # ID: 18
+      # Name: Require 2FA each session in all devices
+      #-------
+
     #############################################################################################################################################################################
