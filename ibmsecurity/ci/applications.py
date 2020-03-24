@@ -114,6 +114,7 @@ def add(ciAppliance,
                provisionattributemappings,               
                provisionbearertoken,
                provisionscimbaseurl,
+               authpolicy,
                check_mode=False, force=False):
 
     """
@@ -139,6 +140,9 @@ def add(ciAppliance,
         for element in attributemappings:
             client_json['attributeMappings'].append({"targetName":element["targetName"], "sourceId":element["sourceId"], "targetAttrFormat":element["targetAttrFormat"]})
 
+    if authpolicy != '':
+	client_json['authPolicy'] = {}
+	
     ## if Govern is active.....
     if provpolicy != '' and \
        deprovpolicy != '' and \
