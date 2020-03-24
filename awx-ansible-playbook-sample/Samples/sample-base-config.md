@@ -21,5 +21,4 @@ ansible-playbook -i ../awx-ansible-inventories/inventories/awx.tempdata.nl/ awx_
 ansible-playbook -i ../awx-ansible-inventories/inventories/awx.tempdata.nl/ awx_add_project.yml
 ansible-playbook -i ../awx-ansible-inventories/inventories/awx.tempdata.nl/ awx_add_inventory.yml
 ansible-playbook -i ../awx-ansible-inventories/inventories/awx.tempdata.nl/ awx_add_inventory_source.yml
-ansible-playbook -i ../awx-ansible-inventories/inventories/awx.tempdata.nl/ awx_update_settings.yml
 ansible-playbook -i ../awx-ansible-inventories/inventories/awx.tempdata.nl/ awx_add_job_template.yml
