@@ -61,6 +61,7 @@
       customicon:                                             "{{ customicon | default(None) }}"
       ## for all apps
       attributemappings:                                      "{{ attributemappings | default(None) }}"
+      authpolicy:                                             "{{ authpolicy | default(None) }}"
       ## for all apps
       target_connectedapp:                                    "{{ target_connectedapp | default(None) }}"
       # for customization:
