@@ -10,19 +10,36 @@
     - role: start_ci_config
 
     - role: add_identitysource
-      sourcetypeid: "1"
-      instancename: "Facebook"
+      # sourcetypeid: "1"
+      # instancename: "Facebook"
+      # new_instancename: ""
+      # enabled: false
+      # # FB
+      # properties_client_id_sensitive: false
+      # properties_client_id_value: ""
+      # properties_client_secret_sensitive: false
+      # properties_client_secret_value: ""
+      # properties_identitylinkingenabled_sensitive: false
+      # properties_identitylinkingenabled_value: "false"
+      # properties_identitylinkingjitenabled_sensitive: false
+      # properties_identitylinkingjitenabled_value: "false"
+      # properties_identitylinkingprincipalattribute_sensitive: false
+      # properties_identitylinkingprincipalattribute_value: ""
+      # properties_realm_sensitive: false
+      # properties_realm_value: "www.facebook.com"
+
+      sourcetypeid: '1'
+      instancename: Facebook - CIC Demo1
       enabled: false
-      # FB
       properties_client_id_sensitive: false
-      properties_client_id_value: ""
+      properties_client_id_value: '2411909862433016'
       properties_client_secret_sensitive: false
-      properties_client_secret_value: ""
+      properties_client_secret_value: f5d7e9bcbfd0230fda9923aaedde225d
       properties_identitylinkingenabled_sensitive: false
-      properties_identitylinkingenabled_value: "false"
+      properties_identitylinkingenabled_value: 'false'
       properties_identitylinkingjitenabled_sensitive: false
-      properties_identitylinkingjitenabled_value: "false"
+      properties_identitylinkingjitenabled_value: 'false'
       properties_identitylinkingprincipalattribute_sensitive: false
-      properties_identitylinkingprincipalattribute_value: ""
+      properties_identitylinkingprincipalattribute_value: ''
       properties_realm_sensitive: false
-      properties_realm_value: "www.facebook.com"
+      properties_realm_value: www.facebook.com

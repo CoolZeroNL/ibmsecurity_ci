@@ -10,6 +10,7 @@
     ciapi:
       sourcetypeid: "{{ sourcetypeid }}"
       instancename: "{{ instancename }}"
+      new_instancename: "{{ new_instancename | default(None) }}"
       enabled:      "{{ enabled }}"
       # FB
       properties_client_id_sensitive:                         "{{ properties_client_id_sensitive }}"
