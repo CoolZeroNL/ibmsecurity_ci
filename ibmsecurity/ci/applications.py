@@ -142,6 +142,11 @@ def add(ciAppliance,
 
     if authpolicy != '':
 	client_json['authPolicy'] = {}
+	authpolicy_id = authpolicy[0]['id']
+	authpolicy_name = authpolicy[0]['name']
+   		if authpolicy_id != '' and authpolicy_name != '':
+			client_json['authPolicy']['id'] = authpolicy_id
+			client_json['authPolicy']['name'] = authpolicy_name
 	
     ## if Govern is active.....
     if provpolicy != '' and \
