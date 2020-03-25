@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         Профиль пользователя изменен
@@ -30,7 +25,7 @@
              </table>
           </div>
           <div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
-            <p style="padding-bottom: 12px;font-size: 16px">Информация о вашей учетной записи изменилась. </p>    
+            <p style="padding-bottom: 12px;font-size: 16px">Информация о вашей учетной записи была изменена. </p>    
             <p style="padding-bottom: 12px; line-height: 24px">Вы получили это электронное письмо, так как один или несколько фрагментов информации, связанной с вашей учетной записью, <a href="#" style="color: #4178BE;">@USERNAME@</a>, были обновлены для подписки <b><a style="text-decoration: none; color: #000000;">@TENANT@</a></b>. Если вы не запрашивали эти изменения, обратитесь к системному администратору.</p>
             <p style="font-size: 14px; line-height: 24px">
              <b>Изменившаяся информация:</b><br /> 

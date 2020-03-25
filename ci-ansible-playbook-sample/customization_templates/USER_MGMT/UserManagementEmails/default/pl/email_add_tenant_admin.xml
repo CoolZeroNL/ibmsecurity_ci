@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
-Dla identyfikatora IBMid zostało utworzone konto administracyjne najemcy.
+        Dla identyfikatora IBMid zostało utworzone konto administracyjne najemcy.
       </Value>
     </Subject>
 
@@ -29,10 +24,10 @@ Dla identyfikatora IBMid zostało utworzone konto administracyjne najemcy.
                </tr>
              </table>
           </div>
-      	<div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
+      	<div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;"> 
 		<p style="padding-bottom: 12px">Utworzono konto z uprawnieniami administracyjnymi najemcy w subskrypcji
 		<b><a style="text-decoration: none;color: #000000;">@TENANT@</a></b> dla konta o identyfikatorze IBMid <b>@USERNAME@</b>.</p> 
-		<p style="padding-bottom: 12px; line-height: 24px">Kliknij odsyłacz, aby się zalogować: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui/admin</a></p>
+		<p style="padding-bottom: 12px; line-height: 24px">Kliknij następujący odsyłacz, aby się zalogować: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui/admin</a></p>
 		</div>
      
         </body>

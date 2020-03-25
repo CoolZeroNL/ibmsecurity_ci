@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         IBMid に対してテナント管理アカウントが作成されました。
@@ -29,14 +24,14 @@
                </tr>
              </table>
           </div>
-      	<div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
+      	<div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;"> 
 		<p style="padding-bottom: 12px">サブスクリプション <b><a style="text-decoration: none;color: #000000;">@TENANT@</a></b> のテナント管理特権を持つ
 		アカウントが IBMid アカウント <b>@USERNAME@</b> に対して作成されました。</p> 
 		<p style="padding-bottom: 12px; line-height: 24px">ログインするには次のリンクをクリックしてください: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui/admin</a></p>
 		</div>
      
-        </body>  		
-          </html>
+        </body>
+            </html>
          ]]>
       </Value>
     </Message>

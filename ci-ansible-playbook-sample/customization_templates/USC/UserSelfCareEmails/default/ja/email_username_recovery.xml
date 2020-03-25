@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         ユーザー名リカバリー情報
@@ -26,7 +21,7 @@
 	            </table>
 	         </div>
 	         <div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
-	                @FIRST_NAME@ 様
+	                @FIRST_NAME@様
 	                <br>
 	                <br>                 
                     サブスクリプション <b>@TENANT@</b> のユーザー名は <b>@USERNAME@</b> です。                     <br>

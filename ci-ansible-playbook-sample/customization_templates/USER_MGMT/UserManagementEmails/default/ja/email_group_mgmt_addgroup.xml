@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         グループが追加されました
@@ -17,7 +12,8 @@
         <![CDATA[<html>
          <head>
     		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    		<title>グループが追加されました</title>
+    		<title>        グループが追加されました
+      </title>
   		</head>
         <body>
            <div style="font-family: 'Helvetica neue', sans-serif;">

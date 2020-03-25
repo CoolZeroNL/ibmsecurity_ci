@@ -148,7 +148,17 @@ def upload_page(ciAppliance, pages, keepzip, check_mode=False, force=False):
             
             #copy custom page. file on desc need to be named: page.html
             if '.html' in extension:
-                shutil.copy(location+'/'+file_name, directory+'/templates/'+cur+'/page.html')
+
+                ary = file_name.split("_")
+                first = ary[0]
+
+                if first== 'header':
+                    shutil.copy(location+'/'+file_name, directory+'/templates/'+cur+'/header.html')
+                elif first== 'footer':
+                    shutil.copy(location+'/'+file_name, directory+'/templates/'+cur+'/footer.html')
+                elif first== 'page':
+                    shutil.copy(location+'/'+file_name, directory+'/templates/'+cur+'/page.html')
+                
             else:
                 restore_filename = file_name.rsplit('_', 1)[0] + extension  # split at '_', starting from the right, maximum 1 split
                 shutil.copy(location+'/'+file_name, directory+'/templates/'+cur+'/'+restore_filename)

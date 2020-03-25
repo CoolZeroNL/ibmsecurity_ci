@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
-        Profil utilisateur modifié
-
-</Value>
+        Profil utilisateur modifié</Value>
     </Subject>
 
     <Message>
@@ -31,11 +24,8 @@
              </table>
           </div>
           <div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
-            <p style="padding-bottom: 12px;font-size: 16px">Les informations relatives à votre compte ont changé. </p>    
-            <p style="padding-bottom: 12px; line-height: 24px">Vous recevez ce courrier
-électronique car une ou plusieurs informations relatives à votre compte,
-<a href="#" style="color: #4178BE;">@USERNAME@</a>, ont été mises à jour pour un
-abonnement <b><a style="text-decoration: none; color: #000000;">@TENANT@</a></b>. Si vous n'avez pas demandé ces modifications, contactez l'administrateur système.</p>
+            <p style="padding-bottom: 12px;font-size: 16px">Les informations de votre compte ont été modifiées. </p>    
+            <p style="padding-bottom: 12px; line-height: 24px">Vous recevez ce courrier électronique parce qu'une ou plusieurs informations relatives à votre compte, <a href="#" style="color: #4178BE;">@USERNAME@</a>,  ont été mises à jour pour l'abonnement <b><a style="text-decoration: none; color: #000000;">@TENANT@</a></b>. Si vous n'avez pas demandé ces modifications, contactez l'administrateur système.</p>
             <p style="font-size: 14px; line-height: 24px">
              <b>Informations modifiées :</b><br /> 
              <table style="border-spacing: 0px; font-size: 14px; line-height: 24px; text-align: left;">

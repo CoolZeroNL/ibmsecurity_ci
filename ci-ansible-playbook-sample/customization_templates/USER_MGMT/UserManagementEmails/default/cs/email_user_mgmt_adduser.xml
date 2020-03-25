@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
-        Účet vytvořen
+        Vytvoření účtu
       </Value>
     </Subject>
 
@@ -17,7 +12,7 @@
         <![CDATA[<html>
          <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Účet vytvořen</title>
+        <title>Vytvoření účtu</title>
          </head>
         <body>
            <div style="font-family: 'Helvetica neue', sans-serif;">
@@ -32,8 +27,8 @@
           <div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
             <p style="padding-bottom: 12px;font-size: 16px">Váš účet byl vytvořen.</p>    
             <p style="padding-bottom: 12px; line-height: 24px">Vaše jméno uživatele je: <b>@USERNAME@</b></p>
-            <p style="padding-bottom: 12px; line-height: 24px">Vaše dočasné heslo je: <b>@PASSWORD@</b><br>Po přihlášení jej musíte změnit.</p>
-            <p style="padding-bottom: 12px; line-height: 24px">Klepnutím na tento odkaz se přihlásíte: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui</a></p> 
+            <p style="padding-bottom: 12px; line-height: 24px">Dočasné heslo je: <b>@PASSWORD@</b><br>Po přihlášení budete muset heslo změnit.</p>
+            <p style="padding-bottom: 12px; line-height: 24px">Přihlaste se klepnutím na odkaz: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui</a></p> 
          </div>
      
         </body>

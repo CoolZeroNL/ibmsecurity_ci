@@ -4,7 +4,7 @@
    "id": {
       "component": "authsvc",
       "name": "basicldapuser_login",
-      "revision": 9
+      "revision": 10
    },
    "isServiceTemplate": false,
    "parameters": {
@@ -23,6 +23,11 @@
             "default": null,
             "description": "User name.",
             "key": "@USERNAME@"
+         },
+         {
+            "default": null,
+            "description": "Flag to show forgot password.",
+            "key": "@SHOW_FORGOT_PASSWORD_LINK@"
          }
       ],
       "required": [

@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
        Переустановка пароля
@@ -17,7 +12,7 @@
       <![CDATA[<html>
         <head>
     		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    		<title>Переустановка пароля</title>
+    		<title>Переустановить пароль</title>
   		</head>
   	    <body>
            <div style="font-family: 'Helvetica neue', sans-serif;">
@@ -33,8 +28,8 @@
               <p style="padding-bottom: 12px; line-height: 24px">Ваш пароль переустановлен.</p>  
               <p style="padding-bottom: 12px; line-height: 24px">Ваше имя пользователя: <b>@USERNAME@</b></p>
               <p style="padding-bottom: 12px; line-height: 24px">Ваш временный пароль: <b>@PASSWORD@</b><br>После входа в систему вы должны изменить свой пароль.</p>
-              <p style="padding-bottom: 12px; line-height: 24px">Если вы не запрашивали переустановку пароля, обратитесь к системному администратору.</p>
-              <p style="padding-bottom: 12px; line-height: 24px">Щелкните по ссылке, чтобы войти в систему: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui</a></p>         
+              <p style="padding-bottom: 12px; line-height: 24px">Если вы не запрашивали эту переустановку пароля, обратитесь к системному администратору.</p>
+              <p style="padding-bottom: 12px; line-height: 24px">Щелкните по ссылке для входа в систему: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui</a></p>         
          </div>
         </body>
         </html>

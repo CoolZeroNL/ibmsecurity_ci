@@ -4,7 +4,7 @@
    "id": {
       "component": "USER_MGMT",
       "name": "UserManagementEmails",
-      "revision": 7
+      "revision": 8
    },
    "isServiceTemplate": false,
    "parameters": {

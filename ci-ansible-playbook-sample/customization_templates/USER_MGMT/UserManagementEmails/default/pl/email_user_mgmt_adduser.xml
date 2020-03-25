@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         Utworzono konto
@@ -30,10 +25,10 @@
              </table>
           </div>
           <div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
-            <p style="padding-bottom: 12px;font-size: 16px">Twoje konto zostało utworzone.</p>    
+            <p style="padding-bottom: 12px;font-size: 16px">Konto zostało utworzone.</p>    
             <p style="padding-bottom: 12px; line-height: 24px">Nazwa użytkownika: <b>@USERNAME@</b></p>
             <p style="padding-bottom: 12px; line-height: 24px">Hasło tymczasowe: <b>@PASSWORD@</b><br>Hasło to należy zmienić po zalogowaniu się.</p>
-            <p style="padding-bottom: 12px; line-height: 24px">Kliknij odsyłacz, aby się zalogować: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui</a></p> 
+            <p style="padding-bottom: 12px; line-height: 24px">Kliknij następujący odsyłacz, aby się zalogować: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui</a></p> 
          </div>
      
         </body>

@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
-        已修改使用者設定檔
-      </Value>
+已修改使用者設定檔</Value>
     </Subject>
 
     <Message>
@@ -30,8 +24,9 @@
              </table>
           </div>
           <div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
-            <p style="padding-bottom: 12px;font-size: 16px">已變更您的帳戶資訊。</p>    
-            <p style="padding-bottom: 12px; line-height: 24px">您收到此電子郵件是因為已更新與您的帳戶 <a href="#" style="color: #4178BE;">@USERNAME@</a> 訂閱 <b><a style="text-decoration: none; color: #000000;">@TENANT@</a></b> 相關的一個以上資訊片段。如果您未要求這些變更，請聯絡您的系統管理者。</p>
+            <p style="padding-bottom: 12px;font-size: 16px">變更您的帳戶資訊。</p>    
+            <p style="padding-bottom: 12px; line-height: 24px">您收到此電子郵件是因為已更新訂閱 <b><a style="text-decoration: none; color: #000000;">@TENANT@</a></b>
+                中與您的帳戶 <a href="#" style="color: #4178BE;">@USERNAME@</a> 相關的一則以上資訊片段。如果您未要求這些變更，請聯絡您的系統管理者。</p>
             <p style="font-size: 14px; line-height: 24px">
              <b>已變更資訊：</b><br /> 
              <table style="border-spacing: 0px; font-size: 14px; line-height: 24px; text-align: left;">

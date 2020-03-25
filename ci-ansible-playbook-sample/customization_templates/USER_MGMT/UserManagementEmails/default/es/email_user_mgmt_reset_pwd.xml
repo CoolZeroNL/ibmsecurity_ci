@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
        Restablecimiento de contraseña
@@ -17,7 +12,7 @@
       <![CDATA[<html>
         <head>
     		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    		<title>Restablecimiento de contraseña</title>
+    		<title>Restablecer contraseña</title>
   		</head>
   	    <body>
            <div style="font-family: 'Helvetica neue', sans-serif;">
@@ -33,8 +28,8 @@
               <p style="padding-bottom: 12px; line-height: 24px">Se ha restablecido su contraseña.</p>  
               <p style="padding-bottom: 12px; line-height: 24px">Su nombre de usuario es: <b>@USERNAME@</b></p>
               <p style="padding-bottom: 12px; line-height: 24px">Su contraseña temporal es: <b>@PASSWORD@</b><br>Después de iniciar la sesión debe cambiar la contraseña.</p>
-              <p style="padding-bottom: 12px; line-height: 24px">Póngase en contacto con el administrador del sistema si no ha solicitado restablecer la contraseña.</p>
-              <p style="padding-bottom: 12px; line-height: 24px">Pulse en el enlace para iniciar la sesión: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui</a></p>         
+              <p style="padding-bottom: 12px; line-height: 24px">Póngase en contacto con el administrador del sistema si no ha solicitado este restablecimiento de contraseña.</p>
+              <p style="padding-bottom: 12px; line-height: 24px">Pulse el enlace para iniciar la sesión: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui</a></p>         
          </div>
         </body>
         </html>

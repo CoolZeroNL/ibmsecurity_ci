@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         Für Ihre IBMid wurde ein Tenantverwaltungsaccount erstellt.
@@ -29,10 +24,10 @@
                </tr>
              </table>
           </div>
-      	<div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
+      	<div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;"> 
 		<p style="padding-bottom: 12px">Für die Subskription	<b><a style="text-decoration: none;color: #000000;">@TENANT@</a></b> wurde
   für Ihren IBMid-Account <b>@USERNAME@</b> ein Account mit Tenantverwaltungsberechtigungen erstellt. </p> 
-		<p style="padding-bottom: 12px; line-height: 24px">Klicken Sie auf den Link, um sich anzumelden: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui/admin</a></p>
+		<p style="padding-bottom: 12px; line-height: 24px">Klicken Sie für die Anmeldung auf den folgenden Link: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui/admin</a></p>
 		</div>
      
         </body>

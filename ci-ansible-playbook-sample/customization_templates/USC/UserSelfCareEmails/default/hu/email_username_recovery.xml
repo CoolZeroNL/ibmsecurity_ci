@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         Felhasználónév helyreállítási információk
@@ -20,19 +15,19 @@
 	            <table cellspacing="0" cellpadding="22" border="0" style="width: 100%; margin-bottom: 10px; top: 0px;left: 0px;" >
 	              <tr style="line-height: 30px; color: white; margin: 0 auto; background-color: #4178be;">
 	                <td style="font-size:24px;padding: 32px 64px 32px 72px;">
-	                   IBM <b>Cloud Identity</b>
-	                </td>
+	                                       IBM <b>Cloud Identity</b>
+                 </td>
 	              </tr>
 	            </table>
 	         </div>
 	         <div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
-	                Kedves @FIRST_NAME@,
+	                Helló @FIRST_NAME@,
 	                <br>
 	                <br>                 
                     A felhasználóneve a(z) <b>@TENANT@</b> előfizetéshez: <b>@USERNAME@</b>.   
                     <br>
                     <br>
-                    Ha nem Ön kérte a felhasználóneve helyreállítását, akkor vegye fel a kapcsolatot az adminisztrátorával.            
+                    Ha nem kérte felhasználóneve helyreállítását, akkor keresse meg a rendszergazdát.
              </div>
             </body>
             </html>

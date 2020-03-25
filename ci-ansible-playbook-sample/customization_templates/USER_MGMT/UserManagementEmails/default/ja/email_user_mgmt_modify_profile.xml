@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         ユーザー・プロファイルが変更されました
@@ -35,8 +30,7 @@
             <p style="font-size: 14px; line-height: 24px">
              <b>変更された情報:</b><br /> 
              <table style="border-spacing: 0px; font-size: 14px; line-height: 24px; text-align: left;">
-                @ATTRS_TABLEROWS@  
-            </table>
+@ATTRS_TABLEROWS@</table>
          </p>            
          </div>
          </body>

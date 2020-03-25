@@ -4,7 +4,7 @@
    "id": {
       "component": "commonfim",
       "name": "generic_protocol_error",
-      "revision": 2
+      "revision": 3
    },
    "isServiceTemplate": false,
    "parameters": {
@@ -19,6 +19,10 @@
          {
             "description": "The request address.",
             "key": "@REQ_ADDR@"
+         },
+         {
+            "description": "The locale of the current template page.",
+            "key": "@LOCALE@"
          }
       ]
    }

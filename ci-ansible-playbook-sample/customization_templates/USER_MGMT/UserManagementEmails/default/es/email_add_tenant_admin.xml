@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         Se ha creado una cuenta administrativa de arrendatario para su IBMid.
@@ -29,7 +24,7 @@
                </tr>
              </table>
           </div>
-      	<div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
+      	<div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;"> 
 		<p style="padding-bottom: 12px">Se ha creado una cuenta con privilegios administrativos de arrendatario en la suscripción
 		<b><a style="text-decoration: none;color: #000000;">@TENANT@</a></b> para su cuenta IBMid <b>@USERNAME@</b>.</p> 
 		<p style="padding-bottom: 12px; line-height: 24px">Pulse el enlace para iniciar sesión: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui/admin</a></p>

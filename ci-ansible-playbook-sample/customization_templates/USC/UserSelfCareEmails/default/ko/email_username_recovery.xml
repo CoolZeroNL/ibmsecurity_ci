@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         사용자의 사용자 이름 복구 정보
@@ -29,10 +24,10 @@
 	                안녕하세요, @FIRST_NAME@님.
 	                <br>
 	                <br>                 
-                    등록 <b>@TENANT@</b>에 대한 귀하의 사용자 이름은 <b>@USERNAME@</b>입니다.   
+                    등록 <b>@TENANT@</b>에 대한 귀하의 사용자 이름은 <b>@USERNAME@</b>입니다.  
                     <br>
                     <br>
-                    사용자 이름의 복구를 요청하지 않았다면 귀하의 관리자에게 문의하십시오.            
+                    사용자 이름의 복구를 요청하지 않았다면 귀하의 관리자에게 문의하십시오.           
              </div>
             </body>
             </html>

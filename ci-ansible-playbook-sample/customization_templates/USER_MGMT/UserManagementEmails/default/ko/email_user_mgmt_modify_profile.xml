@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         사용자 프로파일 수정 완료
@@ -17,7 +12,7 @@
       <![CDATA[<html>
              <head>
             	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    		    <title>User profile modified</title>
+    		    <title>        사용자 프로파일 수정 완료</title>
     		</head>
     	   <body>
            <div style="font-family: 'Helvetica neue', sans-serif;">
@@ -31,7 +26,7 @@
           </div>
           <div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
             <p style="padding-bottom: 12px;font-size: 16px">계정 정보가 변경되었습니다. </p>    
-            <p style="padding-bottom: 12px; line-height: 24px"><a href="#" style="color: #4178BE;">@USERNAME@</a> 계정과 관련된 하나 이상의 정보가 <b><a style="text-decoration: none; color: #000000;">@TENANT@</a></b> 등록에 대해 업데이트되어 이 이메일을 수신했습니다. 이러한 변경을 요청하지 않은 경우, 시스템 관리자에게 문의하십시오.</p>
+            <p style="padding-bottom: 12px; line-height: 24px"><b><a style="text-decoration: none; color: #000000;">@TENANT@</a></b> 등록에 대해 <a href="#" style="color: #4178BE;">@USERNAME@</a> 계정과 관련된 하나 이상의 정보가 업데이트되어 이 이메일을 수신했습니다. 이러한 변경을 요청하지 않은 경우, 시스템 관리자에게 문의하십시오.</p>
             <p style="font-size: 14px; line-height: 24px">
              <b>변경된 정보:</b><br /> 
              <table style="border-spacing: 0px; font-size: 14px; line-height: 24px; text-align: left;">

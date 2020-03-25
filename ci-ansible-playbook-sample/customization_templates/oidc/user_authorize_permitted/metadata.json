@@ -4,7 +4,7 @@
    "id": {
       "component": "oidc",
       "name": "user_authorize_permitted",
-      "revision": 5
+      "revision": 7
    },
    "isServiceTemplate": false,
    "parameters": {
@@ -33,6 +33,31 @@
             "default": null,
             "description": "Description of the scopes if available",
             "key": "@OAUTH_TOKEN_SCOPE_DESC_REPEAT@"
+         },
+         {
+            "default": null,
+            "description": "Entitlements that were consented",
+            "key": "@OAUTH_TOKEN_ENTITLEMENT_REPEAT@"
+         },
+         {
+            "default": null,
+            "description": "Description of the entitlements if available",
+            "key": "@OAUTH_TOKEN_ENTITLEMENT_DESC_REPEAT@"
+         },
+         {
+            "default": null,
+            "description": "The ID of the registered template theme.",
+            "key": "@THEME_ID@"
+         },
+         {
+            "default": null,
+            "description": "The HTML that contains the header of the page. This code can be modified by customizing the header.html common template.",
+            "key": "@PAGE_HEADER@"
+         },
+         {
+            "default": null,
+            "description": "The HTML that contains the footer of the page. This code can be modified by customizing the footer.html common template.",
+            "key": "@PAGE_FOOTER@"
          }
       ],
       "required": [

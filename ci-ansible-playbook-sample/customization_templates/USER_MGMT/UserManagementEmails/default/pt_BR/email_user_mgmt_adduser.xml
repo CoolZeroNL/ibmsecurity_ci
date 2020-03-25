@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         Conta criada
@@ -17,7 +12,7 @@
         <![CDATA[<html>
          <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Conta criada</title>
+        <title>Conta Criada</title>
          </head>
         <body>
            <div style="font-family: 'Helvetica neue', sans-serif;">
@@ -30,8 +25,8 @@
              </table>
           </div>
           <div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
-            <p style="padding-bottom: 12px;font-size: 16px">Sua conta foi criada.</p>    
-            <p style="padding-bottom: 12px; line-height: 24px">Seu nome do usuário é: <b>@USERNAME@</b></p>
+            <p style="padding-bottom: 12px;font-size: 16px">A conta foi criada.</p>    
+            <p style="padding-bottom: 12px; line-height: 24px">O nome do usuário é: <b>@USERNAME@</b></p>
             <p style="padding-bottom: 12px; line-height: 24px">Sua senha provisória é: <b>@PASSWORD@</b><br>Após efetuar login, deve-se mudar a senha.</p>
             <p style="padding-bottom: 12px; line-height: 24px">Clique no link para efetuar login: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui</a></p> 
          </div>

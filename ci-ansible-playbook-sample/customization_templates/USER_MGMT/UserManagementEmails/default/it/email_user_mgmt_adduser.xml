@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         Account creato
@@ -33,7 +28,7 @@
             <p style="padding-bottom: 12px;font-size: 16px">L'account è stato creato.</p>    
             <p style="padding-bottom: 12px; line-height: 24px">Il nome utente è: <b>@USERNAME@</b></p>
             <p style="padding-bottom: 12px; line-height: 24px">La password temporanea è: <b>@PASSWORD@</b><br>Dopo aver effettuato l'accesso, è necessario modificare la password.</p>
-            <p style="padding-bottom: 12px; line-height: 24px">Fare clic sul link per accedere a: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui</a></p> 
+            <p style="padding-bottom: 12px; line-height: 24px">Fare clic sul link per accedere: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui</a></p> 
          </div>
      
         </body>

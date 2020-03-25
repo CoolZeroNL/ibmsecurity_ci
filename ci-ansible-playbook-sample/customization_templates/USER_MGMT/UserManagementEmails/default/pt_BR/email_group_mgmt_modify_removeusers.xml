@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         Grupo modificado
@@ -17,7 +12,7 @@
         <![CDATA[<html>
          <head>
     		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    		<title>Grupo Modificado</title>
+    		<title>Grupo modificado</title>
   		</head>
   		 <body>
            <div style="font-family: 'Helvetica neue', sans-serif;">

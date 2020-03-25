@@ -1,3 +1,20 @@
 /* css for customization
    Add styling here to override classes from <tenant>/usc/css/stateless.css 
 */
+body {
+    background-color: powderblue !important;
+}
+
+body,body.tile-background {
+    background-image: url("https://i.ibb.co/XCDHjq9/TempData.png");
+    background-color: powderblue !important;
+}
+
+.cs-content {
+    right: 50%;				
+    left: 0;
+}
+.login-footer {
+    right: 50%;
+    left: 0;
+}								 

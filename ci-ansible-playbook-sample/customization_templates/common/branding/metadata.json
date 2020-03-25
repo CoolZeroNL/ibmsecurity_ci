@@ -10,7 +10,7 @@
    "parameters": {
       "optional": [
          {
-            "default": null,
+            "default": "",
             "description": "The id of the theme that holds the common visual elements.",
             "key": "@THEME_ID@"
          }

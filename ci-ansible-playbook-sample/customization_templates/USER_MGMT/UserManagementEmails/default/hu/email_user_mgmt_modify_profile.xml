@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         Felhasználói profil módosítva
@@ -30,10 +25,10 @@
              </table>
           </div>
           <div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
-            <p style="padding-bottom: 12px;font-size: 16px">Fiókadatai megváltoztak. </p>    
-            <p style="padding-bottom: 12px; line-height: 24px">Azért kapja ezt az e-mailt, mert <a href="#" style="color: #4178BE;">@USERNAME@</a> fiókjához kapcsolódó adatok legalább egyike frissítésre került a(z) <b><a style="text-decoration: none; color: #000000;">@TENANT@</a></b> előfizetés esetében. Ha nem kérte ezt a változtatást, akkor forduljon a rendszergazdához.</p>
+            <p style="padding-bottom: 12px;font-size: 16px">Fiók adatai megváltoztak. </p>    
+            <p style="padding-bottom: 12px; line-height: 24px">Azért kapta ezt az e-mailt, mert a fiókjához (<a href="#" style="color: #4178BE;">@USERNAME@</a>) kapcsolódó legalább egy információ frissítésre került a(z) <b><a style="text-decoration: none; color: #000000;">@TENANT@</a></b> előfizetés esetében. Ha nem kérte ezt a változtatást, akkor forduljon a rendszergazdához.</p>
             <p style="font-size: 14px; line-height: 24px">
-             <b>Megváltozott adatok:</b><br /> 
+             <b>Megváltozott információk:</b><br /> 
              <table style="border-spacing: 0px; font-size: 14px; line-height: 24px; text-align: left;">
                 @ATTRS_TABLEROWS@
             </table>

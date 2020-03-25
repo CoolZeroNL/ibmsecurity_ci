@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
-        IBM ID에 대해 테넌트 관리 계정이 작성되었습니다.
-      </Value>
+        IBM ID에 대해 테넌트 관리 계정이 작성되었습니다.      </Value>
     </Subject>
 
     <Message>

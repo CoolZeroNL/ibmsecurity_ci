@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="app">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+      <base href="/" />
+      <title id="loginTitle">@LABEL_TITLE@ - IBM Cloud Identity</title>
+      <link rel="shortcut icon" type="image/x-icon" href="usc/favicon.ico" />
+      <link rel="stylesheet" href="usc/css/stateless.css" />
+      <link rel='stylesheet' href='/templates/v1.0/static/theme.css?themeId=@THEME_ID@' />
+      <meta name="viewport" content="width=device-width">
+   </head>
+   <body>
+      <div class="cs-content login">
+		<div data-role="header" class="heading">
+            <h1>IBM<small>®</small></h1>
+            <h2>Cloud Identity</h2>
+         </div>
+         <h3>@LABEL_PAGE_HEADING@</h3>
+         <p>@LABEL_PAGE_DESC@</p>
+         <div class="login-main">
+            <form id="login-main-form" class="login-fields input-centered" method="POST" action="@ACTION@">
+               <input type="hidden" name="operation" value="verify" /> 
+               <label class="label" id="user-name-label">@LABEL_USERNAME@</label> 
+               <input id="user-name-input" placeholder="@LABEL_USERNAME@" type="text" name="username" class="user-name" 
+                  carbon-text-input="false" tabindex="1"/> 
+               <button class="button" id="login-button" value="login" class="button-1 ease-in-anim-fast login" 
+                  tabindex="2" type="submit" cs-attach="submitButton" onClick="return validateUsername()">@LABEL_CONTINUE@</button>
+               <div class="use-another-method" id="abortSection" tabindex="3" style="text-align:left;padding-top: 30px">
+                  <a href="@ACTION@&amp;operation=cancel">@LABEL_CANCEL@</a>
+               </div>
+            </form>
+            <div id="login-error-message" class="login-error-message ease-in-anim">
+               <p id="login-error-text" class="login-error-text">@MESSAGE@</p>
+            </div>
+         </div>
+         @PAGE_FOOTER@
+         <script>
+		 // START NON-TRANSLATABLE
+		 <!--  START NON-TRANSLATABLE  -->
+           function validateUsername() {
+               var errorMessage = document.getElementById('login-error-message');
+               
+       	       var userNameField = document.getElementById('user-name-input');
+       	       var username = userNameField.value;
+       	       if (username === null || username.trim() === "") {
+       	           errorMessage.innerText = "@LABEL_USER_NAME_INSTRUCTION@"
+       	           userNameField.focus()
+       	           return false
+       	       } else {
+       	           errorMessage.innerText = ""
+       	           return true
+       	       }
+           }
+		   <!--  END NON-TRANSLATABLE  -->
+		   // END NON-TRANSLATABLE
+         </script>
+      </div>
+   </body>
+</html>
+

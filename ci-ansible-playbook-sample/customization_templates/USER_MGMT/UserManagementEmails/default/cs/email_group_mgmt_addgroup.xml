@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
-        Přidána skupina
+        Přidání do skupiny
       </Value>
     </Subject>
 
@@ -17,7 +12,7 @@
         <![CDATA[<html>
          <head>
     		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    		<title>Přidána skupina</title>
+    		<title>Přidání do skupiny</title>
   		</head>
         <body>
            <div style="font-family: 'Helvetica neue', sans-serif;">
@@ -30,7 +25,7 @@
              </table>
           </div>
           <div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
-            <p>Váš účet <b>@USERNAME@</b> byl přidán do skupiny <b>@GROUPNAME@</b> pro odběr <b><a style="text-decoration: none; color: #000000;">@TENANT@</a></b>.</p>  
+            <p>Váš účet <b>@USERNAME@</b> byl přidán do skupiny <b>@GROUPNAME@</b> odebírající <b><a style="text-decoration: none; color: #000000;">@TENANT@</a></b>.</p>  
          </div>
         </body>  		
           </html>

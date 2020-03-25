@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
-        Vaše informace o obnově jména uživatele
+        Informace o obnově vašeho jména uživatele
       </Value>
     </Subject>
     <Message>
       <Value>
       <![CDATA[<html>
             <head/>
-        <body>
+            <body>
 	         <div style="font-family: 'Helvetica neue', sans-serif;">
 	            <table cellspacing="0" cellpadding="22" border="0" style="width: 100%; margin-bottom: 10px; top: 0px;left: 0px;" >
 	              <tr style="line-height: 30px; color: white; margin: 0 auto; background-color: #4178be;">
@@ -26,13 +21,14 @@
 	            </table>
 	         </div>
 	         <div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
-	                Dobrý den @FIRST_NAME@,
+	                Zpráva pro uživatele @FIRST_NAME@:
+                    Dobrý den,
 	                <br>
 	                <br>                 
-                    Vaše jméno uživatele pro odběr <b>@TENANT@</b> je: <b>@USERNAME@</b>.   
+                    Vaše jméno uživatele k odběru <b>@TENANT@</b> je: <b>@USERNAME@</b>.   
                     <br>
                     <br>
-                    Pokud jste si nevyžádali obnovu jména uživatele, obraťte se na administrátora.            
+                    Pokud jste nepožádali o obnovu jména uživatele, obraťte se na svého administrátora.            
              </div>
             </body>
             </html>

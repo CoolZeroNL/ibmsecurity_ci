@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
-        테넌트 관리 계정이 삭제되었습니다.
-      </Value>
+        테넌트 관리 계정이 삭제되었습니다.      </Value>
     </Subject>
 
     <Message>

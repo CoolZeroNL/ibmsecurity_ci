@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
        Kennwortzurücksetzung
@@ -34,7 +29,7 @@
               <p style="padding-bottom: 12px; line-height: 24px">Ihr Benutzername ist: <b>@USERNAME@</b></p>
               <p style="padding-bottom: 12px; line-height: 24px">Ihr temporäres Kennwort ist: <b>@PASSWORD@</b><br>Nach der Anmeldung müssen Sie Ihr Kennwort ändern. </p>
               <p style="padding-bottom: 12px; line-height: 24px">Wenden Sie sich an Ihren Systemadministrator, wenn diese Kennwortzurücksetzung nicht von Ihnen angefordert wurde. </p>
-              <p style="padding-bottom: 12px; line-height: 24px">Klicken Sie auf den Link, um sich anzumelden: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui</a></p>         
+              <p style="padding-bottom: 12px; line-height: 24px">Klicken Sie für die Anmeldung auf den folgenden Link: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui</a></p>         
          </div>
         </body>
         </html>

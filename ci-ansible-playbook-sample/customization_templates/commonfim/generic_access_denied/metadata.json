@@ -4,7 +4,7 @@
    "id": {
       "component": "commonfim",
       "name": "generic_access_denied",
-      "revision": 2
+      "revision": 3
    },
    "isServiceTemplate": false,
    "parameters": {
@@ -16,6 +16,10 @@
          }
       ],
       "required": [
+         {
+            "description": "The locale of the current template page.",
+            "key": "@LOCALE@"
+         }
       ]
    }
 }

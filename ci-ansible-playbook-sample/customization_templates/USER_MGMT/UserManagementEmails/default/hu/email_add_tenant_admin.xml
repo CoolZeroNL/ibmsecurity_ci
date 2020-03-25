@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
-        IBM azonosítójához létrehozásra került egy bérlői adminisztrációs fiók. </Value>
+        Bérlő adminisztrációs fiók jött létre IBM azonosítójához.
+      </Value>
     </Subject>
 
     <Message>
@@ -16,7 +12,7 @@
         <![CDATA[<html>
          <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Account Created</title>
+        <title>Fiók létrehozva</title>
          </head>
         <body>
            <div style="font-family: 'Helvetica neue', sans-serif;">
@@ -28,9 +24,9 @@
                </tr>
              </table>
           </div>
-      	<div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
-		<p style="padding-bottom: 12px">Létrehozásra került egy fiók bérlői adminisztrációs jogosultságokkal az előfizetésen
-		<b><a style="text-decoration: none;color: #000000;">@TENANT@</a></b> <b>@USERNAME@</b> IBM azonosítójához.</p> 
+      	<div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;"> 
+		<p style="padding-bottom: 12px">Fiók került létrehozásra bérlő adminisztrációs jogosultságokkal a(z)
+<b><a style="text-decoration: none;color: #000000;">@TENANT@</a></b> előfizetésben (IBMid fiók: <b>@USERNAME@</b>).</p> 
 		<p style="padding-bottom: 12px; line-height: 24px">A bejelentkezéshez kattintson a hivatkozásra: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui/admin</a></p>
 		</div>
      

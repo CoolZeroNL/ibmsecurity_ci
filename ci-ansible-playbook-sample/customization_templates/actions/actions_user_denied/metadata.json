@@ -4,7 +4,7 @@
    "id": {
       "component": "actions",
       "name": "actions_user_denied",
-      "revision": 1
+      "revision": 3
    },
    "isServiceTemplate": false,
    "parameters": {

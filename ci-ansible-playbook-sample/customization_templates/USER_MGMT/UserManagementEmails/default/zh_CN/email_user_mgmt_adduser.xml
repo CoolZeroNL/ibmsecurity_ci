@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         已创建帐户
@@ -37,7 +32,7 @@
          </div>
      
         </body>
-        </html>
+            </html>
          ]]>
       </Value>
     </Message>

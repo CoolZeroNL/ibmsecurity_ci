@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         Zmodyfikowano profil użytkownika
@@ -30,13 +25,13 @@
              </table>
           </div>
           <div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
-            <p style="padding-bottom: 12px;font-size: 16px">Informacje o Twoim koncie zostały zresetowane. </p>    
-            <p style="padding-bottom: 12px; line-height: 24px">Otrzymujesz tę wiadomość, ponieważ dla konta <a href="#" style="color: #4178BE;">@USERNAME@</a> (w subskrypcji <b><a style="text-decoration: none; color: #000000;">@TENANT@</a></b>) zmodyfikowano przynajmniej jedną właściwość. Skontaktuj się z administratorem, jeśli nie jesteś inicjatorem tej zmiany.</p>
+            <p style="padding-bottom: 12px;font-size: 16px">Informacje o koncie zostały zmienione. </p>    
+            <p style="padding-bottom: 12px; line-height: 24px">Otrzymujesz tę wiadomość, ponieważ dla konta <a href="#" style="color: #4178BE;">@USERNAME@</a> (w subskrypcji <b><a style="text-decoration: none; color: #000000;">@TENANT@</a></b>) zmodyfikowano przynajmniej jedną właściwość.  Skontaktuj się z administratorem, jeśli nie jesteś inicjatorem tej zmiany.</p>
             <p style="font-size: 14px; line-height: 24px">
-             <b>Zmieniona właściwość:</b><br /> 
+             <b>Zmienione informacje:</b><br /> 
              <table style="border-spacing: 0px; font-size: 14px; line-height: 24px; text-align: left;">
                 @ATTRS_TABLEROWS@
-             </table>
+            </table>
          </p>            
          </div>
          </body>

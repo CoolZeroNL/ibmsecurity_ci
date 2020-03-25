@@ -4,7 +4,7 @@
    "id": {
       "component": "authbroker",
       "name": "social_login",
-      "revision": 5
+      "revision": 8
    },
    "isServiceTemplate": false,
    "parameters": {
@@ -48,6 +48,11 @@
             "default": null,
             "description": "A label for the cloud directory form submit button",
             "key": "@SIGNIN@"
+         },
+         {
+            "default": null,
+            "description": "A label for the forgot password link",
+            "key": "@FORGOT_PASSWORD@"
          }
       ],
       "required": [

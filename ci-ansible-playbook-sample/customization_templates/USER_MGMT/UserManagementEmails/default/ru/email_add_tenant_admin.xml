@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         Создана административная учетная запись арендатора для вашего IBMid.
@@ -29,11 +24,10 @@
                </tr>
              </table>
           </div>
-      	<div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
+      	<div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;"> 
 		<p style="padding-bottom: 12px">Создана учетная запись с административными полномочиями арендатора для подписки
 		<b><a style="text-decoration: none;color: #000000;">@TENANT@</a></b> для вашей учетной записи IBMid <b>@USERNAME@</b>.</p> 
-		<p style="padding-bottom: 12px; line-height: 24px">Щелкните по ссылке, чтобы войти в систему:
-<a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui/admin</a></p>
+		<p style="padding-bottom: 12px; line-height: 24px">Щелкните по ссылке, чтобы войти в систему: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui/admin</a></p>
 		</div>
      
         </body>

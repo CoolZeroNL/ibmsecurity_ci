@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         Perfil de usuario modificado
@@ -30,7 +25,7 @@
              </table>
           </div>
           <div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
-            <p style="padding-bottom: 12px;font-size: 16px">La información de su cuenta ha cambiado. </p>    
+            <p style="padding-bottom: 12px;font-size: 16px">La información de su cuenta se ha cambiado. </p>    
             <p style="padding-bottom: 12px; line-height: 24px">Le hemos enviado este mensaje de correo electrónico porque se han actualizado uno o más datos relacionados con su cuenta, <a href="#" style="color: #4178BE;">@USERNAME@</a>, para la suscripción <b><a style="text-decoration: none; color: #000000;">@TENANT@</a></b>. Póngase en contacto con el administrador del sistema si no ha solicitado estos cambios.</p>
             <p style="font-size: 14px; line-height: 24px">
              <b>Información cambiada:</b><br /> 

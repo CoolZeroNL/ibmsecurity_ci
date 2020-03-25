@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<base href="/" />
+	<link rel="shortcut icon" type="image/x-icon" href="ui/assets/img/favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet' href='/templates/v1.0/static/theme.css?themeId=@THEME_ID@' />
+	<title>@LABEL_TITLE@ - IBM Cloud Identity</title>
+	<link rel="stylesheet" href="usc/css/stateless.css" />
+	<style>
+	.button {
+			font-size: 18px;
+	}
+	</style>
+</head>
+
+
+<body class="tile-background" >
+	<div data-role="page" class="cs-content">
+		<div data-role="header" class="heading">
+			<div>
+				<h1>IBM<small>®</small></h1>
+				<h2>Cloud Identity</h2>
+			</div>
+		</div>
+		<div class="content">
+			<div data-role="content" class="header">
+				<p>@MESSAGE@</p>
+			</div>
+			<div id="topDiv" class="message">
+				<div class="spaced" id="authButtonDiv">
+					<a class="cs-link-button cs-button-primary-deprecated" id="authButton" href="/ui" >
+						<span class="ng-scope">@LABEL_RETURN_HOME@</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		@PAGE_FOOTER@
+	</div>
+</body>
+
+</html>

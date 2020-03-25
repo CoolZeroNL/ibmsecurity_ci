@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         Fiók törölve
@@ -30,7 +25,7 @@
              </table>
           </div>
           <div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
-                <p><b>@USERNAME@</b> fiókja törlésre került a(z) <b><a style="text-decoration: none;color: #000000;">@TENANT@</a></b> előfizetésből.</p>
+                <p>Fiókját (<b>@USERNAME@</b>) törölték a(z) <b><a style="text-decoration: none;color: #000000;">@TENANT@</a></b> előfizetésből.</p>
                 <p>Ha úgy gondolja, hogy ez hibás működés, akkor forduljon a rendszergazdához.</p>	
          </div>
         </body>  	

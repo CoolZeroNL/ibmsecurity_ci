@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         Su información de recuperación de nombre de usuario
@@ -15,7 +10,7 @@
       <Value>
       <![CDATA[<html>
             <head/>
-            <body>
+        <body>
 	         <div style="font-family: 'Helvetica neue', sans-serif;">
 	            <table cellspacing="0" cellpadding="22" border="0" style="width: 100%; margin-bottom: 10px; top: 0px;left: 0px;" >
 	              <tr style="line-height: 30px; color: white; margin: 0 auto; background-color: #4178be;">
@@ -26,7 +21,7 @@
 	            </table>
 	         </div>
 	         <div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
-	                Hola, @FIRST_NAME@:
+	                Hola, @FIRST_NAME@,
 	                <br>
 	                <br>                 
                     Su nombre de usuario para la suscripción <b>@TENANT@</b> es: <b>@USERNAME@</b>.   

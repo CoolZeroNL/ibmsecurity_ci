@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         アカウントが作成されました
@@ -36,8 +31,8 @@
             <p style="padding-bottom: 12px; line-height: 24px">ログインするには次のリンクをクリックしてください: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui</a></p> 
          </div>
      
-        </body>  		
-          </html>
+        </body>
+            </html>
          ]]>
       </Value>
     </Message>

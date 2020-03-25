@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
-        Účet odstraněn
+        Odstranění účtu
       </Value>
     </Subject>
 
@@ -17,7 +12,7 @@
       <![CDATA[<html>
             <head>
             	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    		    <title>Účet odstraněn</title>
+    		    <title>Účet byl odstraněn</title>
     		</head>
     	   <body>
            <div style="font-family: 'Helvetica neue', sans-serif;">
@@ -30,8 +25,8 @@
              </table>
           </div>
           <div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
-                <p>Váš účet <b>@USERNAME@</b> byl odstraněn pro odběr <b><a style="text-decoration: none;color: #000000;">@TENANT@</a></b>.</p>
-                <p>Pokud se domníváte, že se jedná o omyl, obraťte se na administrátora systému.</p>	
+                <p>Váš účet <b>@USERNAME@</b> byl z odběru <b><a style="text-decoration: none;color: #000000;">@TENANT@</a></b> odstraněn.</p>
+                <p>Pokud se domníváte, že tato akce byla chybná, obraťte se na svého administrátor systému.</p>	
          </div>
         </body>  	
         </html>

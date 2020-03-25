@@ -4,7 +4,7 @@
    "id": {
       "component": "USC_LEGACY",
       "name": "UserSelfCareLegacyEmails",
-      "revision": 3
+      "revision": 4
    },
    "isServiceTemplate": false,
    "parameters": {

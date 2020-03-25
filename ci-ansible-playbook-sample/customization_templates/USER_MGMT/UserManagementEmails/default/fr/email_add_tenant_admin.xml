@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         Un compte d'administration de titulaire a été créé pour votre IBMid.
@@ -29,9 +24,12 @@
                </tr>
              </table>
           </div>
-      	<div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
-		<p style="padding-bottom: 12px">Un compte disposant de droits d'administration de titulaire a été créé pour l'abonnement <b><a style="text-decoration: none;color: #000000;">@TENANT@</a></b> de votre compte IBMid <b>@USERNAME@</b>.</p> 
-		<p style="padding-bottom: 12px; line-height: 24px">Connectez-vous en cliquant sur le lien suivant : <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui/admin</a></p>
+      	<div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;"> 
+		<p style="padding-bottom: 12px">Un compte disposant de privilèges d'administration de titulaire a été créé pour l'abonnement
+<b><a style="text-decoration: none;color: #000000;">@TENANT@</a></b> pour votre compte
+IBMid <b>@USERNAME@</b>. </p> 
+		<p style="padding-bottom: 12px; line-height: 24px">Cliquez sur le lien suivant pour vous
+connecter : <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui/admin</a> </p>
 		</div>
      
         </body>

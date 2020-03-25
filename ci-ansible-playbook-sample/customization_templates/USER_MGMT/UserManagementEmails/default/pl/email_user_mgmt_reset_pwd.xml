@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
        Zresetowano hasło
@@ -17,7 +12,7 @@
       <![CDATA[<html>
         <head>
     		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    		<title>Zresetowano hasło</title>
+    		<title>Zresetuj hasło</title>
   		</head>
   	    <body>
            <div style="font-family: 'Helvetica neue', sans-serif;">
@@ -30,11 +25,11 @@
              </table>
           </div>
           <div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
-              <p style="padding-bottom: 12px; line-height: 24px">Twoje hasło zostało zresetowane.</p>  
+              <p style="padding-bottom: 12px; line-height: 24px">Hasło zostało zresetowane.</p>  
               <p style="padding-bottom: 12px; line-height: 24px">Nazwa użytkownika: <b>@USERNAME@</b></p>
               <p style="padding-bottom: 12px; line-height: 24px">Hasło tymczasowe: <b>@PASSWORD@</b><br>Hasło to należy zmienić po zalogowaniu się.</p>
-              <p style="padding-bottom: 12px; line-height: 24px">Skontaktuj się z administratorem, jeśli nie jesteś inicjatorem tego żądania zresetowania hasła.</p>
-              <p style="padding-bottom: 12px; line-height: 24px">Kliknij odsyłacz, aby się zalogować: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui</a></p>         
+              <p style="padding-bottom: 12px; line-height: 24px">Skontaktuj się z administratorem systemu, jeśli nie jesteś inicjatorem tego żądania zresetowania hasła.</p>
+              <p style="padding-bottom: 12px; line-height: 24px">Kliknij następujący odsyłacz, aby się zalogować: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui</a></p>         
          </div>
         </body>
         </html>

@@ -4,7 +4,7 @@
    "id": {
       "component": "factors",
       "name": "EmailNotification",
-      "revision": 1
+      "revision": 3
    },
    "isServiceTemplate": false,
    "parameters": {
@@ -12,7 +12,7 @@
       ],
       "required": [
          {
-            "description": "The recovery link that is emailed to the end user.  The macro is used by the email_password_recovery.xml template.",
+            "description": "The recovery link that is emailed to the end user. The macro is used by the email_password_recovery.xml template.",
             "key": "@PASSWORD_RECOVERY_LINK@"
          },
          {
@@ -26,6 +26,10 @@
          {
             "description": "The user name. The macro is used by the email_password_recovery.xml template.",
             "key": "@USERNAME@"
+         },
+         {
+            "description": "The user name. The macro is used by the email_password_recovery.xml template.",
+            "key": "@USER_FRIENDLY_NAME@"
          }
       ]
    }

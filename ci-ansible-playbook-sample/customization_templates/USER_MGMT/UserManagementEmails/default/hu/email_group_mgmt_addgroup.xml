@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         Csoport hozzáadva
@@ -17,7 +12,7 @@
         <![CDATA[<html>
          <head>
     		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    		<title>Group added</title>
+    		<title>Csoport hozzáadva</title>
   		</head>
         <body>
            <div style="font-family: 'Helvetica neue', sans-serif;">
@@ -30,7 +25,7 @@
              </table>
           </div>
           <div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
-            <p><b>@USERNAME@</b> fiókja hozzáadásra került a(z) <b><a style="text-decoration: none; color: #000000;">@TENANT@</a></b> előfizetés <b>@GROUPNAME@</b> csoportjához.</p>  
+            <p><b>@USERNAME@</b> fiókja hozzáadásra került a(z) <b>@GROUPNAME@</b> csoporthoz (előfizetés: <b><a style="text-decoration: none; color: #000000;">@TENANT@</a></b>).</p>  
          </div>
         </body>  		
           </html>

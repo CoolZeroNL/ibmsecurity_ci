@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         帳戶已建立
@@ -33,7 +28,7 @@
             <p style="padding-bottom: 12px;font-size: 16px">已建立您的帳戶。</p>    
             <p style="padding-bottom: 12px; line-height: 24px">您的使用者名稱為：<b>@USERNAME@</b></p>
             <p style="padding-bottom: 12px; line-height: 24px">您的臨時密碼為：<b>@PASSWORD@</b><br>登入之後，您必須變更密碼。</p>
-            <p style="padding-bottom: 12px; line-height: 24px">按一下此鏈結以登入：<a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui</a></p> 
+            <p style="padding-bottom: 12px; line-height: 24px">按一下鏈結以登入：<a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui</a></p> 
          </div>
      
         </body>

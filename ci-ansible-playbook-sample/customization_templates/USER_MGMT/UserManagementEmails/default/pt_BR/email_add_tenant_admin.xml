@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         Uma conta administrativa de locatário foi criada para seu IBMid.
@@ -17,7 +12,7 @@
         <![CDATA[<html>
          <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Conta criada</title>
+        <title>Conta Criada</title>
          </head>
         <body>
            <div style="font-family: 'Helvetica neue', sans-serif;">
@@ -29,9 +24,9 @@
                </tr>
              </table>
           </div>
-      	<div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
+      	<div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;"> 
 		<p style="padding-bottom: 12px">Uma conta foi criada com privilégios administrativos de locatário na assinatura
-		<b><a style="text-decoration: none;color: #000000;">@TENANT@</a></b> para sua conta do IBMid <b>@USERNAME@</b>.</p> 
+		<b><a style="text-decoration: none;color: #000000;">@TENANT@</a></b> para sua conta <b>@USERNAME@</b> do IBMid.</p> 
 		<p style="padding-bottom: 12px; line-height: 24px">Clique no link para efetuar login: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui/admin</a></p>
 		</div>
      

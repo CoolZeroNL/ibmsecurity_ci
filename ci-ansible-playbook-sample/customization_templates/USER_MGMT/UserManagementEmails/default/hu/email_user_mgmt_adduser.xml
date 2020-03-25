@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         Fiók létrehozva
@@ -30,9 +25,9 @@
              </table>
           </div>
           <div style="font-family: 'Helvetica neue', sans-serif; font-size: 14px; padding: 10px 64px 64px 64px; color: #121212;">
-            <p style="padding-bottom: 12px;font-size: 16px">Fiókja létrehozásra került.</p>    
-            <p style="padding-bottom: 12px; line-height: 24px">Felhasználónév:<b>@USERNAME@</b></p>
-            <p style="padding-bottom: 12px; line-height: 24px">Ideiglenes jelszava: <b>@PASSWORD@</b><br>Bejelentkezés után a jelszót módosítania kell.</p>
+            <p style="padding-bottom: 12px;font-size: 16px">A fiókja létrehozásra került.</p>    
+            <p style="padding-bottom: 12px; line-height: 24px">A felhasználóneve: <b>@USERNAME@</b></p>
+            <p style="padding-bottom: 12px; line-height: 24px">Az ideiglenes jelszava a következő: <b>@PASSWORD@</b><br>Bejelentkezés után a jelszót módosítania kell.</p>
             <p style="padding-bottom: 12px; line-height: 24px">A bejelentkezéshez kattintson a hivatkozásra: <a href="@LOGIN_PAGE_LINK@">https://@TENANT@/ui</a></p> 
          </div>
      

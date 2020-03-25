@@ -29,18 +29,21 @@
 						<div class="bx--form-item bx--text-input-wrapper">
 							<label for="user-name-input" class="bx--label label" id="user-name-label">@USERNAME@</label>
 							<div class="bx--text-input__field-wrapper">
-							<input id="user-name-input" type="text" class="bx--text-input" name="username" placeholder="@USERNAME@" value="@LOGIN_HINT@">
+							<input id="user-name-input" type="text" class="bx--text-input" name="username" placeholder="@USERNAME@" value="@LOGIN_HINT@" tabindex="1">
 							</div>
 						</div>
 						<div class="bx--form-item bx--text-input-wrapper">
-							<label for="password-input" class="bx--label label" id="password-label">@PASSWORD@</label>
+							<div class="w-100 display-flex">
+							    <label for="password-input" class="bx--label label half-width" id="password-label">@PASSWORD@</label>
+					            <a id="forgot-password-link" class="bx--link forgot-pwd" href="" tabindex="4">@FORGOT_PASSWORD@</a>
+					        </div>
 							<div class="bx--text-input__field-wrapper">
-							<input id="password-input" type="password" class="bx--text-input" name="password" placeholder="@PASSWORD@">
+							<input id="password-input" type="password" class="bx--text-input" name="password" placeholder="@PASSWORD@" tabindex="2" autocomplete="off">
 							</div>
 						</div>
 						<input type="hidden" name="operation" value="verify">
 						<div class="submit-wrapper">
-							<button class="button cs-hide-focus" id="login-button" value="login" type="submit">@SIGNIN_BUTTON@</button>
+							<button class="button cs-hide-focus" id="login-button" value="login" type="submit" tabindex="3">@SIGNIN_BUTTON@</button>
 						</div>
 					</form>
 				</div>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<base href="/" />
+	<title id="title">@LABEL_CHANGE_PASSWORD@ - IBM Cloud Identity</title>
+	<link rel="shortcut icon" type="image/x-icon" href="usc/favicon.ico" />
+	<link rel="stylesheet" href="usc/css/stateless.css" />
+	<link rel='stylesheet' href='/template/v1.0/static/theme.css?themeId=@THEME_ID@' />
+</head>
+
+<body>
+	<div class="cs-change-password cs-content">
+		<div data-role="header" class="heading">
+            <h1>IBM<small>®</small></h1>
+            <h2>Cloud Identity</h2>
+        </div>
+		<h3>@LABEL_CHANGE_PASSWORD@</h3>
+        <p>@LABEL_CHANGE_PASSWORD_DESC@</p>
+		<div>
+			<form id="change-password-main-form" class="input-centered"
+				method="POST" action="">
+				<input type="hidden" name="operation" value="verify" />
+				<input type="hidden" name="username" value="@USERNAME@" /> 
+				<label class="label" for="oldpassword">@LABEL_CURRENT_PASSWORD@</label> 
+				<input id="oldpassword" type="password" name="oldpassword" placeholder="@LABEL_CURRENT_PASSWORD@" tabindex="1" />
+				<label class="label" for="newpassword">@LABEL_NEW_PASSWORD@</label>
+				<input id="newpassword" type="password" name="newpassword" placeholder="@LABEL_NEW_PASSWORD@" tabindex="2" /> 
+				<label class="label" for="confirmpassword">@LABEL_CONFIRM_PASSWORD@</label>
+				<input id="confirmpassword" type="password" name="confirmpassword" placeholder="@LABEL_CONFIRM_PASSWORD@" tabindex="3" />
+				<div class="use-another-method" id="abortOrSubmitSection" style="text-align: left; padding-top: 30px">
+					<input type="button" class="button half-width" name="changepassword" value="@LABEL_CHANGE_PASSWORD@" 
+						tabindex="4" onClick="return validateAndSubmit(event);"/>
+					<a style="float: left; padding-top: 20px" tabindex="5" href="@ACTION@&amp;operation=cancel">@LABEL_CANCEL@</a>
+				</div>
+			</form>
+			<div id="password-error-message" class="password-error-message">
+				<p id="password-error-text" class="password-error-text">@ERROR_MESSAGE@</p>
+			</div>
+		</div>
+		<ol class="spaced" style="padding-top: 30px">
+			<!--  START NON-TRANSLATABLE  -->
+			[RPT PolicyDetails]
+			<li><span data-name="@POLICYMESSAGE@">@POLICYMESSAGE@</span></li>
+			[ERPT PolicyDetails]
+			<!--  END NON-TRANSLATABLE  -->
+		</ol>
+		@PAGE_FOOTER@
+	</div>
+
+	<script>
+		function validateAndSubmit(event) {
+	        var errorMessage = document.getElementById('password-error-text');
+	        errorMessage.innerText = "";
+	        
+	        var inputField = document.getElementById('oldpassword');
+	        var oldPassword = inputField.value;
+	        if (oldPassword === null || oldPassword.trim() === "") {
+	            showError("@ERROR_CURRENT_PASSWORD_EMPTY@");
+	            inputField.focus();
+	            return false;
+	        }
+	        
+	        inputField = document.getElementById('newpassword');
+	        var newPassword = inputField.value;
+	        if (newPassword === null || newPassword.trim() === "") {
+	            showError("@ERROR_NEW_PASSWORD_EMPTY@");
+	            inputField.focus(); 
+	            return false;
+	        }
+	        
+	        inputField = document.getElementById('confirmpassword');
+	        var confirmPassword = inputField.value;
+	        if (confirmPassword === null || confirmPassword.trim() === "") {
+	            showError("@ERROR_CONFIRM_PASSWORD_EMPTY@");
+	            inputField.focus(); 
+	            return false;
+	        }
+			
+	        document.getElementById('change-password-main-form').submit();
+	        return true;
+		}
+		
+		function buildTemplateFormAction(actionBaseHref, action, themeId) {
+			var result = action;
+			
+			if (!!actionBaseHref) {
+				// if there is an action-base-href specified
+				if (action.indexOf(actionBaseHref) === 0) {
+					// the action already starts with the action-base-href, so don't concatenate
+					result = action;
+				} else {
+					// the action doesn't start with the action-base-href, so concatenate them
+					result = actionBaseHref + action;
+				}
+			} else {
+				// no action-base-href specified
+				result = action;
+			}
+			
+			if (themeId && themeId != "default" && action.indexOf("themeId") === -1) {
+				if (action.indexOf("?") === -1){
+					result += "?themeId=" + themeId;
+				} else {
+					result += "&themeId=" + themeId;
+				}
+			}
+			
+			return result
+		}
+		
+		function setFocus() {
+			document.getElementById("oldpassword").focus();
+		}
+		
+		window.showError = function (error) {
+			if (error.trim() !== "") {
+				setError(error.trim());
+			}
+		};
+		
+		window.inputClick = function (event) {
+			var inputField = event.currentTarget;
+			if (inputField.classList && inputField.classList.contains("error")) {
+				resetInput();
+			}
+		};
+		
+		window.inputKeyup = function (event) {
+			var inputField = event.currentTarget;
+			var labelField = inputField.previousElementSibling;
+			
+			if (inputField.value.length === 0) {
+				inputField.classList.remove('active');
+				labelField.classList.remove('active');
+				labelField.classList.remove('input-done');
+			} else {
+				inputField.classList.add('active');
+				labelField.classList.add('active');
+			}
+		};
+		
+		window.inputBlur = function (event) {
+			var inputField = event.currentTarget;
+			var labelField = inputField.previousElementSibling;
+			
+			if (inputField.value.length === 0) {
+				inputField.classList.remove('active');
+				labelField.classList.remove('input-done');
+			} else {
+				inputField.classList.remove('active');
+				labelField.classList.add('input-done');
+			}
+		};
+		
+		function setError(errorMessage) {
+			var field;
+			
+			field = document.getElementById('oldpassword');
+			field.value = '';
+			field.classList.add('error');
+			
+			field = document.getElementById('newpassword');
+			field.value = '';
+			field.classList.add('error');
+			
+			field = document.getElementById('confirmpassword');
+			field.value = '';
+			field.classList.add('error');
+			
+			field = document.getElementById('password-error-message');
+			field.classList.add('active');
+			
+			field = document.getElementById('password-error-text');
+			field.innerHTML = errorMessage;
+			
+			setFocus();
+		};
+		
+		window.resetInput = function () {
+			var field;
+			
+			field = document.getElementById('oldpassword-label');
+			field.classList.remove('active');
+			field.classList.remove('input-done');
+			field.classList.remove('error');
+			
+			field = document.getElementById('oldpassword');
+			field.value = '';
+			field.classList.remove('active');
+			field.classList.remove('input-done');
+			field.classList.remove('error');
+			
+			field = document.getElementById('newpassword-label');
+			field.classList.remove('active');
+			field.classList.remove('input-done');
+			field.classList.remove('error');
+			
+			field = document.getElementById('newpassword');
+			field.value = '';
+			field.classList.remove('active');
+			field.classList.remove('input-done');
+			field.classList.remove('error');
+			
+			field = document.getElementById('confirmpassword-label');
+			field.classList.remove('active');
+			field.classList.remove('input-done');
+			field.classList.remove('error');
+			
+			field = document.getElementById('confirmpassword');
+			field.value = '';
+			field.classList.remove('active');
+			field.classList.remove('input-done');
+			field.classList.remove('error');
+			
+			field = document.getElementById('password-error-message');
+			field.classList.remove('active');
+		};
+		
+		function addEnterListner(inputFieldElement) {
+			var inputField = document.getElementById(inputFieldElement);
+			inputField.addEventListener('keypress', function(event) {
+				  if (event.keyCode == 13) {
+					  validateAndSubmit();
+				  }
+			});
+		}
+		
+		function mockSubmitFunction() {
+			addEnterListner('oldpassword');
+			addEnterListner('newpassword');
+			addEnterListner('confirmpassword');
+		}
+		
+		mockSubmitFunction();
+		
+		document.getElementById("change-password-main-form").action = buildTemplateFormAction("", "@ACTION@", "@THEME_ID@")
+		
+		showError("@ERROR_MESSAGE@");
+		
+		setFocus();
+	</script>
+</body>
+
+</html>

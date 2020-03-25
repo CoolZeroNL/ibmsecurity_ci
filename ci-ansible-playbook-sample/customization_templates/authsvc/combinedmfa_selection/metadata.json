@@ -4,7 +4,7 @@
    "id": {
       "component": "authsvc",
       "name": "combinedmfa_selection",
-      "revision": 8
+      "revision": 9
    },
    "isServiceTemplate": false,
    "parameters": {
@@ -23,6 +23,11 @@
             "default": null,
             "description": "The localized label that will be displayed to users for an MFA type.",
             "key": "@OTP_METHOD_LABEL@"
+         },
+         {
+            "default": null,
+            "description": "The locale of the current template page.",
+            "key": "@LOCALE@"
          }
       ],
       "required": [

@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <Email id="default">
-    <Sender>
-       <Value>
-        ibmacct@ibm.com
-       </Value>
-    </Sender>
     <Subject>
       <Value>
         已為您的 IBMid 建立租戶管理帳戶。
@@ -17,7 +12,7 @@
         <![CDATA[<html>
          <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-                 <title>帳戶已建立</title>
+        <title>帳戶已建立</title>
          </head>
         <body>
            <div style="font-family: 'Helvetica neue', sans-serif;">
