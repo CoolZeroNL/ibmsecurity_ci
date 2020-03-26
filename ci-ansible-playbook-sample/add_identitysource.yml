@@ -9,21 +9,40 @@
   roles:
     - role: start_ci_config
 
-    - role: add_identitysource
-      # sourcetypeid: "1"
-      # instancename: "Facebook"
-      # new_instancename: ""
-      # enabled: false
-      # # FB
-      # properties_client_id_sensitive: false
-      # properties_client_id_value: ""
-      # properties_client_secret_sensitive: false
-      # properties_client_secret_value: ""
-      # properties_identitylinkingenabled_sensitive: false
-      # properties_identitylinkingenabled_value: "false"
-      # properties_identitylinkingjitenabled_sensitive: false
-      # properties_identitylinkingjitenabled_value: "false"
-      # properties_identitylinkingprincipalattribute_sensitive: false
-      # properties_identitylinkingprincipalattribute_value: ""
-      # properties_realm_sensitive: false
-      # properties_realm_value: "www.facebook.com"
+    # - role: add_identitysource
+    #   sourcetypeid: "1"
+    #   instancename: "Facebook - CIC Demo"
+    #   new_instancename: ""    
+    #   enabled: true
+    #   # # FB
+    #   properties:
+    #     - client_id:
+    #         sensitive: false
+    #         value: "2411909862433016"
+    #     - client_secret:
+    #         sensitive: false
+    #         value: "f5d7e9bcbfd0230fda9923aaedde225d"
+    #     - identityLinkingEnabled:
+    #         sensitive: false
+    #         value: "false"
+    #     - identityLinkingJitEnabled:
+    #         sensitive: false
+    #         value: "false"
+    #     - identityLinkingPrincipalAttribute:
+    #         sensitive: false
+    #         value: ""
+    #     - realm:
+    #         sensitive: false
+    #         value: "www.facebook.com"
+
+    # - role: add_identitysource
+    #   sourcetypeid: "5"
+    #   instancename: "Cloud Directory"      
+    #   enabled: true
+    #   # # Cloud Directory
+    #   properties:
+    #     - passwordResetEnabled:
+    #         sensitive: false
+    #         value: "false"
+
+    
