@@ -18,10 +18,10 @@
     #   properties:
     #     - client_id:
     #         sensitive: false
-    #         value: "2411909862433016"
+    #         value: ""
     #     - client_secret:
     #         sensitive: false
-    #         value: "f5d7e9bcbfd0230fda9923aaedde225d"
+    #         value: ""
     #     - identityLinkingEnabled:
     #         sensitive: false
     #         value: "false"
@@ -45,4 +45,3 @@
     #         sensitive: false
     #         value: "false"
 
-    
