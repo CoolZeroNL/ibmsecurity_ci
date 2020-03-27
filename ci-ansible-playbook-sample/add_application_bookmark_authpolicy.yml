@@ -29,10 +29,10 @@
       #authpolicy:
       #-------      
       # ID: 1
-		  # NAME: Allow access from all devices
+      # NAME: Allow access from all devices
       #-------
       # ID: 17
-		  # NAME: Always require 2FA in all devices
+      # NAME: Always require 2FA in all devices
       #-------
       # ID: 18
       # Name: Require 2FA each session in all devices

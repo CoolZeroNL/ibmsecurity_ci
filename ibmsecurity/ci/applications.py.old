@@ -115,7 +115,6 @@ def add(ciAppliance,
                provisionbearertoken,
                provisionscimbaseurl,
                authpolicy,
-               identitySources,
                check_mode=False, force=False):
 
     """
@@ -150,13 +149,6 @@ def add(ciAppliance,
             client_json['authPolicy']['id'] = authpolicy_id
             client_json['authPolicy']['name'] = authpolicy_name
 
-    if identitySources != '':
-        client_json['identitySources'] = []
-        for element in identitySources:
-            from ibmsecurity.ci.configuration.identitysources import resolve_name_to_id as identitysources_resolve_name_to_id
-            id = identitysources_resolve_name_to_id(ciAppliance=ciAppliance, name=element)
-            client_json['identitySources'] += [id]  # input = [ "foo","bar".... ]
-            
     ## if Govern is active.....
     if provpolicy != '' and \
        deprovpolicy != '' and \

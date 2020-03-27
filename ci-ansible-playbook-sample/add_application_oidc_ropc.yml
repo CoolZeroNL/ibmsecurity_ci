@@ -41,11 +41,11 @@
       providers_oidc_properties_sendallknownuserattributes: false
       providers_oidc_properties_accesstokenexpiry: "7200"
       providers_oidc_properties_idtokensigningalg: "RS256"
-      providers_oidc_properties_redirecturis: ""
+      providers_oidc_properties_redirecturis: "https://demo.nl/oauth/callback"
       providers_oidc_token_accesstokentype: "default"
       providers_oidc_requirepkceverification: true
       providers_oidc_consentaction: "always_prompt"
-      providers_oidc_applicationurl: "https://<yourtentant>.ice.ibmcloud.com/"
+      providers_oidc_applicationurl: "https://demo.nl/"
       providers_oidc_restrictentitlements: false
       providers_oidc_entitlements: [ ] 
       providers_sso_useroptions: "oidc"
