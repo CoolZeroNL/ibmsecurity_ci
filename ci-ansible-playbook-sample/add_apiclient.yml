@@ -1,0 +1,15 @@
+- name: Add a API Client.
+  hosts: "{{ hosts | default('all') }}"
+  no_log: False
+  connection: local
+  gather_facts: no
+  vars:
+    log_level: "DEBUG"
+  roles:
+    - role: start_ci_config
+
+    - role: add_apiclient
+      clientName: "API Client Test"
+      # new_clientName: ""    
+      enabled: true
+      entitlements: ["accessDevPortal", "accessAdminConsole", "authnAnyUser", "authn", "generateOTP", "manageAccessPolicies", "manageAPIClients", "manageAppAccessOwner", "manageAppAccessAdmin", "manageAttributes", "manageAuthenticatorsConfig", "manageAuthenticatorsAnyUser", "manageCerts", "manageFederations", "manageIdentitySources", "manageOIDCConsents", "manageOIDCGrants", "managePwdPolicy", "managePushCreds", "manageReports", "manageEnrollMFAMethodAnyUser", "manageMFAMethods", "manageTemplates", "manageUserStandardGroups", "manageUserGroups", "readAccessPolicies", "readAppConfig", "readAttributes", "readAuthenticatorsConfig", "readAuthenticatorsAnyUser", "readCerts", "readFederations", "readIdentitySources", "readOIDCConsents", "readOIDCGrants", "readPwdPolicy", "readPushCreds", "readReports", "readEnrollMFAMethodAnyUser", "readMFAMethods", "readTemplates", "readTenantProperties", "readUserGroups", "recoverUsername", "resetPassword", "resetPasswordAnyUser", "manageAllUserGroups", "updateAnyUser"]

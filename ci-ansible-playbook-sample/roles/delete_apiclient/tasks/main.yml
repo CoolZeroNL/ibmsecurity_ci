@@ -1,0 +1,11 @@
+- name: Delete a API Client.
+  ci:
+    appliance:      "{{ inventory_hostname }}"
+    client_id:      "{{ client_id }}"
+    client_secret:  "{{ client_secret }}"
+    lmi_port:       "{{ lmi_port }}"
+    log:            "{{ log_level }}"
+    force:          "{{ force }}"
+    ciapi:
+      clientName:      "{{ clientName }}"    
+    action: ibmsecurity.ci.configuration.apiclients.delete

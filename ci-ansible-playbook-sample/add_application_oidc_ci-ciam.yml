@@ -40,19 +40,15 @@
       providers_oidc_properties_sendallknownuserattributes: true
       providers_oidc_properties_accesstokenexpiry: "7200"
       providers_oidc_properties_idtokensigningalg: "RS256"
-      providers_oidc_properties_redirecturis: "https://ciam.tempdata.nl/oauth/callback"
+      providers_oidc_properties_redirecturis: "https://ciam.demo.nl/oauth/callback"
       providers_oidc_token_accesstokentype: "default"
       providers_oidc_requirepkceverification: false
       providers_oidc_consentaction: "never_prompt"                   # never_prompt / always_prompt
-      providers_oidc_applicationurl: "https://ciam.tempdata.nl/"
+      providers_oidc_applicationurl: "https://ciam.demo.nl/"
       providers_oidc_restrictentitlements: false
-      #providers_oidc_entitlements: [ "accessAdminConsole", "accessDevPortal", "authn", "authnAnyUser", "generateOTP", "manageAPIClients", "manageAccessPolicies", "manageAllUserGroups", "manageAppAccessAdmin", "manageAppAccessOwner", "manageAttributes", "manageAuthenticatorsAnyUser", "manageAuthenticatorsConfig", "manageCerts", "manageEnrollMFAMethodAnyUser", "manageFederations", "manageIdentitySources", "manageMFAMethods", "manageOIDCConsents", "manageOIDCGrants", "managePushCreds", "managePwdPolicy", "manageReports", "manageTemplates", "manageUserGroups", "manageUserStandardGroups", "readAccessPolicies", "readAppConfig", "readAttributes", "readAuthenticatorsAnyUser", "readAuthenticatorsConfig", "readCerts", "readEnrollMFAMethodAnyUser", "readFederations", "readIdentitySources", "readMFAMethods", "readOIDCConsents", "readOIDCGrants", "readPushCreds", "readPwdPolicy", "readReports", "readTemplates", "readTenantProperties", "readUserGroups", "recoverUsername", "resetPassword", "resetPasswordAnyUser", "reviewCertRecords", "updateAnyUser" ] 
-      #providers_oidc_entitlements: [ "accessAdminConsole", "accessDevPortal", "authn", "authnAnyUser", "generateOTP", "manageAPIClients", "manageAccessPolicies", "manageAllUserGroups", "manageAppAccessAdmin", "manageAppAccessOwner", "manageAttributes", "manageAuthenticatorsAnyUser", "manageAuthenticatorsConfig", "manageCerts", "manageEnrollMFAMethodAnyUser", "manageFederations", "manageIdentitySources", "manageMFAMethods", "manageOIDCConsents", "manageOIDCGrants", "managePushCreds", "managePwdPolicy", "manageReports", "manageTemplates", "manageUserGroups", "manageUserStandardGroups", "readAccessPolicies", "readAppConfig", "readAttributes", "readAuthenticatorsAnyUser", "readAuthenticatorsConfig", "readCerts", "readEnrollMFAMethodAnyUser", "readFederations", "readIdentitySources", "readMFAMethods", "readOIDCConsents", "readOIDCGrants", "readPushCreds", "readPwdPolicy", "readReports", "readTemplates", "readTenantProperties", "readUserGroups", "recoverUsername", "resetPassword", "resetPasswordAnyUser", "updateAnyUser" ] 
       providers_oidc_entitlements: [ ] 
       providers_sso_useroptions: "oidc"
       providers_sso_idpinitiatedssosupport: "false"
-
-      # Select specific supported identity sources / Allow all identity sources that are enabled for end users (2 sources) 
-      identitySources: [ "Cloud Directory", "Facebook - CIC Demo"]
+      identitySources: [ "Cloud Directory", "Facebook"]
 
     #############################################################################################################################################################################

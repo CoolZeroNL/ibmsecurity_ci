@@ -1,0 +1,15 @@
+- name: add api client. 
+  ci:
+    appliance:      "{{ inventory_hostname }}"
+    client_id:      "{{ client_id }}"
+    client_secret:  "{{ client_secret }}"
+    lmi_port:       "{{ lmi_port }}"
+    log:            "{{ log_level }}"
+    force:          "{{ force }}"
+    # header:       "application/json"
+    ciapi:
+      clientName:         "{{ clientName }}"
+      new_clientName:     "{{ new_clientName | default(None) }}"
+      enabled:            "{{ enabled }}"
+      entitlements:       "{{ entitlements | default(None) }}"
+    action: ibmsecurity.ci.configuration.apiclients.add
